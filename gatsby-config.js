@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/das-js`,
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,

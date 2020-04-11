@@ -1,4 +1,4 @@
-import uuidv1 from 'uuid/v1';
+import { v1 as uuidv1 } from 'uuid';
 
 // HEAD DATA
 export const headData = {

@@ -32,6 +32,11 @@ const Header = () => {
     }
   }, []);
 
+  if (!latitude) {
+    // still loading
+    return null;
+  }
+
   const result = calculate(latitude, longitude);
   const { date, timings } = formatter(result, timeZone);
 
