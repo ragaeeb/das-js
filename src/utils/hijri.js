@@ -87,7 +87,7 @@ const writeIslamicDate = (adjustment, today) => {
     'al-ʾArbiʿāʾ',
     'al-Khamīs',
     'al-Jumuʿah',
-    'as-Sabt',
+    'al-Sabt',
   ];
 
   const iMonthNames = [
