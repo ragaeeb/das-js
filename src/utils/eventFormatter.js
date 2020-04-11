@@ -23,13 +23,18 @@ const formatTime = (t, timeZone) => {
   return time;
 };
 
-const formatDate = (result) =>
-  new Date(result[SalatEvents.Fajr]).toLocaleDateString('en-US', {
+const formatDate = (result) => {
+  if (!result[SalatEvents.Fajr]) {
+    return '';
+  }
+
+  return new Date(result[SalatEvents.Fajr]).toLocaleDateString('en-US', {
     weekday: 'long',
     month: 'long',
     day: 'numeric',
     year: 'numeric',
   });
+};
 
 /**
  * Returns a list of formatted times ordered from earliest to latest.
