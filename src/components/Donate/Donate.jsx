@@ -7,7 +7,7 @@ import Title from '../Title/Title';
 
 const DonateOption = ({ avatar, title, children, status }) => {
   return (
-    <Toast style={{ width: '900px', maxWidth: '1000px' }}>
+    <Toast style={{ maxWidth: '100%' }}>
       <Toast.Header closeButton={false}>
         <img src={avatar} width="20px" height="20px" className="rounded mr-2" alt="" />
         <strong className="mr-auto">
@@ -22,7 +22,7 @@ const DonateOption = ({ avatar, title, children, status }) => {
   );
 };
 
-const stringToColour = str => {
+const stringToColour = (str) => {
   let hash = 0;
   for (let i = 0; i < str.length; i += 1) {
     // eslint-disable-next-line no-bitwise
