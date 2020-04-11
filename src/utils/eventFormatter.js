@@ -23,7 +23,7 @@ const formatTime = (t, timeZone) => {
   return time;
 };
 
-const formatDate = result =>
+const formatDate = (result) =>
   new Date(result[SalatEvents.Fajr]).toLocaleDateString('en-US', {
     weekday: 'long',
     month: 'long',
@@ -44,7 +44,7 @@ const formatAsObject = (calculationResult, timeZone) => {
     .map(([event, t]) => {
       return {
         label: SalatNames[event],
-        time: formatTime(t, timeZone),
+        time: t ? formatTime(t, timeZone) : '',
       };
     });
 
