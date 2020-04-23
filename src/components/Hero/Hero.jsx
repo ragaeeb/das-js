@@ -40,7 +40,7 @@ const Header = () => {
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h2>{date}</h2>
-          <h2>{hijri(0, new Date())}</h2>
+          <h2>{hijri(-1, new Date())}</h2>
           <h1 className="hero-title">{timings.map(renderTiming)}</h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
