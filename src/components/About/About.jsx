@@ -6,7 +6,7 @@ import Title from '../Title/Title';
 
 const renderService = ({ title, body }) => {
   return (
-    <li>
+    <li key={title}>
       <strong>{title}</strong>:<br />
       {body}
     </li>

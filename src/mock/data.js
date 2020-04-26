@@ -12,6 +12,8 @@ export const heroData = {
   cta: 'Why our Fajr timing is different from other masājid?',
   latitude: '45.3506',
   longitude: '-75.793',
+  scheduleLabel: 'Ramaḍān 1441H Schedule',
+  schedulePdf: 'https://drive.google.com/open?id=1yJlAhbCYRYK_Z3LLzZHamrfPrnfnTMUD',
   timeZone: 'America/Toronto',
   fajrPdf: 'https://archive.org/download/fajr-letter-das/Letter_Fajr-Ishaa_Ottawa-2016-06-27.pdf',
 };
