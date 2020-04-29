@@ -50,34 +50,36 @@ const Header = () => {
           <h2>{hijri(-1, now)}</h2>
           <h1 className="hero-title">{timings.map(renderTiming)}</h1>
         </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-          <p className="hero-cta">
-            <button type="button" onClick={nextDay(-1)} className="cta-btn cta-btn--hero">
-              &lt;
-            </button>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn cta-btn--hero"
-              href={fajrPdf}
-            >
-              {cta}
-            </a>
-            <button type="button" onClick={nextDay()} className="cta-btn cta-btn--hero">
-              &gt;
-            </button>
-          </p>
-          <p className="hero-cta">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn cta-btn--hero"
-              href={schedulePdf}
-            >
-              {scheduleLabel}
-            </a>
-          </p>
-        </Fade>
+        {scheduleLabel && (
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <p className="hero-cta">
+              <button type="button" onClick={nextDay(-1)} className="cta-btn cta-btn--hero">
+                &lt;
+              </button>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-btn cta-btn--hero"
+                href={fajrPdf}
+              >
+                {cta}
+              </a>
+              <button type="button" onClick={nextDay()} className="cta-btn cta-btn--hero">
+                &gt;
+              </button>
+            </p>
+            <p className="hero-cta">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-btn cta-btn--hero"
+                href={schedulePdf}
+              >
+                {scheduleLabel}
+              </a>
+            </p>
+          </Fade>
+        )}
       </Container>
     </section>
   );

@@ -49,7 +49,7 @@ const formatAsObject = (calculationResult, timeZone) => {
     .map(([event, t]) => {
       return {
         label: SalatNames[event],
-        time: t ? formatTime(t, timeZone) : '',
+        time: t ? formatTime(t, timeZone) : '0:00 AM',
       };
     });
 
