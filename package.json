@@ -39,7 +39,7 @@
     "react-reveal": "1.2.2",
     "react-tilt": "0.1.4",
     "suncalc": "1.8.0",
-    "uuid": "7.0.3"
+    "uuid": "8.0.0"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "7.9.0",
