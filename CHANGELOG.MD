@@ -9,7 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- [Remove gatsby-ssr](https://github.com/ragaeeb/das-js/issues/13)
 - [Add placeholders on first load](https://github.com/ragaeeb/das-js/issues/16)
+- [Add yarn.lock to gitignore](https://github.com/ragaeeb/das-js/issues/17)
 
 ## [0.1.2] - 2020-04-26
 
