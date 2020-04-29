@@ -2,9 +2,9 @@ import { v1 as uuidv1 } from 'uuid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Dār as-Ṣaḥābah',
+  lang: 'en',
+  description: 'Dār as-Ṣaḥābah Association',
 };
 
 // HERO DATA
