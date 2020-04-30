@@ -8,6 +8,8 @@ const Contact = () => {
   const { contact } = useContext(PortfolioContext);
   const { cta, emailButton, telButton, email, tel } = contact;
 
+  const onContactClicked = (key) => () => window.analytics.track(key);
+
   return (
     <section id="contact">
       <Container>
@@ -19,6 +21,7 @@ const Contact = () => {
             <p className="contact-wrapper__text">K2B 7W3</p>
             <a
               target="_blank"
+              onClick={onContactClicked('EmailUs')}
               rel="noopener noreferrer"
               className="cta-btn cta-btn--resume"
               href={`mailto:${email}`}
@@ -27,6 +30,7 @@ const Contact = () => {
             </a>
             <a
               target="_blank"
+              onClick={onContactClicked('CallUs')}
               rel="noopener noreferrer"
               className="cta-btn cta-btn--resume"
               href={`tel:${tel}`}

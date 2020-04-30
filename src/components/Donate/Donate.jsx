@@ -76,6 +76,8 @@ const Header = () => {
 
   const totalExpenses = expenseData.datasets[0].data.reduce((total, current) => total + current, 0);
 
+  const onDonateClicked = () => window.analytics.track('PaypalDonateClicked');
+
   return (
     <section id="donate" className="jumbotron">
       <Container>
@@ -129,6 +131,7 @@ const Header = () => {
               <br />
               <a
                 className="cta-btn cta-btn--hero"
+                onClick={onDonateClicked}
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=M36T4MXQHLUHJ&source=url"
