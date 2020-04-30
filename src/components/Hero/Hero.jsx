@@ -37,7 +37,12 @@ const Header = () => {
     const newDate = new Date(now.valueOf());
     newDate.setDate(newDate.getDate() + delta);
     setNow(newDate);
+
+    window.analytics.track(delta === 1 ? 'NextDayTimings' : 'PrevDayTimings');
   };
+
+  const onFajrPdfClicked = () => window.analytics.track('FajrTimingPdf');
+  const onRamadanScheduleClicked = () => window.analytics.track('RamadanSchedule');
 
   const result = calculate(latitude, longitude, now);
   const { date, timings } = formatter(result, timeZone);
@@ -58,6 +63,7 @@ const Header = () => {
               </button>
               <a
                 target="_blank"
+                onClick={onFajrPdfClicked}
                 rel="noopener noreferrer"
                 className="cta-btn cta-btn--hero"
                 href={fajrPdf}
@@ -71,6 +77,7 @@ const Header = () => {
             <p className="hero-cta">
               <a
                 target="_blank"
+                onClick={onRamadanScheduleClicked}
                 rel="noopener noreferrer"
                 className="cta-btn cta-btn--hero"
                 href={schedulePdf}

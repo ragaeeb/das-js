@@ -9,6 +9,8 @@ const Footer = () => {
   const { networks } = footer;
   const { isEnabled } = githubButtons;
 
+  const onSocialClicked = (name) => () => window.analytics.track(name);
+
   return (
     <footer className="footer navbar-static-bottom">
       <Container>
@@ -17,17 +19,18 @@ const Footer = () => {
         </a>
         <div className="social-links">
           {networks &&
-            networks.map(network => {
+            networks.map((network) => {
               const { id, name, url } = network;
               return (
                 <a
+                  onClick={onSocialClicked(name)}
                   key={id}
-                  href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
+                  href={url}
                   rel="noopener noreferrer"
                   target="_blank"
                   aria-label={name}
                 >
-                  <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
+                  <i className={`fa fa-${name} fa-inverse`} />
                 </a>
               );
             })}
