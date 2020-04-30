@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import { githubButtons } from '../../mock/data';
 import GithubButtons from '../GithubButtons/GithubButtons';
+import GitHash from './GitHash';
 
 const Footer = () => {
   const { footer } = useContext(PortfolioContext);
@@ -39,6 +40,7 @@ const Footer = () => {
         <p className="footer__text">© {new Date().getFullYear()} Dar As-Sahaba Association</p>
 
         {isEnabled && <GithubButtons />}
+        <GitHash />
       </Container>
     </footer>
   );
