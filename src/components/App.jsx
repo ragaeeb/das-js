@@ -11,6 +11,7 @@ import {
 import About from './About/About';
 import Contact from './Contact/Contact';
 import Donate from './Donate/Donate';
+import ErrorBoundary from './ErrorBoundary';
 import Footer from './Footer/Footer';
 import Hero from './Hero/Hero';
 
@@ -32,13 +33,15 @@ function App() {
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero, about, donations, projects, contact, footer }}>
-      <Hero />
-      <About />
-      <Donate />
-      <Contact />
-      <Footer />
-    </PortfolioProvider>
+    <ErrorBoundary>
+      <PortfolioProvider value={{ hero, about, donations, projects, contact, footer }}>
+        <Hero />
+        <About />
+        <Donate />
+        <Contact />
+        <Footer />
+      </PortfolioProvider>
+    </ErrorBoundary>
   );
 }
 

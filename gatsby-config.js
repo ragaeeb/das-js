@@ -1,3 +1,6 @@
+const git = require('git-rev-sync');
+require('dotenv').config();
+
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
@@ -5,6 +8,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
+    'gatsby-source-local-git',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,22 +36,32 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-sentry',
+      options: {
+        dsn: process.env.SENTRY_DSN,
+        tags: { git_commit: git.short() },
+        release: git.long(),
+        environment: process.env.NODE_ENV,
+        enabled: process.env.NODE_ENV === 'production',
+      },
+    },
+    {
       resolve: `gatsby-plugin-segment-js`,
       options: {
         // your segment write key for your production environment
         // when process.env.NODE_ENV === 'production'
         // required; non-empty string
-        prodKey: `HLQD6HTMXOSl0ShgVSgoOWl0eEj3lFYu`,
+        prodKey: process.env.SEGMENT_PROD_KEY,
 
         // if you have a development env for your segment account, paste that key here
         // when process.env.NODE_ENV === 'development'
         // optional; non-empty string
-        devKey: `pSEN2BgpNEf12NDhxSaSkvG3cstZ2Tvy`,
+        devKey: process.env.SEGMENT_DEV_KEY,
 
         // boolean (defaults to false) on whether you want
         // to include analytics.page() automatically
         // if false, see below on how to track pageviews manually
-        trackPage: true,
+        trackPage: false,
 
         // boolean (defaults to false); whether to delay load Segment
         // ADVANCED FEATURE: only use if you leverage client-side routing (ie, Gatsby <Link>)

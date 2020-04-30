@@ -65,6 +65,7 @@ $ git remote remove origin
 Then you can install the dependencies either using NPM or Yarn:
 
 Using NPM:
+
 ```bash
 # Install dependencies
 $ npm install
@@ -72,7 +73,9 @@ $ npm install
 # Start development server
 $ gatsby develop
 ```
+
 Using Yarn:
+
 ```bash
 # Install dependencies
 $ yarn
@@ -245,6 +248,14 @@ I highly recommend to use [Netlify](https://netlify.com) to achieve this on the 
 - [React](https://es.reactjs.org/) - Front-End JavaScript library
 - [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) - Front-End UI library
 - [Sass](https://sass-lang.com/documentation) - CSS extension language
+
+## Have an .env file with the following (replace the values with the correct ones):
+
+```
+SENTRY_DSN=https://54f80@o385646.ingest.sentry.io/50
+SEGMENT_PROD_KEY=HLQDYu
+SEGMENT_DEV_KEY=pSENTvy
+```
 
 ## Authors
 
