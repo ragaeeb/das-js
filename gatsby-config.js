@@ -9,6 +9,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     'gatsby-source-local-git',
+    'gatsby-plugin-csp',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
