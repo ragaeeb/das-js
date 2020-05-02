@@ -39,9 +39,7 @@ const About = () => {
             <div className="about-wrapper__info">
               <p className="about-wrapper__info-text">{paragraphOne}</p>
               <p className="about-wrapper__info-text">{paragraphTwo}</p>
-              <p className="about-wrapper__info-text">
-                <ul>{(services || []).map(renderService)}</ul>
-              </p>
+              <ul className="about-wrapper__info-text">{(services || []).map(renderService)}</ul>
             </div>
           </Fade>
         </Row>
