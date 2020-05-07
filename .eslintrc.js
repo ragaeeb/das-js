@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'prettier'],
+  extends: ['plugin:cypress/recommended', 'airbnb', 'prettier'],
   plugins: ['prettier'],
   env: {
     browser: true,
