@@ -1,7 +1,7 @@
+import Fade from '@kogk/react-reveal/Fade';
 import React, { useContext, useEffect, useState } from 'react';
 import { Container, Toast } from 'react-bootstrap';
 import { Pie } from 'react-chartjs-2';
-import Fade from 'react-reveal/Fade';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 

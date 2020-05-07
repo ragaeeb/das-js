@@ -1,6 +1,6 @@
+import Fade from '@kogk/react-reveal/Fade';
 import React, { useContext, useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 

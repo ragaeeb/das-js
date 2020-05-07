@@ -1,6 +1,6 @@
+import Fade from '@kogk/react-reveal/Fade';
 import React, { useContext, useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
 import PortfolioContext from '../../context/context';
 import calculate from '../../utils/calculator';
 import formatter from '../../utils/eventFormatter';
@@ -51,8 +51,8 @@ const Header = () => {
     <section id="hero" className="jumbotron">
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <h2>{date}</h2>
-          <h2>{hijri(-1, now)}</h2>
+          <h2 data-cy="gregorian">{date}</h2>
+          <h2 data-cy="hijri">{hijri(-1, now)}</h2>
           <h1 className="hero-title">{timings.map(renderTiming)}</h1>
         </Fade>
         {scheduleLabel && (
