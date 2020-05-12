@@ -18,7 +18,7 @@
   "dependencies": {
     "@kogk/react-reveal": "1.2.3",
     "adhan": "3.0.0",
-    "bootstrap": "4.4.1",
+    "bootstrap": "4.5.0",
     "chart.js": "2.9.3",
     "cypress": "4.5.0",
     "dotenv": "8.2.0",
