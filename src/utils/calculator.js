@@ -1,60 +1,66 @@
-const SunCalc = require('suncalc');
-const { CalculationMethod, PrayerTimes, Coordinates } = require('adhan');
-const SalatEvents = require('./SalatEvents');
+const { CalculationParameters, PrayerTimes, SunnahTimes, Coordinates } = require('adhan');
 
-const extractTime = data => data.getTime();
-
-const calculate = (date, latitude, longitude) => {
-  const {
-    nauticalDawn: fajr,
-    sunrise,
-    sunset: maghrib,
-    nauticalDusk: isha,
-    solarNoon: dhuhr,
-  } = SunCalc.getTimes(date, latitude, longitude);
-
-  const coordinates = new Coordinates(latitude, longitude);
-  const { asr } = new PrayerTimes(coordinates, date, CalculationMethod.MuslimWorldLeague());
-
-  return {
-    fajr,
-    sunrise,
-    dhuhr,
-    asr,
-    maghrib,
-    isha,
-  };
+const SalatNames = {
+  fajr: 'Fajr',
+  sunrise: 'Sunrise',
+  dhuhr: 'Dhuhr',
+  asr: 'ʿAṣr',
+  maghrib: 'Maġrib',
+  isha: 'ʿIshāʾ',
+  middleOfTheNight: '1/2 Night Begins',
+  lastThirdOfTheNight: 'Last 1/3 Night Begins',
 };
 
-const calculateForCoordinates = (latitude, longitude, now = new Date()) => {
-  now.setUTCHours(12); // we set it to 12 since we want it for that specific day, so we should get a good average
-  now.setUTCMinutes(0);
-  now.setUTCSeconds(0);
-  now.setUTCMilliseconds(0);
-
-  const today = calculate(now, Number(latitude), Number(longitude));
-
-  const next = new Date(now.getTime());
-  next.setUTCHours(12); // for some reason by default it sets it to 5AM
-  next.setUTCDate(next.getUTCDate() + 1);
-
-  const tomorrow = calculate(next, Number(latitude), Number(longitude));
-
-  const halfNight = new Date((today.maghrib.getTime() + tomorrow.fajr.getTime()) / 2);
-
-  const diff = tomorrow.fajr.getTime() - today.maghrib.getTime();
-  const lastThirdNight = new Date(tomorrow.fajr.getTime() - diff / 3);
-
-  return {
-    [SalatEvents.Fajr]: extractTime(today.fajr),
-    [SalatEvents.Sunrise]: extractTime(today.sunrise),
-    [SalatEvents.Dhuhr]: extractTime(today.dhuhr),
-    [SalatEvents.Asr]: extractTime(today.asr),
-    [SalatEvents.Maghrib]: extractTime(today.maghrib),
-    [SalatEvents.Isha]: extractTime(today.isha),
-    [SalatEvents.HalfNight]: extractTime(halfNight),
-    [SalatEvents.LastThirdNight]: extractTime(lastThirdNight),
-  };
+const formatTime = (t, timeZone) => {
+  const time = new Date(t).toLocaleTimeString('en-US', {
+    timeZone,
+    hour: 'numeric',
+    minute: '2-digit',
+    hour12: true,
+  });
+  return time;
 };
 
-module.exports = calculateForCoordinates;
+const formatDate = (fajr) => {
+  return new Date(fajr).toLocaleDateString('en-US', {
+    weekday: 'long',
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  });
+};
+
+/**
+ * Returns a list of formatted times ordered from earliest to latest.
+ * @param {*} calculationResult The result of the calculation times (object).
+ * @param {*} latitude
+ * @param {*} longitude
+ */
+const formatAsObject = (calculationResult, timeZone) => {
+  const timings = Object.entries(calculationResult)
+    // sort the events from earliest to latest (to sort from fajr - isha)
+    .sort(([, value], [, nextValue]) => value - nextValue)
+    .map(([event, t]) => {
+      return {
+        label: SalatNames[event],
+        time: formatTime(t, timeZone),
+      };
+    });
+
+  return { date: formatDate(calculationResult.fajr), timings };
+};
+
+const calculate = (latitude, longitude, timeZone, now = new Date()) => {
+  const fard = new PrayerTimes(
+    new Coordinates(Number(latitude), Number(longitude)),
+    now,
+    new CalculationParameters('NauticalTwilight', 12, 12)
+  );
+
+  const sunan = new SunnahTimes(fard);
+  const { coordinates, calculationParameters, date, ...rest } = { ...fard, ...sunan };
+
+  return formatAsObject(rest, timeZone);
+};
+
+module.exports = calculate;
