@@ -105,8 +105,13 @@ const writeIslamicDate = (adjustment, today) => {
     'Ḏū al-Ḥijjah',
   ];
 
-  const iDate = kuwaiticalendar(adjustment, today);
-  return `${wdNames[iDate[4]]}, ${iDate[5]} ${iMonthNames[iDate[6]]} ${iDate[7]} H`;
+  const [, , , , day, date, month, year] = kuwaiticalendar(adjustment, today);
+  return {
+    day: wdNames[day],
+    date,
+    month: iMonthNames[month],
+    year,
+  };
 };
 
 export default writeIslamicDate;

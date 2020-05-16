@@ -3,7 +3,6 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import calculate from '../../utils/calculator';
-import formatter from '../../utils/eventFormatter';
 import hijri from '../../utils/hijri';
 
 const renderTiming = ({ label, time }) => {
@@ -13,6 +12,11 @@ const renderTiming = ({ label, time }) => {
       <br />
     </React.Fragment>
   );
+};
+
+const placeholder = {
+  date: '',
+  timings: [{ label: 'Fajr', time: '0:00 AM' }],
 };
 
 const Header = () => {
@@ -44,15 +48,17 @@ const Header = () => {
   const onFajrPdfClicked = () => window.analytics.track('FajrTimingPdf');
   const onRamadanScheduleClicked = () => window.analytics.track('RamadanSchedule');
 
-  const result = calculate(latitude, longitude, now);
-  const { date, timings } = formatter(result, timeZone);
+  const { date, timings } =
+    latitude && longitude ? calculate(latitude, longitude, timeZone, now) : placeholder;
+
+  const { day, date: hijriDate, month, year } = hijri(-1, now);
 
   return (
     <section id="hero" className="jumbotron">
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h2 data-cy="gregorian">{date}</h2>
-          <h2 data-cy="hijri">{hijri(-1, now)}</h2>
+          <h2 data-cy="hijri">{`${day}, ${hijriDate} ${month} ${year} H`}</h2>
           <h1 className="hero-title">{timings.map(renderTiming)}</h1>
         </Fade>
         {scheduleLabel && (

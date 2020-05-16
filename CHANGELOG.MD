@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.11] - 2020-05-16
+
+### Fixed
+
+- [1/2 night and last 1/3 night are getting placed out of order if browser is in different timezone](https://github.com/ragaeeb/das-js/issues/11)
+
 ## [0.1.10] - 2020-05-07
 
 ### Fixed
