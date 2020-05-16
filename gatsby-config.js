@@ -2,6 +2,11 @@ const git = require('git-rev-sync');
 require('dotenv').config();
 
 module.exports = {
+  siteMetadata: {
+    title: `Dār as-Ṣaḥābah`,
+    description: `Dār as-Ṣaḥābah Association`,
+    author: `Dār as-Ṣaḥābah`,
+  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
