@@ -3,41 +3,21 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: `Dār as-Ṣaḥābah`,
+    title: `Dar as-Sahaba`,
     description: `Dār as-Ṣaḥābah Association`,
-    author: `Dār as-Ṣaḥābah`,
+    author: `Dar as-Sahaba`,
   },
   plugins: [
-    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-offline`,
     'gatsby-source-local-git',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages/`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Dār as-Ṣaḥābah Assocation`,
-        short_name: `Dār as-Ṣaḥābah`,
-        start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#02aab0`,
-        display: `standalone`,
-        icon: 'src/images/favicon.png',
       },
     },
     {
@@ -87,6 +67,18 @@ module.exports = {
         // number (default to 1000); time to wait after scroll or route change
         // To be used when `delayLoad` is set to `true`
         delayLoadTime: 1000,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Dar as-Sahaba Assocation`,
+        short_name: `Dar as-Sahaba`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#02aab0`,
+        display: `standalone`,
+        icon: 'src/images/favicon.png',
       },
     },
   ],
