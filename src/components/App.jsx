@@ -8,12 +8,12 @@ import {
   heroData,
   projectsData,
 } from '../mock/data';
-import About from './About/About';
-import Contact from './Contact/Contact';
-import Donate from './Donate/Donate';
+import About from './About';
+import Contact from './Contact';
+import Donate from './Donate';
 import ErrorBoundary from './ErrorBoundary';
 import Footer from './Footer/Footer';
-import Hero from './Hero/Hero';
+import Hero from './Hero';
 
 function App() {
   const [hero, setHero] = useState({});

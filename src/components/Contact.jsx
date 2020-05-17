@@ -1,8 +1,8 @@
 import Fade from '@kogk/react-reveal/Fade';
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
+import PortfolioContext from '../context/context';
+import Title from './Title';
 
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);

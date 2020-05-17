@@ -2,9 +2,9 @@ import Fade from '@kogk/react-reveal/Fade';
 import React, { useContext, useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Tilt from 'react-tilt';
-import PortfolioContext from '../../context/context';
-import ProjectImg from '../Image/ProjectImg';
-import Title from '../Title/Title';
+import PortfolioContext from '../context/context';
+import ProjectImg from './Image/ProjectImg';
+import Title from './Title';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
