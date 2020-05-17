@@ -1,9 +1,9 @@
-import Fade from '@kogk/react-reveal/Fade';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
-import calculate from '../../utils/calculator';
-import hijri from '../../utils/hijri';
+import PortfolioContext from '../context/context';
+import calculate from '../utils/calculator';
+import hijri from '../utils/hijri';
+import ScreenFade from './ScreenFade';
 
 const renderTiming = ({ label, time }) => {
   return (
@@ -22,20 +22,7 @@ const placeholder = {
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
   const { latitude, longitude, timeZone, cta, fajrPdf, scheduleLabel, schedulePdf } = hero;
-
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
   const [now, setNow] = useState(new Date());
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
 
   const nextDay = (delta = 1) => () => {
     const newDate = new Date(now.valueOf());
@@ -56,13 +43,13 @@ const Header = () => {
   return (
     <section id="hero" className="jumbotron">
       <Container>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+        <ScreenFade>
           <h2 data-cy="gregorian">{date}</h2>
           <h2 data-cy="hijri">{`${day}, ${hijriDate} ${month} ${year} H`}</h2>
           <h1 className="hero-title">{timings.map(renderTiming)}</h1>
-        </Fade>
+        </ScreenFade>
         {scheduleLabel && (
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <ScreenFade>
             <p className="hero-cta">
               <button type="button" onClick={nextDay(-1)} className="cta-btn cta-btn--hero">
                 &lt;
@@ -91,7 +78,7 @@ const Header = () => {
                 {scheduleLabel}
               </a>
             </p>
-          </Fade>
+          </ScreenFade>
         )}
       </Container>
     </section>

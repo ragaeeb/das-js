@@ -1,9 +1,9 @@
-import Fade from '@kogk/react-reveal/Fade';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { Container, Toast } from 'react-bootstrap';
 import { Pie } from 'react-chartjs-2';
-import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
+import PortfolioContext from '../context/context';
+import ScreenFade from './ScreenFade';
+import Title from './Title';
 
 const DonateOption = ({ avatar, title, children, status }) => {
   return (
@@ -61,19 +61,6 @@ const Header = () => {
     }
   );
 
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
-
   const totalExpenses = expenseData.datasets[0].data.reduce((total, current) => total + current, 0);
 
   const onDonateClicked = () => window.analytics.track('PaypalDonateClicked');
@@ -82,7 +69,7 @@ const Header = () => {
     <section id="donate" className="jumbotron">
       <Container>
         <Title title="Donate" />
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+        <ScreenFade>
           <h2>Why Donate?</h2>
           <center>
             <DonateOption
@@ -113,11 +100,11 @@ const Header = () => {
               the muṣallá running.
             </DonateOption>
           </center>
-        </Fade>
+        </ScreenFade>
         <br />
         <br />
         <br />
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+        <ScreenFade>
           <h2>Ways to Donate</h2>
           <center>
             <DonateOption
@@ -172,11 +159,11 @@ const Header = () => {
               donate generously for the sake of Allāh.
             </DonateOption>
           </center>
-        </Fade>
+        </ScreenFade>
         <br />
         <br />
         <br />
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+        <ScreenFade>
           <h2>
             Our Monthly Expenses:{' '}
             {totalExpenses.toLocaleString('en-CA', { style: 'currency', currency: 'CAD' })}
@@ -196,7 +183,7 @@ const Header = () => {
               },
             }}
           />
-        </Fade>
+        </ScreenFade>
         <br />
         <br />
         <br />
