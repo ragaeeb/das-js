@@ -1,4 +1,4 @@
-import { graphql, Link, StaticQuery } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Tilt from 'react-tilt';
@@ -14,35 +14,12 @@ const renderPost = ({ node }) => {
         <ScreenFade>
           <div className="project-wrapper__text">
             <Link to={node.fields.slug}>
-              <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+              <h3 className="project-wrapper__text-title">{title}</h3>
             </Link>
             <div>
-              <p>
-                {node.frontmatter.description ||
-                  node.excerpt ||
-                  'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-              </p>
+              <p>{node.frontmatter.description || node.excerpt || ''}</p>
               <p className="mb-4">{node.frontmatter.date || ''}</p>
             </div>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn cta-btn--hero"
-              href={node.fields.slug || '#!'}
-            >
-              See Live
-            </a>
-
-            {node.fields.slug && (
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta-btn text-color-main"
-                href={node.fields.slug}
-              >
-                Source Code
-              </a>
-            )}
           </div>
         </ScreenFade>
       </Col>
@@ -82,32 +59,31 @@ const renderPost = ({ node }) => {
   );
 };
 
-const GitHash = () => (
-  <StaticQuery
-    query={graphql`
-      {
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 2) {
-          edges {
-            node {
-              excerpt
-              fields {
-                slug
-              }
-              frontmatter {
-                date(formatString: "MMMM DD, YYYY")
-                title
-                description
-                imageUrl
-              }
+const Posts = () => {
+  const {
+    allMarkdownRemark: { edges: posts },
+  } = useStaticQuery(graphql`
+    {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 3) {
+        edges {
+          node {
+            excerpt
+            fields {
+              slug
+            }
+            frontmatter {
+              date(formatString: "MMMM DD, YYYY")
+              title
+              description
+              imageUrl
             }
           }
         }
       }
-    `}
-    render={({ allMarkdownRemark: { edges: posts } }) => {
-      return posts.map(renderPost);
-    }}
-  />
-);
+    }
+  `);
 
-export default GitHash;
+  return posts.map(renderPost);
+};
+
+export default Posts;
