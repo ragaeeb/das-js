@@ -1,35 +1,37 @@
 import { graphql, Link } from 'gatsby';
 import React from 'react';
+import ScreenFade from '../components/ScreenFade';
 import SEO from '../components/seo';
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
+const BlogPostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;
+  const { description, imageUrl, title, date } = post.frontmatter;
 
   return (
-    <>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
+    <section id="projects">
+      <SEO title={title} description={description || post.excerpt} />
       <article>
         <header>
-          <h1
-            style={{
-              marginBottom: 0,
-            }}
-          >
-            {post.frontmatter.title}
-          </h1>
-          <p
-            style={{
-              display: `block`,
-            }}
-          >
-            {post.frontmatter.date}
-          </p>
+          <Link to="/">{siteTitle}</Link>
+          <hr />
         </header>
+        <h1>{title}</h1>
+        <p
+          style={{
+            display: `block`,
+          }}
+        >
+          {date}
+        </p>
+        {imageUrl && (
+          <ScreenFade>
+            <div className="project-wrapper__image">
+              <img src={imageUrl} alt={title} className="full" />
+            </div>
+          </ScreenFade>
+        )}
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr />
       </article>
@@ -60,7 +62,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </li>
         </ul>
       </nav>
-    </>
+    </section>
   );
 };
 
@@ -81,6 +83,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        imageUrl
       }
     }
   }

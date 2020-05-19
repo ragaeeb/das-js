@@ -1,11 +1,10 @@
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Tilt from 'react-tilt';
-import ProjectImg from './Image/ProjectImg';
 import ScreenFade from './ScreenFade';
 
-const renderPost = ({ node }) => {
+const Post = ({ node }) => {
   const { title = node.fields.slug, imageUrl } = node.frontmatter;
 
   return (
@@ -47,7 +46,7 @@ const renderPost = ({ node }) => {
                   }}
                 >
                   <div data-tilt className="thumbnail rounded">
-                    <ProjectImg alt={title} filename={imageUrl} />
+                    <img className="preview" src={imageUrl} alt={title} />
                   </div>
                 </Tilt>
               </a>
@@ -59,31 +58,4 @@ const renderPost = ({ node }) => {
   );
 };
 
-const Posts = () => {
-  const {
-    allMarkdownRemark: { edges: posts },
-  } = useStaticQuery(graphql`
-    {
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 3) {
-        edges {
-          node {
-            excerpt
-            fields {
-              slug
-            }
-            frontmatter {
-              date(formatString: "MMMM DD, YYYY")
-              title
-              description
-              imageUrl
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  return posts.map(renderPost);
-};
-
-export default Posts;
+export default Post;

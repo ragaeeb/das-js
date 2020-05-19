@@ -58,6 +58,10 @@
         margin: 0;
       }
 
+      .full {
+        max-width: 100%;
+      }
+
       & .thumbnail {
         border: none;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -74,8 +78,7 @@
           margin-bottom: 3.2rem;
         }
 
-        & img {
-          //float: left;
+        .preview {
           max-width: 100%;
           object-fit: cover;
         }
