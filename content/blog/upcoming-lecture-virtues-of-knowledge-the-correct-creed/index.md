@@ -2,7 +2,8 @@
 title: 'Upcoming Lecture: Virtues of Knowledge & The Correct Creed'
 date: '2019-05-31T01:16:32.169Z'
 description: 'Taught by: Abū ʿUbayd Muḥammad Ḥasan'
-imageUrl: https://s7.gifyu.com/images/59718414_868153310215394_4063086164922335232_o.jpg_nc_cat100_nc_sid8024bbefgeyJpIjoidCJ9_nc_ohcXQqbCnRFMswAX9EpjVd_nc_htscontent.fybz1-1.jpg
+imageUrl: https://s7.gifyu.com/images/59891967_868153216882070_8775890960631463936_o.jpg_nc_cat102_nc_sid8024bb_nc_ohcd-KHLK2SgwgAX9JtLMV_nc_htscontent.fybz1-1.jpg
+thumbnailUrl: https://s7.gifyu.com/images/59718414_868153310215394_4063086164922335232_o.jpg_nc_cat100_nc_sid8024bbefgeyJpIjoidCJ9_nc_ohcXQqbCnRFMswAX9EpjVd_nc_htscontent.fybz1-1.jpg
 ---
 
 As-salāmu ʿalaykum wa raḥmatullāhi wa barakātuh,

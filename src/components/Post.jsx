@@ -5,24 +5,23 @@ import Tilt from 'react-tilt';
 import ScreenFade from './ScreenFade';
 
 const Post = ({ node }) => {
-  const { title = node.fields.slug, imageUrl } = node.frontmatter;
+  const { title = node.fields.slug, imageUrl, thumbnailUrl } = node.frontmatter;
+  const pic = thumbnailUrl || imageUrl;
 
   return (
     <Row key={node.fields.slug}>
-      <Col lg={imageUrl ? 4 : 12} sm={12}>
-        <ScreenFade>
-          <div className="project-wrapper__text">
-            <Link to={node.fields.slug}>
-              <h3 className="project-wrapper__text-title">{title}</h3>
-            </Link>
-            <div>
-              <p>{node.frontmatter.description || node.excerpt || ''}</p>
-              <p className="mb-4">{node.frontmatter.date || ''}</p>
-            </div>
+      <Col lg={pic ? 4 : 12} sm={12}>
+        <div className="project-wrapper__text">
+          <Link to={node.fields.slug}>
+            <h3 className="project-wrapper__text-title">{title}</h3>
+          </Link>
+          <div>
+            <p>{node.frontmatter.description || node.excerpt || ''}</p>
+            <p className="mb-4">{node.frontmatter.date || ''}</p>
           </div>
-        </ScreenFade>
+        </div>
       </Col>
-      {imageUrl && (
+      {pic && (
         <Col lg={8} sm={12}>
           <ScreenFade>
             <div className="project-wrapper__image">
@@ -46,7 +45,7 @@ const Post = ({ node }) => {
                   }}
                 >
                   <div data-tilt className="thumbnail rounded">
-                    <img className="preview" src={imageUrl} alt={title} />
+                    <img className="preview" src={pic} alt={title} />
                   </div>
                 </Tilt>
               </a>

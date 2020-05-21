@@ -1,14 +1,13 @@
 ---
-title: ʿĪd al-Fiṭr 1440H/2019
-date: '2019-05-31T01:16:32.169Z'
-description: 'Ruth Wildgens Park (outside)'
-thumbnailUrl: https://s7.gifyu.com/images/61500056_534054103793943_2106921951086772224_o.jpg_nc_cat105_nc_sid8024bb_nc_ohco7qx0HRxOssAX_zNLHE_nc_htscontent.fybz1-1a3f97b56bdc3f621.jpg
-imageUrl: https://s7.gifyu.com/images/61500056_534054103793943_2106921951086772224_o.jpg_nc_cat105_nc_sid8024bbefgeyJpIjoidCJ9_nc_ohco7qx0HRxOssAX_zNLHE_nc_htscontent.fybz1-1.jpg
+title: 'EIDUL-FITR'
+date: '2018-06-08T17:04:45.169Z'
+description: '1439AH/2018'
+imageUrl: https://s7.gifyu.com/images/unnamed.png
 ---
 
 As-salāmu ʿalaykum wa raḥmatullāhi wa barakātuh,
 
-We will be praying the ʿĪd al-Fiṭr prayer on June 4th or June 5th, 2019 at:
+We will be praying the ʿĪdul-Fiṭr prayer on June 15th or June 16th, 2018 at:
 
 Ruth Wildgens Park (outside)
 
@@ -22,9 +21,20 @@ Boys & Girls Club of Ottawa
 
 (2825 Dumaurier Avenue)
 
+1st Jamāʿah – 9:00 am SHARP!!!
+
+2nd Jamāʿah – 10:00 am SHARP!!!
+
 Please bring your own rugs, blankets, umbrellas, etc.
 
 PLEASE READ THE IMPORTANT POINTS BELOW:
+
+PARKING:
+
+Parking will be available at the following locations:
+On Dumaurier and Grenon Avenue (the other side of Abraar School).
+
+Please mind the parking. There will be parking attendants guiding the vehicles at the designated parking lots. We ask you to pay attention to them, follow their instructions and please park as well as leave in an organized manner before and after the ʿĪd prayer/khuṭbah.
 
 PRAYER/KHUṬBAH:
 

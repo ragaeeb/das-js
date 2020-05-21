@@ -21,6 +21,7 @@ const Projects = () => {
               title
               description
               imageUrl
+              thumbnailUrl
             }
           }
         }
@@ -35,7 +36,7 @@ const Projects = () => {
           <Title title="Updates" />
           {posts.map(Post)}
         </div>
-        <Link className="cta-btn cta-btn--hero" to="/all-posts">
+        <Link className="cta-btn cta-btn--hero" to="/posts">
           All Posts
         </Link>
       </Container>
