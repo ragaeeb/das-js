@@ -63,7 +63,7 @@
     "gh-pages": "2.2.0",
     "git-rev-sync": "2.0.0",
     "husky": "4.2.5",
-    "lint-staged": "10.2.2",
+    "lint-staged": "10.2.6",
     "prettier": "2.0.5"
   },
   "repository": {
