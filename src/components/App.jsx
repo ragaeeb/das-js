@@ -14,6 +14,7 @@ import Donate from './Donate';
 import ErrorBoundary from './ErrorBoundary';
 import Footer from './Footer/Footer';
 import Hero from './Hero';
+import Projects from './Projects';
 
 function App() {
   const [hero, setHero] = useState({});
@@ -36,6 +37,7 @@ function App() {
     <ErrorBoundary>
       <PortfolioProvider value={{ hero, about, donations, projects, contact, footer }}>
         <Hero />
+        <Projects />
         <About />
         <Donate />
         <Contact />

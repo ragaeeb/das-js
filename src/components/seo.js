@@ -10,6 +10,9 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
+// https://github.com/LasaleFamine/string-normalize-es6/blob/master/src/index.js
+const normalize = (input) => input.normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -25,7 +28,8 @@ function SEO({ description, lang, meta, title }) {
     `
   );
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaDescription = normalize(description || site.siteMetadata.description);
+  const metaTitle = normalize(title);
 
   return (
     <Helmet
@@ -33,7 +37,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       defer={false}
-      title={title}
+      title={metaTitle}
       // titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
@@ -42,7 +46,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           property: `og:description`,
@@ -62,7 +66,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           name: `twitter:description`,

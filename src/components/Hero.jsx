@@ -33,12 +33,12 @@ const Header = () => {
   };
 
   const onFajrPdfClicked = () => window.analytics.track('FajrTimingPdf');
-  const onRamadanScheduleClicked = () => window.analytics.track('RamadanSchedule');
+  const onRamadanScheduleClicked = () => window.analytics.track('EidHomeHow');
 
   const { date, timings } =
     latitude && longitude ? calculate(latitude, longitude, timeZone, now) : placeholder;
 
-  const { day, date: hijriDate, month, year } = hijri(-1, now);
+  const { day, date: hijriDate, month, year } = hijri(0, now);
 
   return (
     <section id="hero" className="jumbotron">

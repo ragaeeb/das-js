@@ -1,15 +1,15 @@
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Post from './Post';
-import Title from './Title';
+import Post from '../components/Post';
+import Title from '../components/Title';
 
-const Projects = () => {
+const AllPosts = () => {
   const {
     allMarkdownRemark: { edges: posts },
   } = useStaticQuery(graphql`
     {
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 3) {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
         edges {
           node {
             excerpt
@@ -20,8 +20,6 @@ const Projects = () => {
               date(formatString: "MMMM DD, YYYY")
               title
               description
-              imageUrl
-              thumbnailUrl
             }
           }
         }
@@ -33,15 +31,12 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Updates" />
+          <Title title="All Posts" />
           {posts.map(Post)}
         </div>
-        <Link className="cta-btn cta-btn--hero" to="/posts">
-          All Posts
-        </Link>
       </Container>
     </section>
   );
 };
 
-export default Projects;
+export default AllPosts;
