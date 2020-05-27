@@ -2,7 +2,6 @@ import { Link } from 'gatsby';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Tilt from 'react-tilt';
-import ScreenFade from './ScreenFade';
 
 const Post = ({ node }) => {
   const { title = node.fields.slug, imageUrl, thumbnailUrl } = node.frontmatter;
@@ -23,34 +22,32 @@ const Post = ({ node }) => {
       </Col>
       {pic && (
         <Col lg={8} sm={12}>
-          <ScreenFade>
-            <div className="project-wrapper__image">
-              <a
-                href={node.fields.slug || '#!'}
-                target="_blank"
-                aria-label="Project Link"
-                rel="noopener noreferrer"
+          <div className="project-wrapper__image">
+            <a
+              href={node.fields.slug || '#!'}
+              target="_blank"
+              aria-label="Project Link"
+              rel="noopener noreferrer"
+            >
+              <Tilt
+                options={{
+                  reverse: false,
+                  max: 8,
+                  perspective: 1000,
+                  scale: 1,
+                  speed: 300,
+                  transition: true,
+                  axis: null,
+                  reset: true,
+                  easing: 'cubic-bezier(.03,.98,.52,.99)',
+                }}
               >
-                <Tilt
-                  options={{
-                    reverse: false,
-                    max: 8,
-                    perspective: 1000,
-                    scale: 1,
-                    speed: 300,
-                    transition: true,
-                    axis: null,
-                    reset: true,
-                    easing: 'cubic-bezier(.03,.98,.52,.99)',
-                  }}
-                >
-                  <div data-tilt className="thumbnail rounded">
-                    <img className="preview" src={pic} alt={title} />
-                  </div>
-                </Tilt>
-              </a>
-            </div>
-          </ScreenFade>
+                <div data-tilt className="thumbnail rounded">
+                  <img className="preview" src={pic} alt={title} />
+                </div>
+              </Tilt>
+            </a>
+          </div>
         </Col>
       )}
     </Row>
