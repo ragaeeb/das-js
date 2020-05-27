@@ -6,6 +6,7 @@ module.exports = {
     title: `Dar as-Sahaba`,
     description: `Dār as-Ṣaḥābah Association`,
     author: `Dar as-Sahaba`,
+    siteUrl: 'https://dar-as-sahaba.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -82,7 +83,7 @@ module.exports = {
         // boolean (defaults to false) on whether you want
         // to include analytics.page() automatically
         // if false, see below on how to track pageviews manually
-        trackPage: false,
+        trackPage: true,
 
         // boolean (defaults to false); whether to delay load Segment
         // ADVANCED FEATURE: only use if you leverage client-side routing (ie, Gatsby <Link>)

@@ -1,6 +1,5 @@
 import { graphql, Link } from 'gatsby';
 import React from 'react';
-import ScreenFade from '../components/ScreenFade';
 import SEO from '../components/seo';
 
 const BlogPostTemplate = ({ data, pageContext }) => {
@@ -26,11 +25,9 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           {date}
         </p>
         {imageUrl && (
-          <ScreenFade>
-            <div className="project-wrapper__image">
-              <img src={imageUrl} alt={title} className="full" />
-            </div>
-          </ScreenFade>
+          <div className="project-wrapper__image">
+            <img src={imageUrl} alt={title} className="full" />
+          </div>
         )}
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr />
