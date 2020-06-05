@@ -1,7 +1,7 @@
 ---
 title: 'LECTURE: General Advice'
 date: '2016-09-28T12:21:45.169Z'
-description: 'by Ash-Shaykh Abu 'Abdir-Rahman Muhammad 'Ali Agial'
+description: "by Ash-Shaykh Abu 'Abdir-Rahman Muhammad 'Ali Agial"
 imageUrl: https://s7.gifyu.com/images/14990911_327086277655436_7522333777924306449_o.jpg_nc_cat104_nc_sid8024bb_nc_ohclBk8NzrFyRwAX9LLbY5_nc_htscontent.fybz1-1.jpg
 thumbnailUrl: https://s7.gifyu.com/images/14917308_327086280988769_5684284368693871289_o.jpg_nc_cat101_nc_sid8024bb_nc_ohcz4oymNaZ88kAX_BauTY_nc_htscontent.fybz1-1.jpg
 ---

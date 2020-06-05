@@ -1,7 +1,7 @@
 ---
 title: 'LECTURE - Helpful Means of Patience in Dealing with Harm From Others'
 date: '2016-09-28T12:21:45.169Z'
-description: 'by Ash-Shaykh Abu 'Abdir-Rahmaan Muhammad 'Ali'
+description: "by Ash-Shaykh Abu 'Abdir-Rahmaan Muhammad 'Ali"
 imageUrl: https://s7.gifyu.com/images/14525113_306240069740057_4138868523896650447_o.jpg_nc_cat110_nc_sid8024bb_nc_ohc-GVWZl1ohLkAX8Xdcc0_nc_htscontent.fybz1-1.jpg
 thumbnailUrl: https://s7.gifyu.com/images/14409909_306240093073388_2303212084924638353_o.jpg_nc_cat105_nc_sid8024bb_nc_ohcWuXfaPEWEAsAX_DNvhK_nc_htscontent.fybz1-1.jpg
 ---

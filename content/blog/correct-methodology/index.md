@@ -1,7 +1,7 @@
 ---
 title: 'LECTURE - Characteristics of the Correct Methodology'
 date: '2016-10-05T16:21:45.169Z'
-description: 'Ash-Shaykh Dr. 'Abdur-Rahmaan Omisan'
+description: "Ash-Shaykh Dr. 'Abdur-Rahmaan Omisan"
 imageUrl: https://s7.gifyu.com/images/14435340_302749223422475_726102825261262116_o.jpg_nc_cat104_nc_sid8024bb_nc_ohcT4DbhGMlUMkAX-2vpus_nc_htscontent-lga3-1.jpg
 thumbnailUrl: https://s7.gifyu.com/images/14425494_302748453422552_5900295896030605932_o.jpg_nc_cat104_nc_sid8024bb_nc_ohcgpwiX_WAVZ0AX_--llH_nc_htscontent-lga3-1.jpg
 ---

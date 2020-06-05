@@ -1,7 +1,7 @@
 ---
 title: 'LECTURE - The Greater Understanding'
 date: '2016-09-21T11:28:45.169Z'
-description: 'by Ash-Shaykh Abu 'Abdir-Rahmaan Muhammad 'Ali'
+description: "by Ash-Shaykh Abu 'Abdir-Rahmaan Muhammad 'Ali"
 imageUrl: https://s7.gifyu.com/images/14352068_302755393421858_7625229819261568251_o.jpg_nc_cat105_nc_sid8024bb_nc_ohcYsZF9CH7c5IAX-PteC__nc_htscontent.fybz1-1.jpg
 thumbnailUrl: https://s7.gifyu.com/images/14435322_302756000088464_3029840581586284949_o.jpg_nc_cat104_nc_sid8024bb_nc_ohcBbbGfrpt-jkAX9Nr73T_nc_htscontent.fybz1-1.jpg
 ---

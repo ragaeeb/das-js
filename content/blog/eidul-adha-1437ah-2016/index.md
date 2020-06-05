@@ -1,5 +1,5 @@
 ---
-title: '1437 AH / 2016 'Eidul-Adha'
+title: "1437 AH / 2016 'Eidul-Adha"
 date: '2016-09-08T00:19:45.169Z'
 description: 'Monday, September 12th, 2016'
 imageUrl: https://s7.gifyu.com/images/14207598_296422434055154_6094148181122640200_o.jpg_nc_cat103_nc_sid8024bb_nc_ohcqOtupXlgkSwAX8dWj0G_nc_htscontent.fybz1-1.jpg

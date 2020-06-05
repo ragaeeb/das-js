@@ -1,7 +1,7 @@
 ---
 title: 'LECTURE: The Prostrations of Forgetfulness'
 date: '2016-10-14T14:14:45.169Z'
-description: 'with Ash-Shaykh Abu 'Abdir-Rahmaan Muhammad 'Ali'
+description: "with Ash-Shaykh Abu 'Abdir-Rahmaan Muhammad 'Ali"
 imageUrl: https://cdn2.tstatic.net/jateng/foto/bank/images/sujud-syukur.jpg
 thumbnailUrl: https://storage.nu.or.id/storage/post/16_9/big/1385955865.jpg
 ---
