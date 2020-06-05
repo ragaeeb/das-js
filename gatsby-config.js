@@ -4,7 +4,6 @@ require('dotenv').config();
 console.log('*** dirname', __dirname);
 
 module.exports = {
-  pathPrefix: '/das-js',
   siteMetadata: {
     title: `Dar as-Sahaba`,
     description: `Dār as-Ṣaḥābah Association`,
