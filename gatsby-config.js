@@ -2,6 +2,7 @@ const git = require('git-rev-sync');
 require('dotenv').config();
 
 module.exports = {
+  pathPrefix: '/das-js',
   siteMetadata: {
     title: `Dar as-Sahaba`,
     description: `Dār as-Ṣaḥābah Association`,
