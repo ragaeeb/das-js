@@ -1,6 +1,8 @@
 const git = require('git-rev-sync');
 require('dotenv').config();
 
+console.log('*** dirname', __dirname);
+
 module.exports = {
   pathPrefix: '/das-js',
   siteMetadata: {
