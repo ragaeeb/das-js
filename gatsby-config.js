@@ -1,15 +1,6 @@
 const git = require('git-rev-sync');
 require('dotenv').config();
 
-const { readdirSync } = require('fs');
-
-const getDirectories = (source) =>
-  readdirSync(source, { withFileTypes: true })
-    .filter((dirent) => dirent.isDirectory())
-    .map((dirent) => dirent.name)
-    .forEach(console.log);
-getDirectories('.');
-
 module.exports = {
   siteMetadata: {
     title: `Dar as-Sahaba`,
