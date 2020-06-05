@@ -11,5 +11,5 @@ jobs:
         with:
           access-token: ${{ secrets.REPO_ACCESS_TOKEN }}
           deploy-branch: gh-pages
-          gatsby-args:
+          gatsby-args: --verbose
           skip-publish: true
