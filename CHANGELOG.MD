@@ -9,8 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- [Add jest testing](https://github.com/ragaeeb/das-js/issues/83)
-- General dependency upgrades.
+- [Add jest testing](https://github.com/ragaeeb/das-js/issues/101)
+- [Set up cypress runs on cypress.io](https://github.com/ragaeeb/das-js/issues/82)
 
 ## [0.3.2] - 2020-06-05
 
