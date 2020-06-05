@@ -1,8 +1,6 @@
 const git = require('git-rev-sync');
 require('dotenv').config();
 
-console.log('*** dirname', __dirname);
-
 module.exports = {
   siteMetadata: {
     title: `Dar as-Sahaba`,
@@ -19,7 +17,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
+        path: `content/blog`,
         name: `blog`,
       },
     },
@@ -48,7 +46,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
+        path: `content/assets`,
         name: `assets`,
       },
     },
@@ -56,7 +54,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
+        path: `src/images/`,
       },
     },
     {
