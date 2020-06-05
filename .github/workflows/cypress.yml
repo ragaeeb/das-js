@@ -11,6 +11,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v1.16.1
         with:
+          start: gatsby develop
           record: true
         env:
           # pass the Dashboard record key as an environment variable
