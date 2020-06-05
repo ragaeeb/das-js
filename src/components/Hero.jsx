@@ -20,7 +20,7 @@ const placeholder = {
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { latitude, longitude, timeZone, cta, fajrPdf, scheduleLabel } = hero;
+  const { latitude, longitude, timeZone, cta, fajrPdf, scheduleLabel, istijabaText } = hero;
   const [now, setNow] = useState(new Date());
 
   const nextDay = (delta = 1) => () => {
@@ -33,7 +33,7 @@ const Header = () => {
 
   const onFajrPdfClicked = () => window.analytics.track('FajrTimingPdf');
 
-  const { date, timings } =
+  const { date, timings, istijaba } =
     latitude && longitude ? calculate(latitude, longitude, timeZone, now) : placeholder;
 
   const { day, date: hijriDate, month, year } = hijri(0, now);
@@ -41,6 +41,13 @@ const Header = () => {
   return (
     <section id="hero" className="jumbotron">
       <Container>
+        {istijaba && (
+          <>
+            <h2 data-cy="istijaba">{istijabaText}</h2>
+            <br />
+            <br />
+          </>
+        )}
         <h2 data-cy="gregorian">{date}</h2>
         <h2 data-cy="hijri">{`${day}, ${hijriDate} ${month} ${year} H`}</h2>
         <h1 className="hero-title">{timings.map(renderTiming)}</h1>

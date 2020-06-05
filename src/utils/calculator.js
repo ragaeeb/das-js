@@ -1,5 +1,7 @@
 const { CalculationParameters, PrayerTimes, SunnahTimes, Coordinates } = require('adhan');
 
+const ONE_HOUR = 60 * 60 * 1000;
+
 const SalatNames = {
   fajr: 'Fajr',
   sunrise: 'Sunrise',
@@ -60,7 +62,15 @@ const calculate = (latitude, longitude, timeZone, now = new Date()) => {
   const sunan = new SunnahTimes(fard);
   const { coordinates, calculationParameters, date, ...rest } = { ...fard, ...sunan };
 
-  return formatAsObject(rest, timeZone);
+  const result = formatAsObject(rest, timeZone);
+
+  const nextPrayer = fard.nextPrayer();
+  const diff = fard.timeForPrayer(nextPrayer) - now;
+
+  return {
+    ...result,
+    istijaba: now.getDay() === 5 && nextPrayer === 'maghrib' && diff < ONE_HOUR,
+  };
 };
 
 module.exports = calculate;
