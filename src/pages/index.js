@@ -1,12 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { graphql } from 'gatsby';
 import React from 'react';
 import App from '../components/App';
 import SEO from '../components/seo';
-import { headData } from '../mock/data';
 import '../style/main.scss';
 
-export default () => {
-  const { title, lang, description } = headData;
+export default ({ data }) => {
+  const { title, lang, description } = data.site.siteMetadata;
 
   return (
     <>
@@ -15,3 +15,15 @@ export default () => {
     </>
   );
 };
+
+export const pageQuery = graphql`
+  query AppTitleQuery {
+    site {
+      siteMetadata {
+        lang
+        title
+        description
+      }
+    }
+  }
+`;

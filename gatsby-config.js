@@ -4,6 +4,7 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: `Dar as-Sahaba`,
+    lang: 'en',
     description: `Dār as-Ṣaḥābah Association`,
     author: `Dar as-Sahaba`,
     siteUrl: 'https://dar-as-sahaba.com',

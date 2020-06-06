@@ -1,12 +1,5 @@
 import { v1 as uuidv1 } from 'uuid';
 
-// HEAD DATA
-export const headData = {
-  title: 'Dār as-Ṣaḥābah',
-  lang: 'en',
-  description: 'Dār as-Ṣaḥābah Association',
-};
-
 // HERO DATA
 export const heroData = {
   cta: 'Why our Fajr timing is different from other masājid?',
