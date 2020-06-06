@@ -1,6 +1,5 @@
 describe('Timings', () => {
   before(() => {
-    cy.log('***cyconfig', Cypress.config());
     cy.visit('/');
   });
 
