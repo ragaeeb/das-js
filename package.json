@@ -3,7 +3,7 @@
   "private": true,
   "homepage": "https://ragaeeb.github.io/das-js",
   "description": "Dar as-Sahābah website",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
