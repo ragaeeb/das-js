@@ -1,9 +1,6 @@
 describe('Timings', () => {
-  before(() => {
-    cy.visit('/');
-  });
-
   beforeEach(() => {
+    cy.visit('/');
     cy.get('[data-cy="gregorian"]').as('gregorian');
     cy.get('[data-cy="hijri"]').as('hijri');
   });
