@@ -3,7 +3,7 @@
   "private": true,
   "homepage": "https://ragaeeb.github.io/das-js",
   "description": "Dar as-Sahābah website",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -14,9 +14,7 @@
     "deploy": "gh-pages -d public",
     "clean": "gatsby clean",
     "test": "jest",
-    "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
     "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run"
   },
   "dependencies": {
@@ -80,7 +78,7 @@
     "lint-staged": "10.2.9",
     "prettier": "2.0.5",
     "react-test-renderer": "16.13.1",
-    "start-server-and-test": "^1.11.0"
+    "start-server-and-test": "1.11.0"
   },
   "repository": {
     "type": "git",
