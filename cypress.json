@@ -1,6 +1,10 @@
 {
   "baseUrl": "http://localhost:8000",
+  "chromeWebSecurity": false,
   "env": {
     "BRAND_NAME": "Dar As-Sahaba"
-  }
+  },
+  "projectId": "qnmnp9",
+  "video": false,
+  "videoUploadOnPasses": false
 }

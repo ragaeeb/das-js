@@ -2,7 +2,6 @@ const git = require('git-rev-sync');
 require('dotenv').config();
 
 module.exports = {
-  pathPrefix: '/das-js',
   siteMetadata: {
     title: `Dar as-Sahaba`,
     description: `Dār as-Ṣaḥābah Association`,
@@ -18,7 +17,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
+        path: `content/blog`,
         name: `blog`,
       },
     },
@@ -47,7 +46,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
+        path: `content/assets`,
         name: `assets`,
       },
     },
@@ -55,7 +54,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
+        path: `src/images`,
       },
     },
     {
