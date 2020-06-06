@@ -14,6 +14,7 @@ jobs:
           start: npm run test:e2e:ci
           record: true
           browser: chrome
+          headless: true
         env:
           # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
