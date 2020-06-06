@@ -1,6 +1,10 @@
 describe('Timings', () => {
-  beforeEach(() => {
+  before(() => {
+    console.log('***cyconfig', Cypress.config());
     cy.visit('/');
+  });
+
+  beforeEach(() => {
     cy.get('[data-cy="gregorian"]').as('gregorian');
     cy.get('[data-cy="hijri"]').as('hijri');
   });
