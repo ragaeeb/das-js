@@ -50,7 +50,7 @@
     "react-chartjs-2": "2.9.0",
     "react-dom": "16.13.1",
     "react-github-btn": "1.2.0",
-    "react-helmet": "6.0.0",
+    "react-helmet": "6.1.0",
     "react-tilt": "0.1.4",
     "uuid": "8.1.0"
   },
