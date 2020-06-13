@@ -14,6 +14,6 @@ jobs:
           start: npm start
           wait-on: 'http://localhost:8000'
           browser: chrome
-          headless: true
+          #headless: true
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
