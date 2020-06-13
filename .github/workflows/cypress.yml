@@ -12,6 +12,7 @@ jobs:
         uses: cypress-io/github-action@master
         with:
           start: npm start
+          wait-on: 'http://localhost:8000'
           browser: chrome
           headless: true
         env:
