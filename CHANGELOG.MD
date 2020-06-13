@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.5] - 2020-06-13
+
+### Updated
+
+- [Move arrows to edges of the screen](https://github.com/ragaeeb/das-js/issues/112)
+- Fix cypress tests failing on build pipeline.
+- Add new post on musalla reopening.
+
 ## [0.3.4] - 2020-06-06
 
 ### Updated
