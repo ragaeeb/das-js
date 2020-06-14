@@ -4,10 +4,13 @@ import PortfolioContext from '../context/context';
 import calculate from '../utils/calculator';
 import hijri from '../utils/hijri';
 
-const renderTiming = ({ label, time }) => {
+const renderTiming = ({ label, time, iqamah }) => {
   return (
     <React.Fragment key={label}>
-      {label} <span className="text-color-main">{time}</span>
+      <span className={iqamah ? '' : 'nawafil'}>
+        {label} <span className="text-color-main">{time}</span>
+      </span>
+      {iqamah && <small className="iqamah">&nbsp;{iqamah}</small>}
       <br />
     </React.Fragment>
   );
@@ -20,7 +23,16 @@ const placeholder = {
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { latitude, longitude, timeZone, cta, fajrPdf, scheduleLabel, istijabaText } = hero;
+  const {
+    latitude,
+    longitude,
+    timeZone,
+    cta,
+    fajrPdf,
+    scheduleLabel,
+    istijabaText,
+    iqamahs,
+  } = hero;
   const [now, setNow] = useState(new Date());
 
   const nextDay = (delta = 1) => () => {
@@ -34,7 +46,7 @@ const Header = () => {
   const onFajrPdfClicked = () => window.analytics.track('FajrTimingPdf');
 
   const { date, timings, istijaba } =
-    latitude && longitude ? calculate(latitude, longitude, timeZone, now) : placeholder;
+    latitude && longitude ? calculate(latitude, longitude, timeZone, now, iqamahs) : placeholder;
 
   const { day, date: hijriDate, month, year } = hijri(0, now);
 

@@ -38,7 +38,7 @@ const formatDate = (fajr) => {
  * @param {*} latitude
  * @param {*} longitude
  */
-const formatAsObject = (calculationResult, timeZone) => {
+const formatAsObject = (calculationResult, timeZone, iqamahs) => {
   const timings = Object.entries(calculationResult)
     // sort the events from earliest to latest (to sort from fajr - isha)
     .sort(([, value], [, nextValue]) => value - nextValue)
@@ -46,13 +46,14 @@ const formatAsObject = (calculationResult, timeZone) => {
       return {
         label: SalatNames[event],
         time: formatTime(t, timeZone),
+        ...(iqamahs[event] && { iqamah: iqamahs[event] }),
       };
     });
 
   return { date: formatDate(calculationResult.fajr), timings };
 };
 
-const calculate = (latitude, longitude, timeZone, now = new Date()) => {
+const calculate = (latitude, longitude, timeZone, now = new Date(), iqamahs) => {
   const fard = new PrayerTimes(
     new Coordinates(Number(latitude), Number(longitude)),
     now,
@@ -62,7 +63,7 @@ const calculate = (latitude, longitude, timeZone, now = new Date()) => {
   const sunan = new SunnahTimes(fard);
   const { coordinates, calculationParameters, date, ...rest } = { ...fard, ...sunan };
 
-  const result = formatAsObject(rest, timeZone);
+  const result = formatAsObject(rest, timeZone, iqamahs);
 
   const nextPrayer = fard.nextPrayer();
   const diff = fard.timeForPrayer(nextPrayer) - now;
