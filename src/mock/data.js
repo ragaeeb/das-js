@@ -5,6 +5,13 @@ export const heroData = {
   cta: 'Why our Fajr timing is different from other masājid?',
   latitude: '45.3506',
   longitude: '-75.793',
+  iqamahs: {
+    fajr: '4:30 AM',
+    dhuhr: '1:30 PM',
+    asr: '+20 mins',
+    maghrib: '+5 mins',
+    isha: '10:30 PM',
+  },
   scheduleLabel: 'How To Pray The ʿĪd Prayer At Home',
   schedulePdf: 'https://s7.gifyu.com/images/eid-home-description.png',
   timeZone: 'America/Toronto',
