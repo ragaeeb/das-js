@@ -40,6 +40,9 @@ const Header = () => {
 
   return (
     <section id="hero" className="jumbotron">
+      <button type="button" onClick={nextDay(-1)} className="cta-btn cta-btn--hero">
+        &lt;
+      </button>
       <Container>
         {istijaba && (
           <>
@@ -54,9 +57,6 @@ const Header = () => {
         {scheduleLabel && (
           <>
             <p className="hero-cta">
-              <button type="button" onClick={nextDay(-1)} className="cta-btn cta-btn--hero">
-                &lt;
-              </button>
               <a
                 target="_blank"
                 onClick={onFajrPdfClicked}
@@ -66,13 +66,13 @@ const Header = () => {
               >
                 {cta}
               </a>
-              <button type="button" onClick={nextDay()} className="cta-btn cta-btn--hero">
-                &gt;
-              </button>
             </p>
           </>
         )}
       </Container>
+      <button type="button" onClick={nextDay()} className="cta-btn cta-btn--hero">
+        &gt;
+      </button>
     </section>
   );
 };
