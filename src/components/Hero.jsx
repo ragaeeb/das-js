@@ -7,9 +7,7 @@ import hijri from '../utils/hijri';
 const renderTiming = ({ label, time, iqamah }) => {
   return (
     <React.Fragment key={label}>
-      <span className={iqamah ? '' : 'nawafil'}>
-        {label} <span className="text-color-main">{time}</span>
-      </span>
+      {label} <span className="text-color-main">{time}</span>
       {iqamah && <small className="iqamah">&nbsp;{iqamah}</small>}
       <br />
     </React.Fragment>
@@ -52,9 +50,6 @@ const Header = () => {
 
   return (
     <section id="hero" className="jumbotron">
-      <button type="button" onClick={nextDay(-1)} className="cta-btn cta-btn--hero">
-        &lt;
-      </button>
       <Container>
         {istijaba && (
           <>
@@ -63,7 +58,16 @@ const Header = () => {
             <br />
           </>
         )}
-        <h2 data-cy="gregorian">{date}</h2>
+        <h2 data-cy="gregorian">
+          <button type="button" onClick={nextDay(-1)} className="arrow-button cta-btn">
+            &lt;
+          </button>
+          &nbsp;
+          {date}&nbsp;
+          <button type="button" onClick={nextDay()} className="arrow-button cta-btn">
+            &gt;
+          </button>
+        </h2>
         <h2 data-cy="hijri">{`${day}, ${hijriDate} ${month} ${year} H`}</h2>
         <h1 className="hero-title">{timings.map(renderTiming)}</h1>
         {scheduleLabel && (
@@ -82,9 +86,6 @@ const Header = () => {
           </>
         )}
       </Container>
-      <button type="button" onClick={nextDay()} className="cta-btn cta-btn--hero">
-        &gt;
-      </button>
     </section>
   );
 };
