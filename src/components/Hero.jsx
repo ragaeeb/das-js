@@ -1,13 +1,32 @@
+import { Link } from 'gatsby';
 import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import PortfolioContext from '../context/context';
 import calculate from '../utils/calculator';
 import hijri from '../utils/hijri';
 
-const renderTiming = ({ label, time, iqamah }) => {
+const getLabel = (event, label, onClick, link) => {
+  if (event === 'fajr') {
+    return (
+      <a
+        target="_blank"
+        onClick={onClick}
+        rel="noopener noreferrer"
+        className="hero-title fajr"
+        href={link}
+      >
+        {label}
+      </a>
+    );
+  }
+
+  return label;
+};
+
+const renderTiming = (fajrPdf, fajrOnClick) => ({ label, time, iqamah, event }) => {
   return (
     <React.Fragment key={label}>
-      {label} <span className="text-color-main">{time}</span>
+      {getLabel(event, label, fajrOnClick, fajrPdf)} <span className="text-color-main">{time}</span>
       {iqamah && <small className="iqamah">&nbsp;{iqamah}</small>}
       <br />
     </React.Fragment>
@@ -21,17 +40,9 @@ const placeholder = {
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const {
-    latitude,
-    longitude,
-    timeZone,
-    cta,
-    fajrPdf,
-    scheduleLabel,
-    istijabaText,
-    iqamahs,
-  } = hero;
+  const { latitude, longitude, timeZone, fajrPdf, scheduleLabel, istijabaText, iqamahs } = hero;
   const [now, setNow] = useState(new Date());
+  const isLoaded = latitude && longitude;
 
   const nextDay = (delta = 1) => () => {
     const newDate = new Date(now.valueOf());
@@ -43,8 +54,9 @@ const Header = () => {
 
   const onFajrPdfClicked = () => window.analytics.track('FajrTimingPdf');
 
-  const { date, timings, istijaba } =
-    latitude && longitude ? calculate(latitude, longitude, timeZone, now, iqamahs) : placeholder;
+  const { date, timings, istijaba } = isLoaded
+    ? calculate(latitude, longitude, timeZone, now, iqamahs)
+    : placeholder;
 
   const { day, date: hijriDate, month, year } = hijri(0, now);
 
@@ -58,31 +70,29 @@ const Header = () => {
             <br />
           </>
         )}
-        <h2 data-cy="gregorian">
-          <button type="button" onClick={nextDay(-1)} className="arrow-button cta-btn">
-            &lt;
-          </button>
-          &nbsp;
-          {date}&nbsp;
-          <button type="button" onClick={nextDay()} className="arrow-button cta-btn">
-            &gt;
-          </button>
-        </h2>
+        {isLoaded && (
+          <h2 data-cy="gregorian">
+            <button type="button" onClick={nextDay(-1)} className="arrow-button cta-btn">
+              &lt;
+            </button>
+            &nbsp;
+            {date}&nbsp;
+            <button type="button" onClick={nextDay()} className="arrow-button cta-btn">
+              &gt;
+            </button>
+          </h2>
+        )}
         <h2 data-cy="hijri">{`${day}, ${hijriDate} ${month} ${year} H`}</h2>
-        <h1 className="hero-title">{timings.map(renderTiming)}</h1>
+        <h1 className="hero-title">{timings.map(renderTiming(fajrPdf, onFajrPdfClicked))}</h1>
         {scheduleLabel && (
           <>
-            <p className="hero-cta">
-              <a
-                target="_blank"
-                onClick={onFajrPdfClicked}
-                rel="noopener noreferrer"
-                className="cta-btn cta-btn--hero"
-                href={fajrPdf}
-              >
-                {cta}
-              </a>
-            </p>
+            <Link to="monthly">
+              <p className="hero-cta">
+                <button type="button" className="cta-btn cta-btn--hero">
+                  Monthly Schedule
+                </button>
+              </p>
+            </Link>
           </>
         )}
       </Container>

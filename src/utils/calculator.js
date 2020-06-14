@@ -44,6 +44,7 @@ const formatAsObject = (calculationResult, timeZone, iqamahs) => {
     .sort(([, value], [, nextValue]) => value - nextValue)
     .map(([event, t]) => {
       return {
+        event,
         label: SalatNames[event],
         time: formatTime(t, timeZone),
         ...(iqamahs[event] && { iqamah: iqamahs[event] }),
