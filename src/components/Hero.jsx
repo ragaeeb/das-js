@@ -71,7 +71,7 @@ const Header = () => {
           </>
         )}
         {isLoaded && (
-          <h2 data-cy="gregorian">
+          <h3 data-cy="gregorian">
             <button type="button" onClick={nextDay(-1)} className="arrow-button cta-btn">
               &lt;
             </button>
@@ -80,7 +80,7 @@ const Header = () => {
             <button type="button" onClick={nextDay()} className="arrow-button cta-btn">
               &gt;
             </button>
-          </h2>
+          </h3>
         )}
         <h2 data-cy="hijri">{`${day}, ${hijriDate} ${month} ${year} H`}</h2>
         <h1 className="hero-title">{timings.map(renderTiming(fajrPdf, onFajrPdfClicked))}</h1>
