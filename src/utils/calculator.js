@@ -109,7 +109,27 @@ const monthly = (latitude, longitude, timeZone, targetDate = new Date()) => {
   };
 };
 
+const yearly = (latitude, longitude, timeZone, targetDate = new Date()) => {
+  const times = [];
+  const iqamahs = {};
+  const now = new Date(targetDate.getFullYear(), 0, 1);
+  const lastDayOfYear = new Date(now.getFullYear(), 11, 31);
+
+  while (now <= lastDayOfYear) {
+    const timings = daily(latitude, longitude, timeZone, now, iqamahs);
+    times.push(timings);
+
+    now.setDate(now.getDate() + 1);
+  }
+
+  return {
+    label: now.getFullYear(),
+    dates: times,
+  };
+};
+
 module.exports = {
   daily,
   monthly,
+  yearly,
 };

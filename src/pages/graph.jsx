@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Line } from 'react-chartjs-2';
+import SEO from '../components/seo';
 import { heroData } from '../mock/data';
-import { monthly } from '../utils/calculator';
+import { yearly } from '../utils/calculator';
 import { stringToColour } from '../utils/stringUtils';
 
 const buildDataSet = (label) => {
@@ -45,7 +46,7 @@ const data = {
 const Graph = () => {
   const { latitude, longitude, timeZone } = heroData;
   const [now] = useState(new Date());
-  const { dates, label } = monthly(latitude, longitude, timeZone, now);
+  const { dates, label } = yearly(latitude, longitude, timeZone, now);
   data.labels = dates.map((date, index) => index + 1);
 
   for (let i = 0; i < data.datasets.length; i += 1) {
@@ -53,12 +54,17 @@ const Graph = () => {
       const d = timings[i].value;
       d.setDate(1);
       d.setMonth(now.getMonth());
+      d.setFullYear(now.getFullYear());
       return { y: d };
     });
   }
 
   return (
     <div>
+      <SEO
+        title="Yearly Schedule Graph"
+        description="Graph of yearly schedule for prayer times for Dar as-Sahaba, Ottawa"
+      />
       <h2>{label}</h2>
       <Line
         data={data}

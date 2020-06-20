@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Table } from 'react-bootstrap';
+import SEO from '../components/seo';
 import Title from '../components/Title';
 import { heroData } from '../mock/data';
 import { monthly } from '../utils/calculator';
@@ -32,6 +33,10 @@ const Monthly = () => {
 
   return (
     <Container>
+      <SEO
+        title="Monthly Schedule"
+        description="Monthly schedule for prayer times for Dar as-Sahaba, Ottawa"
+      />
       <Title title={label} />
       <Table striped bordered hover style={TABLE_STYLE}>
         <thead>
