@@ -47,6 +47,7 @@ const formatAsObject = (calculationResult, timeZone, iqamahs) => {
         event,
         label: SalatNames[event],
         time: formatTime(t, timeZone),
+        value: t,
         ...(iqamahs[event] && { iqamah: iqamahs[event] }),
       };
     });
