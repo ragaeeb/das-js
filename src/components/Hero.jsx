@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import PortfolioContext from '../context/context';
-import calculate from '../utils/calculator';
+import { daily } from '../utils/calculator';
 import hijri from '../utils/hijri';
 
 const getLabel = (event, label, onClick, link) => {
@@ -55,7 +55,7 @@ const Header = () => {
   const onFajrPdfClicked = () => window.analytics.track('FajrTimingPdf');
 
   const { date, timings, istijaba } = isLoaded
-    ? calculate(latitude, longitude, timeZone, now, iqamahs)
+    ? daily(latitude, longitude, timeZone, now, iqamahs)
     : placeholder;
 
   const { day, date: hijriDate, month, year } = hijri(0, now);
