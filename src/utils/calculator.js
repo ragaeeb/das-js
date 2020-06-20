@@ -54,7 +54,7 @@ const formatAsObject = (calculationResult, timeZone, iqamahs) => {
   return { date: formatDate(calculationResult.fajr), timings };
 };
 
-const calculate = (latitude, longitude, timeZone, now = new Date(), iqamahs) => {
+const daily = (latitude, longitude, timeZone, now = new Date(), iqamahs) => {
   const fard = new PrayerTimes(
     new Coordinates(Number(latitude), Number(longitude)),
     now,
@@ -75,4 +75,40 @@ const calculate = (latitude, longitude, timeZone, now = new Date(), iqamahs) => 
   };
 };
 
-module.exports = calculate;
+/**
+ * Returns the monthly schedule.
+ * @param {*} latitude Latitude.
+ * @param {*} longitude Longitude.
+ * @param {*} timeZone Timezone.
+ * @param {*} targetDate The date to generate it for (will do it from beginning of the current month to its end)
+ */
+const monthly = (latitude, longitude, timeZone, targetDate = new Date()) => {
+  const times = [];
+  const iqamahs = {};
+  const now = new Date(targetDate.getTime());
+  const lastDayOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0); // https://stackoverflow.com/questions/222309/calculate-last-day-of-month-in-javascript
+
+  for (let i = 1; i <= 31; i += 1) {
+    now.setDate(i);
+    const timings = daily(latitude, longitude, timeZone, now, iqamahs);
+    times.push(timings);
+
+    if (now > lastDayOfMonth) {
+      break;
+    }
+  }
+
+  const monthName = now.toLocaleDateString('en-US', {
+    month: 'long',
+  });
+
+  return {
+    label: `${monthName} ${now.getFullYear()}`,
+    dates: times,
+  };
+};
+
+module.exports = {
+  daily,
+  monthly,
+};
