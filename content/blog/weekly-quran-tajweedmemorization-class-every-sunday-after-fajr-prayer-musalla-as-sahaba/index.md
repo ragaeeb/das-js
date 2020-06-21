@@ -1,5 +1,5 @@
 ---
-title: 'Weekly Qur'an Tajweed/Memorization Class'
+title: "Weekly Qur'an Tajweed/Memorization Class"
 date: '2014-10-19T12:14:32.169Z'
 description: 'Every Sunday after Fajr prayer @ Musalla As-Sahaba'
 imageUrl: https://funci.org/wp-content/uploads/2010/03/Quran-1024x768.jpg
