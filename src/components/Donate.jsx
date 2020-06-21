@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Container, Toast } from 'react-bootstrap';
 import { Pie } from 'react-chartjs-2';
 import PortfolioContext from '../context/context';
+import { stringToColour } from '../utils/stringUtils';
 import ScreenFade from './ScreenFade';
 import Title from './Title';
 
@@ -20,21 +21,6 @@ const DonateOption = ({ avatar, title, children, status }) => {
       </Toast.Body>
     </Toast>
   );
-};
-
-const stringToColour = (str) => {
-  let hash = 0;
-  for (let i = 0; i < str.length; i += 1) {
-    // eslint-disable-next-line no-bitwise
-    hash = str.charCodeAt(i) + ((hash << 5) - hash);
-  }
-  let colour = '#';
-  for (let i = 0; i < 3; i += 1) {
-    // eslint-disable-next-line no-bitwise
-    const value = (hash >> (i * 8)) & 0xff;
-    colour += `00${value.toString(16)}`.substr(-2);
-  }
-  return colour;
 };
 
 const Header = () => {
