@@ -86,13 +86,18 @@ const Header = () => {
         <h1 className="hero-title">{timings.map(renderTiming(fajrPdf, onFajrPdfClicked))}</h1>
         {scheduleLabel && (
           <>
-            <Link to="monthly">
-              <p className="hero-cta">
+            <p className="hero-cta">
+              <Link to="monthly">
                 <button type="button" className="cta-btn cta-btn--hero">
                   Monthly Schedule
                 </button>
-              </p>
-            </Link>
+              </Link>
+              <Link to="yearly">
+                <button type="button" className="cta-btn cta-btn--hero">
+                  Yearly Schedule
+                </button>
+              </Link>
+            </p>
           </>
         )}
       </Container>

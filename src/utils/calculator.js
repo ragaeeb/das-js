@@ -104,7 +104,7 @@ const monthly = (latitude, longitude, timeZone, targetDate = new Date()) => {
   });
 
   return {
-    label: `${monthName} ${now.getFullYear()}`,
+    label: `${monthName} ${targetDate.getFullYear()}`,
     dates: times,
   };
 };
@@ -123,7 +123,7 @@ const yearly = (latitude, longitude, timeZone, targetDate = new Date()) => {
   }
 
   return {
-    label: now.getFullYear(),
+    label: targetDate.getFullYear(),
     dates: times,
   };
 };

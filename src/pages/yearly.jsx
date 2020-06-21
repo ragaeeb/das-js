@@ -5,6 +5,8 @@ import { heroData } from '../mock/data';
 import { yearly } from '../utils/calculator';
 import { stringToColour } from '../utils/stringUtils';
 
+const Landscape = () => <style type="text/css">{'@media print{@page {size: landscape}}'}</style>;
+
 const buildDataSet = (label) => {
   const color = stringToColour(label);
 
@@ -38,8 +40,6 @@ const data = {
     buildDataSet('ʿAṣr'),
     buildDataSet('Maġrib'),
     buildDataSet('ʿIshāʾ'),
-    buildDataSet('1/2 Night Begins'),
-    buildDataSet('Last 1/3 Night Begins'),
   ],
 };
 
@@ -47,15 +47,23 @@ const Graph = () => {
   const { latitude, longitude, timeZone } = heroData;
   const [now] = useState(new Date());
   const { dates, label } = yearly(latitude, longitude, timeZone, now);
-  data.labels = dates.map((date, index) => index + 1);
+  data.labels = dates.map(({ timings }) => {
+    const [fajr] = timings;
+    return fajr.value.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+    });
+  });
 
   for (let i = 0; i < data.datasets.length; i += 1) {
     data.datasets[i].data = dates.map(({ timings }) => {
-      const d = timings[i].value;
+      const { value, label: eventName, time } = timings[i];
+      const d = new Date(value.getTime());
       d.setDate(1);
       d.setMonth(now.getMonth());
       d.setFullYear(now.getFullYear());
-      return { y: d };
+
+      return { y: d, label: eventName, time };
     });
   }
 
@@ -65,6 +73,7 @@ const Graph = () => {
         title="Yearly Schedule Graph"
         description="Graph of yearly schedule for prayer times for Dar as-Sahaba, Ottawa"
       />
+      <Landscape />
       <h2>{label}</h2>
       <Line
         data={data}
@@ -82,6 +91,14 @@ const Graph = () => {
                 },
               },
             ],
+          },
+          tooltips: {
+            callbacks: {
+              label: ({ index, datasetIndex }, { datasets }) => {
+                const current = datasets[datasetIndex].data[index];
+                return `${current.label}: ${current.time}`;
+              },
+            },
           },
         }}
       />
