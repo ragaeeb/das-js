@@ -57,7 +57,7 @@
   "devDependencies": {
     "@babel/plugin-transform-runtime": "7.10.3",
     "babel-eslint": "10.1.0",
-    "babel-jest": "26.0.1",
+    "babel-jest": "26.1.0",
     "babel-preset-gatsby": "0.4.10",
     "cypress": "4.8.0",
     "dotenv": "8.2.0",
@@ -74,7 +74,7 @@
     "git-rev-sync": "2.0.0",
     "husky": "4.2.5",
     "identity-obj-proxy": "3.0.0",
-    "jest": "26.0.1",
+    "jest": "26.1.0",
     "lint-staged": "10.2.11",
     "preact-render-to-string": "5.1.9",
     "prettier": "2.0.5",
