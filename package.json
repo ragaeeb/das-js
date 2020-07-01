@@ -52,7 +52,7 @@
     "react-github-btn": "1.2.0",
     "react-helmet": "6.1.0",
     "react-tilt": "0.1.4",
-    "uuid": "8.1.0"
+    "uuid": "8.2.0"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "7.10.4",
