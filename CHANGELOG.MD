@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Make git hash clickable](https://github.com/ragaeeb/das-js/issues/142)
 - Dependency upgrades and removal of unnecessary packages.
 - General code refactoring.
+- Added more blog posts.
 
 ## [0.4.0] - 2020-06-20
 

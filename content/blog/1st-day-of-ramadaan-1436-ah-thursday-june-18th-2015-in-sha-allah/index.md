@@ -28,3 +28,5 @@ Al-Jumu’ah Prayer – 1:00pm
 The iqaamah times will remain so unless further advised. Due to limited space, 'jumu'ah, 'ishaa and taraweeh prayers will be for brothers only.
 
 Barakallahu feekum.
+
+[2015 Calendar](https://drive.google.com/file/d/1hbJgcitjihUf_a9oI6v4MXo_Fb4NhxyQ)
