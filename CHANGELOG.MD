@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Lower font-size of non-fard events](https://github.com/ragaeeb/das-js/issues/140)
 - [Add jumuah khutbah times](https://github.com/ragaeeb/das-js/issues/141)
 - [Make git hash clickable](https://github.com/ragaeeb/das-js/issues/142)
+- [Add ability to go to prev/next months/years](https://github.com/ragaeeb/das-js/issues/144)
 - Dependency upgrades and removal of unnecessary packages.
 - General code refactoring.
 - Added more blog posts.
