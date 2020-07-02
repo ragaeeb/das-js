@@ -14,7 +14,14 @@ const GitHash = () => (
     render={({ gitCommit }) => {
       return (
         <p className="footer__text">
-          {gitCommit.hash} [{new Date(gitCommit.date).toLocaleString()}]
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href={`https://github.com/ragaeeb/das-js/commit/${gitCommit.hash}`}
+          >
+            {gitCommit.hash}
+          </a>{' '}
+          [{new Date(gitCommit.date).toLocaleString()}]
         </p>
       );
     }}

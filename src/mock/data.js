@@ -1,30 +1,166 @@
-import { v1 as uuidv1 } from 'uuid';
-
-// HERO DATA
 export const heroData = {
-  cta: 'Why our Fajr timing is different from other masājid?',
   latitude: '45.3506',
   longitude: '-75.793',
+  labels: {
+    fajr: 'Fajr',
+    sunrise: 'Sunrise',
+    dhuhr: 'Dhuhr',
+    asr: 'ʿAṣr',
+    maghrib: 'Maġrib',
+    isha: 'ʿIshāʾ',
+    middleOfTheNight: '1/2 Night Begins',
+    lastThirdOfTheNight: 'Last 1/3 Night Begins',
+    jumuah: 'Khuṭbah al-Jumuʿah',
+  },
   iqamahs: {
-    fajr: '4:30 AM',
-    dhuhr: '1:30 PM',
+    fajr: {
+      1: {
+        1: '6:45 AM',
+        21: '6:35 AM',
+      },
+      2: {
+        1: '6:30 AM',
+        11: '6:15 AM',
+        21: '6:05 AM',
+      },
+      3: {
+        1: '5:50 AM',
+        8: '6:30 AM',
+        21: '6:10 AM',
+      },
+      4: {
+        1: '5:50 AM',
+        11: '5:30 AM',
+        21: '5:10 AM',
+      },
+      5: {
+        1: '4:45 AM',
+        11: '4:30 AM',
+        21: '4:20 AM',
+      },
+      6: '4:10 AM',
+      7: {
+        1: '4:15 AM',
+        11: '4:25 AM',
+        21: '4:40 AM',
+      },
+      8: {
+        1: '5:00 AM',
+        11: '5:15 AM',
+        21: '5:30 AM',
+      },
+      9: {
+        1: '5:45 AM',
+        11: '5:55 AM',
+        21: '6:05 AM',
+      },
+      10: {
+        1: '6:15 AM',
+        11: '6:30 AM',
+        21: '6:40 AM',
+      },
+      11: {
+        1: '6:00 AM',
+        11: '6:10 AM',
+        21: '6:20 AM',
+      },
+      12: {
+        1: '6:30 AM',
+        11: '6:40 AM',
+      },
+    },
+    dhuhr: {
+      1: '12:30 PM',
+      2: '12:30 PM',
+      3: {
+        1: '12:30 PM',
+        8: '1:30 PM',
+      },
+      4: '1:30 PM',
+      5: '1:30 PM',
+      6: '1:30 PM',
+      7: '1:30 PM',
+      8: '1:30 PM',
+      9: '1:30 PM',
+      10: '1:30 PM',
+      11: '12:30 PM',
+      12: '12:30 PM',
+    },
+    jumuah: {
+      1: '12:30 PM',
+      2: '12:30 PM',
+      3: {
+        1: '12:30 PM',
+        8: '1:00 PM',
+      },
+      4: '1:00 PM',
+      5: '1:00 PM',
+      6: '1:00 PM',
+      7: ['1:00 PM', '1:45 PM'],
+      8: ['1:00 PM', '1:45 PM'],
+      9: '1:00 PM',
+      10: '1:00 PM',
+      11: '12:30 PM',
+      12: '12:30 PM',
+    },
     asr: '+20 mins',
     maghrib: '+5 mins',
-    isha: '10:30 PM',
+    isha: {
+      1: '7:30 PM',
+      2: '7:30 PM',
+      3: {
+        1: '7:30 PM',
+        8: '8:30 PM',
+        21: '8:45 PM',
+      },
+      4: {
+        1: '9:15 PM',
+        11: '9:30 PM',
+        21: '9:45 PM',
+      },
+      5: {
+        1: '10:00 PM',
+        11: '10:15 PM',
+        21: '10:30 PM',
+      },
+      6: {
+        1: '10:30 PM',
+        11: '10:40 PM',
+        21: '10:40 PM',
+      },
+      7: {
+        1: '10:30 PM',
+        11: '10:20 PM',
+        21: '10:10 PM',
+      },
+      8: {
+        1: '10:00 PM',
+        11: '9:45 PM',
+        21: '9:30 PM',
+      },
+      9: {
+        1: '9:15 PM',
+        11: '9:00 PM',
+        21: '8:45 PM',
+      },
+      10: {
+        1: '8:30 PM',
+        11: '8:15 PM',
+        21: '8:00 PM',
+      },
+      11: '7:30 PM',
+      12: '7:30 PM',
+    },
   },
-  scheduleLabel: 'How To Pray The ʿĪd Prayer At Home',
-  schedulePdf: 'https://s7.gifyu.com/images/eid-home-description.png',
   timeZone: 'America/Toronto',
   fajrPdf: 'https://archive.org/download/fajr-letter-das/Letter_Fajr-Ishaa_Ottawa-2016-06-27.pdf',
   istijabaText:
     'The Messenger of Allāh ﷺ said, “Friday has twelve meaning hours to it. There is no Muslim who asks Allāh for anything (during it) except that Allāh gives it to him so seek it during the last hour after ʿaṣr.” [Abū Dāwūd al-Sijistānī, al-Sunan #1048] [Al-Albānī: Ṣaḥīḥ]',
 };
 
-// ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
   paragraphOne:
-    'As-Ṣaḥāba Muṣallá was officially opened in October 2005 and has been serving the Ramsey community as a place for Muslims to pray 5 times a day, (including the Jumu’ah Prayer) ever since. Lectures on Islām are held on a regular basis and the presence of the Muṣallá has affected the Ramsey area in a positive way, walḥamdulillāh.',
+    'As-Ṣaḥāba Muṣallá was officially opened in October 2005 and has been serving the Ramsey community as a place for Muslims to pray 5 times a day, (including the Jumʿuah Prayer) ever since. Lectures on Islām are held on a regular basis and the presence of the Muṣallá has affected the Ramsey area in a positive way, walḥamdulillāh.',
   paragraphTwo: 'As a service to the Muslim community, Dār As-Ṣaḥāba Provides the Following:',
   services: [
     {
@@ -33,9 +169,9 @@ export const aboutData = {
         'The muṣallá is open to allow Muslims (both brothers and sisters) a location to pray their five daily ṣalawāt.',
     },
     {
-      title: 'Ṣalat al-Jum’uah',
+      title: 'Ṣalat al-Jumʿuah',
       body:
-        'Every week, salat-ul-Jum’uah is held at Dār As-Ṣaḥāba (due to limited space, for brothers only), where the khaṭīb deliver the khuṭbah strictly adhering to the Qur’ān & the Sunnah.',
+        'Every week, salat-ul-Jumʿuah is held at Dār As-Ṣaḥāba (due to limited space, for brothers only), where the khaṭīb deliver the khuṭbah strictly adhering to the Qur’ān & the Sunnah.',
     },
     {
       title: 'Ṣalat al-Tarawīḥ',
@@ -43,9 +179,9 @@ export const aboutData = {
         'During the month of Ramaḍān, every evening Ṣalat al-Tarawīḥ is held (due to limited space, for brothers only).',
     },
     {
-      title: 'Ṣalat al-‘Īd',
+      title: 'Ṣalat al-ʿĪd',
       body:
-        'For both ‘Īd al-Fiṭr and ‘Īd al-Aḍḥá, Dār As-Ṣaḥāba holds ‘Īd prayers for the community at a neighbouring park, weather permitting, or community centre.',
+        'For both ʿĪd al-Fiṭr and ʿĪd al-Aḍḥá, Dār As-Ṣaḥāba holds ʿĪd prayers for the community at a neighbouring park, weather permitting, or community centre.',
     },
     {
       title: 'Lectures',
@@ -58,7 +194,6 @@ export const aboutData = {
         'To those who are interested about Islām, we have provided copies of the Qur’an with translations in the English and French languages; for non-Arabic speaking Muslims, we have also provided translated copies of the Qur’ān in other languages such as Spanish, Somali, Farsi, Urdu, Pashto, etc. As well, we have provided books and tapes/CDs for people ranging from those interested in Islām to those that are interested in further pursuing Islām academically.',
     },
   ],
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
 export const donationsData = {
@@ -71,38 +206,6 @@ export const donationsData = {
   ],
 };
 
-// PROJECTS DATA
-export const projectsData = [
-  {
-    id: uuidv1(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: uuidv1(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: uuidv1(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-];
-
-// CONTACT DATA
 export const contactInfo = {
   cta:
     'Feel free to drop by the muṣallá at any time to perform the congregational prayers and to partake in the activities. If you would require help with learning about Islām and wish to speak to one of the members of the administration, please contact us through the website first so that we can schedule an appointment with you at a convenient time in shā’ Allāh.',
@@ -112,43 +215,35 @@ export const contactInfo = {
   tel: '+16133215459',
 };
 
-// FOOTER DATA
 export const footerData = {
   networks: [
     {
-      id: uuidv1(),
       name: 'twitter',
       url: 'https://twitter.com/DarAsSahaba',
     },
     {
-      id: uuidv1(),
       name: 'soundcloud',
       url: 'https://soundcloud.com/DarAsSahaba',
     },
     {
-      id: uuidv1(),
       name: 'instagram',
       url: 'https://instagram.com/DarAsSahaba',
     },
     {
-      id: uuidv1(),
       name: 'facebook',
       url: 'https://facebook.com/DarAsSahaba',
     },
     {
-      id: uuidv1(),
       name: 'telegram',
       url: 'https://t.me/DarAsSahaba',
     },
     {
-      id: uuidv1(),
       name: 'youtube',
       url: 'https://www.youtube.com/channel/UC4JRttylAMmZubEmFOjX7Vg',
     },
   ],
 };
 
-// Github start/fork buttons
 export const githubButtons = {
   isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };

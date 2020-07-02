@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { PortfolioProvider } from '../context/context';
-import {
-  aboutData,
-  contactInfo,
-  donationsData,
-  footerData,
-  heroData,
-  projectsData,
-} from '../mock/data';
+import { aboutData, contactInfo, donationsData, footerData, heroData } from '../mock/data';
 import About from './About';
 import Contact from './Contact';
 import Donate from './Donate';
@@ -20,7 +13,6 @@ function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [donations, setDonations] = useState([]);
-  const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
 
@@ -28,14 +20,13 @@ function App() {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
     setDonations({ ...donationsData });
-    setProjects([...projectsData]);
     setContact({ ...contactInfo });
     setFooter({ ...footerData });
   }, []);
 
   return (
     <ErrorBoundary>
-      <PortfolioProvider value={{ hero, about, donations, projects, contact, footer }}>
+      <PortfolioProvider value={{ hero, about, donations, contact, footer }}>
         <Hero />
         <Projects />
         <About />

@@ -5,7 +5,7 @@ import Title from '../components/Title';
 import { heroData } from '../mock/data';
 import { monthly } from '../utils/calculator';
 
-const TABLE_STYLE = { fontSize: '2.6rem' };
+const TABLE_STYLE = { fontSize: '1.9rem' };
 
 const renderRow = ({ timings }, index) => {
   const [fajr, sunrise, dhuhr, asr, maghrib, isha] = timings;
@@ -24,10 +24,18 @@ const renderRow = ({ timings }, index) => {
 };
 
 const Monthly = () => {
-  const { latitude, longitude, timeZone } = heroData;
-  const [now] = useState(new Date());
-  const { dates, label } = monthly(latitude, longitude, timeZone, now);
+  const { latitude, longitude, timeZone, labels } = heroData;
+  const [now, setNow] = useState(new Date());
 
+  const nextMonth = (delta = 1) => () => {
+    const newDate = new Date(now.valueOf());
+    newDate.setMonth(newDate.getMonth() + delta);
+    setNow(newDate);
+
+    window.analytics.track(delta === 1 ? 'NextMonthTimings' : 'PrevMonthTimings');
+  };
+
+  const { dates, label } = monthly(labels, latitude, longitude, timeZone, now);
   const [headings] = dates;
   const [fajr, sunrise, dhuhr, asr, maghrib, isha] = headings.timings;
 
@@ -37,7 +45,7 @@ const Monthly = () => {
         title="Monthly Schedule"
         description="Monthly schedule for prayer times for Dar as-Sahaba, Ottawa"
       />
-      <Title title={label} />
+      <Title title={label} onLeft={nextMonth(-1)} onRight={nextMonth(1)} />
       <Table striped bordered hover style={TABLE_STYLE}>
         <thead>
           <tr>
