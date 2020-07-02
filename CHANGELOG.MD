@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2020-07-01
+
+### Added
+
+- [Add support for dynamic yearly iqamah times](https://github.com/ragaeeb/das-js/issues/139)
+- [Lower font-size of non-fard events](https://github.com/ragaeeb/das-js/issues/140)
+- [Add jumuah khutbah times](https://github.com/ragaeeb/das-js/issues/141)
+- [Make git hash clickable](https://github.com/ragaeeb/das-js/issues/142)
+- [Add ability to go to prev/next months/years](https://github.com/ragaeeb/das-js/issues/144)
+- Dependency upgrades and removal of unnecessary packages.
+- General code refactoring.
+- Added more blog posts.
+
 ## [0.4.0] - 2020-06-20
 
 ### Added

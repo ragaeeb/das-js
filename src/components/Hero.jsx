@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import PortfolioContext from '../context/context';
-import { daily } from '../utils/calculator';
+import { daily, getJumuahTime, isFard } from '../utils/calculator';
 import hijri from '../utils/hijri';
 
 const getLabel = (event, label, onClick, link) => {
@@ -23,7 +23,20 @@ const getLabel = (event, label, onClick, link) => {
   return label;
 };
 
+const renderSunnah = (event, label, time) => {
+  console.log('*** label', label, time);
+  return (
+    <div key={event} className="sunan">
+      {label} <span className="text-color-main">{time}</span>
+    </div>
+  );
+};
+
 const renderTiming = (fajrPdf, fajrOnClick) => ({ label, time, iqamah, event }) => {
+  if (!isFard(event)) {
+    return renderSunnah(event, label, time);
+  }
+
   return (
     <React.Fragment key={label}>
       {getLabel(event, label, fajrOnClick, fajrPdf)} <span className="text-color-main">{time}</span>
@@ -40,7 +53,7 @@ const placeholder = {
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { latitude, longitude, timeZone, fajrPdf, scheduleLabel, istijabaText, iqamahs } = hero;
+  const { latitude, longitude, timeZone, fajrPdf, istijabaText, iqamahs, labels = {} } = hero;
   const [now, setNow] = useState(new Date());
   const isLoaded = latitude && longitude;
 
@@ -55,7 +68,7 @@ const Header = () => {
   const onFajrPdfClicked = () => window.analytics.track('FajrTimingPdf');
 
   const { date, timings, istijaba } = isLoaded
-    ? daily(latitude, longitude, timeZone, now, iqamahs)
+    ? daily(labels, latitude, longitude, timeZone, now, iqamahs)
     : placeholder;
 
   const { day, date: hijriDate, month, year } = hijri(0, now);
@@ -83,23 +96,22 @@ const Header = () => {
           </h3>
         )}
         <h2 data-cy="hijri">{`${day}, ${hijriDate} ${month} ${year} H`}</h2>
-        <h1 className="hero-title">{timings.map(renderTiming(fajrPdf, onFajrPdfClicked))}</h1>
-        {scheduleLabel && (
-          <>
-            <p className="hero-cta">
-              <Link to="monthly">
-                <button type="button" className="cta-btn cta-btn--hero">
-                  Monthly Schedule
-                </button>
-              </Link>
-              <Link to="yearly">
-                <button type="button" className="cta-btn cta-btn--hero">
-                  Yearly Schedule
-                </button>
-              </Link>
-            </p>
-          </>
-        )}
+        <h1 className="hero-title">
+          {timings.map(renderTiming(fajrPdf, onFajrPdfClicked))}
+          {isLoaded && renderSunnah('jumuah', labels.jumuah, getJumuahTime(now, iqamahs))}
+        </h1>
+        <p className="hero-cta">
+          <Link to="monthly">
+            <button type="button" className="cta-btn cta-btn--hero">
+              Monthly Schedule
+            </button>
+          </Link>
+          <Link to="yearly">
+            <button type="button" className="cta-btn cta-btn--hero">
+              Yearly Schedule
+            </button>
+          </Link>
+        </p>
       </Container>
     </section>
   );

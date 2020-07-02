@@ -2,17 +2,6 @@ const { CalculationParameters, PrayerTimes, SunnahTimes, Coordinates } = require
 
 const ONE_HOUR = 60 * 60 * 1000;
 
-const SalatNames = {
-  fajr: 'Fajr',
-  sunrise: 'Sunrise',
-  dhuhr: 'Dhuhr',
-  asr: 'ʿAṣr',
-  maghrib: 'Maġrib',
-  isha: 'ʿIshāʾ',
-  middleOfTheNight: '1/2 Night Begins',
-  lastThirdOfTheNight: 'Last 1/3 Night Begins',
-};
-
 const formatTime = (t, timeZone) => {
   const time = new Date(t).toLocaleTimeString('en-US', {
     timeZone,
@@ -38,14 +27,14 @@ const formatDate = (fajr) => {
  * @param {*} latitude
  * @param {*} longitude
  */
-const formatAsObject = (calculationResult, timeZone, iqamahs) => {
+const formatAsObject = (calculationResult, timeZone, iqamahs, salatLabels) => {
   const timings = Object.entries(calculationResult)
     // sort the events from earliest to latest (to sort from fajr - isha)
     .sort(([, value], [, nextValue]) => value - nextValue)
     .map(([event, t]) => {
       return {
         event,
-        label: SalatNames[event],
+        label: salatLabels[event],
         time: formatTime(t, timeZone),
         value: t,
         ...(iqamahs[event] && { iqamah: iqamahs[event] }),
@@ -55,7 +44,42 @@ const formatAsObject = (calculationResult, timeZone, iqamahs) => {
   return { date: formatDate(calculationResult.fajr), timings };
 };
 
-const daily = (latitude, longitude, timeZone, now = new Date(), iqamahs) => {
+const getIqamahInRange = (day, monthData) => {
+  if (typeof monthData === 'string') {
+    return monthData;
+  }
+
+  if (Array.isArray(monthData)) {
+    return monthData.join(', ');
+  }
+
+  const ranges = Object.keys(monthData);
+
+  for (let i = ranges.length - 1; i >= 0; i -= 1) {
+    const range = ranges[i];
+
+    if (day >= range) {
+      return monthData[range];
+    }
+  }
+
+  return null;
+};
+
+const reduceIqamahs = (now, iqamahs) => {
+  const month = now.getMonth() + 1;
+  const day = now.getDate().toString();
+  return Object.entries(iqamahs).reduce((result, [salat, data]) => {
+    return {
+      ...result,
+      [salat]: typeof data === 'string' ? data : getIqamahInRange(day, data[month]),
+    };
+  }, {});
+};
+
+const getJumuahTime = (now, iqamahs) => reduceIqamahs(now, iqamahs).jumuah;
+
+const daily = (salatLabels, latitude, longitude, timeZone, now = new Date(), iqamahs = {}) => {
   const fard = new PrayerTimes(
     new Coordinates(Number(latitude), Number(longitude)),
     now,
@@ -65,7 +89,7 @@ const daily = (latitude, longitude, timeZone, now = new Date(), iqamahs) => {
   const sunan = new SunnahTimes(fard);
   const { coordinates, calculationParameters, date, ...rest } = { ...fard, ...sunan };
 
-  const result = formatAsObject(rest, timeZone, iqamahs);
+  const result = formatAsObject(rest, timeZone, reduceIqamahs(now, iqamahs), salatLabels);
 
   const nextPrayer = fard.nextPrayer();
   const diff = fard.timeForPrayer(nextPrayer) - now;
@@ -83,7 +107,7 @@ const daily = (latitude, longitude, timeZone, now = new Date(), iqamahs) => {
  * @param {*} timeZone Timezone.
  * @param {*} targetDate The date to generate it for (will do it from beginning of the current month to its end)
  */
-const monthly = (latitude, longitude, timeZone, targetDate = new Date()) => {
+const monthly = (salatLabels, latitude, longitude, timeZone, targetDate = new Date()) => {
   const times = [];
   const iqamahs = {};
   const now = new Date(targetDate.getTime());
@@ -91,7 +115,7 @@ const monthly = (latitude, longitude, timeZone, targetDate = new Date()) => {
 
   for (let i = 1; i <= 31; i += 1) {
     now.setDate(i);
-    const timings = daily(latitude, longitude, timeZone, now, iqamahs);
+    const timings = daily(salatLabels, latitude, longitude, timeZone, now, iqamahs);
     times.push(timings);
 
     if (now > lastDayOfMonth) {
@@ -109,14 +133,14 @@ const monthly = (latitude, longitude, timeZone, targetDate = new Date()) => {
   };
 };
 
-const yearly = (latitude, longitude, timeZone, targetDate = new Date()) => {
+const yearly = (salatLabels, latitude, longitude, timeZone, targetDate = new Date()) => {
   const times = [];
   const iqamahs = {};
   const now = new Date(targetDate.getFullYear(), 0, 1);
   const lastDayOfYear = new Date(now.getFullYear(), 11, 31);
 
   while (now <= lastDayOfYear) {
-    const timings = daily(latitude, longitude, timeZone, now, iqamahs);
+    const timings = daily(salatLabels, latitude, longitude, timeZone, now, iqamahs);
     times.push(timings);
 
     now.setDate(now.getDate() + 1);
@@ -128,8 +152,12 @@ const yearly = (latitude, longitude, timeZone, targetDate = new Date()) => {
   };
 };
 
+const isFard = (event) => ['fajr', 'dhuhr', 'asr', 'maghrib', 'isha'].includes(event);
+
 module.exports = {
   daily,
   monthly,
   yearly,
+  getJumuahTime,
+  isFard,
 };

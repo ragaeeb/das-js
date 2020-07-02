@@ -32,21 +32,30 @@ const buildDataSet = (label) => {
   };
 };
 
-const data = {
-  datasets: [
-    buildDataSet('Fajr'),
-    buildDataSet('Sunrise'),
-    buildDataSet('Dhuhr'),
-    buildDataSet('ʿAṣr'),
-    buildDataSet('Maġrib'),
-    buildDataSet('ʿIshāʾ'),
-  ],
-};
-
 const Graph = () => {
-  const { latitude, longitude, timeZone } = heroData;
-  const [now] = useState(new Date());
-  const { dates, label } = yearly(latitude, longitude, timeZone, now);
+  const { latitude, longitude, timeZone, labels } = heroData;
+  const [now, setNow] = useState(new Date());
+
+  const nextYear = (delta = 1) => () => {
+    const newDate = new Date(now.valueOf());
+    newDate.setFullYear(newDate.getFullYear() + delta);
+    setNow(newDate);
+
+    window.analytics.track(delta === 1 ? 'NextYearTimings' : 'PrevYearTimings');
+  };
+
+  const { dates, label } = yearly(labels, latitude, longitude, timeZone, now);
+
+  const data = {
+    datasets: [
+      buildDataSet(labels.fajr),
+      buildDataSet(labels.sunrise),
+      buildDataSet(labels.dhuhr),
+      buildDataSet(labels.asr),
+      buildDataSet(labels.maghrib),
+      buildDataSet(labels.isha),
+    ],
+  };
   data.labels = dates.map(({ timings }) => {
     const [fajr] = timings;
     return fajr.value.toLocaleDateString('en-US', {
@@ -74,7 +83,25 @@ const Graph = () => {
         description="Graph of yearly schedule for prayer times for Dar as-Sahaba, Ottawa"
       />
       <Landscape />
-      <h2>{label}</h2>
+      <h2>
+        <button
+          type="button"
+          className="arrow-button cta-btn"
+          onClick={nextYear(-1)}
+          style={{ backgroundColor: 'transparent', border: 'none', outline: 'none' }}
+        >
+          &lt;
+        </button>
+        {label}
+        <button
+          type="button"
+          className="arrow-button cta-btn"
+          onClick={nextYear(1)}
+          style={{ backgroundColor: 'transparent', border: 'none', outline: 'none' }}
+        >
+          &gt;
+        </button>
+      </h2>
       <Line
         data={data}
         options={{
@@ -92,6 +119,7 @@ const Graph = () => {
               },
             ],
           },
+          responsive: true,
           tooltips: {
             callbacks: {
               label: ({ index, datasetIndex }, { datasets }) => {

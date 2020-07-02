@@ -21,11 +21,11 @@ const Footer = () => {
         <div className="social-links">
           {networks &&
             networks.map((network) => {
-              const { id, name, url } = network;
+              const { name, url } = network;
               return (
                 <a
                   onClick={onSocialClicked(name)}
-                  key={id}
+                  key={name}
                   href={url}
                   rel="noopener noreferrer"
                   target="_blank"
