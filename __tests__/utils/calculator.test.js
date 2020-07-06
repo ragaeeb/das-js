@@ -111,6 +111,35 @@ describe('calculator', () => {
       });
     });
 
+    it('should calculate the proper iqamah times for July 6, 2020', () => {
+      const result = daily(
+        salatLabels,
+        '45.3506',
+        '-75.793',
+        'America/Toronto',
+        new Date(2020, 6, 6, 16, 17, 0),
+        {
+          fajr: {
+            7: {
+              1: '4:15 AM',
+              11: '4:25 AM',
+              21: '4:40 AM',
+            },
+          },
+          isha: {
+            7: {
+              1: '10:30 PM',
+              11: '10:20 PM',
+              21: '10:10 PM',
+            },
+          },
+        }
+      );
+
+      expect(result.timings[0].iqamah).toEqual('4:15 AM');
+      expect(result.timings[5].iqamah).toEqual('10:30 PM');
+    });
+
     describe('isFard', () => {
       it('should be true for fard prayers', () => {
         ['fajr', 'dhuhr', 'asr', 'maghrib', 'isha'].forEach((key) =>
