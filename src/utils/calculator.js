@@ -58,7 +58,7 @@ const getIqamahInRange = (day, monthData) => {
   for (let i = ranges.length - 1; i >= 0; i -= 1) {
     const range = ranges[i];
 
-    if (day >= range) {
+    if (parseInt(day, 10) >= parseInt(range, 10)) {
       return monthData[range];
     }
   }
