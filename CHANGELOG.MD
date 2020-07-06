@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - [Iqamah times are wrong](https://github.com/ragaeeb/das-js/issues/147)
+- Added some older blog posts.
 
 ## [0.5.0] - 2020-07-01
 
