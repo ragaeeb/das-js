@@ -78,7 +78,7 @@
     "preact-render-to-string": "5.1.9",
     "prettier": "2.0.5",
     "react-test-renderer": "16.13.1",
-    "start-server-and-test": "1.11.0"
+    "start-server-and-test": "1.11.2"
   },
   "repository": {
     "type": "git",
