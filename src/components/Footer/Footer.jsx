@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import { githubButtons } from '../../mock/data';
 import GithubButtons from '../GithubButtons/GithubButtons';
@@ -15,9 +16,11 @@ const Footer = () => {
   return (
     <footer className="footer navbar-static-bottom">
       <Container>
-        <a href="#top" aria-label="Back To Top" className="back-to-top">
-          <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
-        </a>
+        <span className="back-to-top">
+          <Link to="hero" smooth duration={1000}>
+            <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
+          </Link>
+        </span>
         <div className="social-links">
           {networks &&
             networks.map((network) => {
