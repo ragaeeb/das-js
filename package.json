@@ -54,7 +54,7 @@
     "react-tilt": "0.1.4"
   },
   "devDependencies": {
-    "@babel/plugin-transform-runtime": "7.10.4",
+    "@babel/plugin-transform-runtime": "7.10.5",
     "babel-eslint": "10.1.0",
     "babel-jest": "26.1.0",
     "babel-preset-gatsby": "0.5.2",
