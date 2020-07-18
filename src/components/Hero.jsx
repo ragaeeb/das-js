@@ -24,7 +24,6 @@ const getLabel = (event, label, onClick, link) => {
 };
 
 const renderSunnah = (event, label, time) => {
-  console.log('*** label', label, time);
   return (
     <div key={event} className="sunan">
       {label} <span className="text-color-main">{time}</span>
