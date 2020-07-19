@@ -25,7 +25,7 @@ const getLabel = (event, label, onClick, link) => {
 
 const renderSunnah = (event, label, time) => {
   return (
-    <div key={event} className="sunan">
+    <div key={event} className="sunan" data-cy="sunan">
       {label} <span className="text-color-main">{time}</span>
     </div>
   );
@@ -50,9 +50,21 @@ const placeholder = {
   timings: [],
 };
 
+const onFajrPdfClicked = () => window.analytics.track('FajrTimingPdf');
+const onCalendarClicked = () => window.analytics.track('Calendar');
+
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { latitude, longitude, timeZone, fajrPdf, istijabaText, iqamahs, labels = {} } = hero;
+  const {
+    latitude,
+    longitude,
+    timeZone,
+    fajrPdf,
+    istijabaText,
+    iqamahs,
+    labels = {},
+    calendarUrl,
+  } = hero;
   const [now, setNow] = useState(new Date());
   const isLoaded = latitude && longitude;
 
@@ -63,8 +75,6 @@ const Header = () => {
 
     window.analytics.track(delta === 1 ? 'NextDayTimings' : 'PrevDayTimings');
   };
-
-  const onFajrPdfClicked = () => window.analytics.track('FajrTimingPdf');
 
   const { date, timings, istijaba } = isLoaded
     ? daily(labels, latitude, longitude, timeZone, now, iqamahs)
@@ -95,11 +105,21 @@ const Header = () => {
           </h3>
         )}
         <h2 data-cy="hijri">{`${day}, ${hijriDate} ${month} ${year} H`}</h2>
-        <h1 className="hero-title">
+        <h1 className="hero-title" data-cy="timings">
           {timings.map(renderTiming(fajrPdf, onFajrPdfClicked))}
           {isLoaded && renderSunnah('jumuah', labels.jumuah, getJumuahTime(now, iqamahs))}
         </h1>
         <p className="hero-cta">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={calendarUrl}
+            onClick={onCalendarClicked}
+          >
+            <button type="button" className="cta-btn cta-btn--hero">
+              Calendar
+            </button>
+          </a>
           <Link to="monthly">
             <button type="button" className="cta-btn cta-btn--hero">
               Monthly Schedule
@@ -107,7 +127,7 @@ const Header = () => {
           </Link>
           <Link to="yearly">
             <button type="button" className="cta-btn cta-btn--hero">
-              Yearly Schedule
+              Annual
             </button>
           </Link>
         </p>
