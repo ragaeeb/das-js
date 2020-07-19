@@ -1,3 +1,4 @@
+import { Link as RouteLink } from 'gatsby';
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
@@ -41,9 +42,11 @@ const Footer = () => {
         </div>
         <hr />
         <p className="footer__text">© {new Date().getFullYear()} Dar As-Sahaba Association</p>
-
         {isEnabled && <GithubButtons />}
         <GitHash />
+        <RouteLink style={{ color: 'white' }} to="privacy">
+          Privacy Policy
+        </RouteLink>
       </Container>
     </footer>
   );
