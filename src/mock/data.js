@@ -154,6 +154,8 @@ export const heroData = {
   },
   timeZone: 'America/Toronto',
   fajrPdf: 'https://archive.org/download/fajr-letter-das/Letter_Fajr-Ishaa_Ottawa-2016-06-27.pdf',
+  calendarUrl:
+    'https://calendar.google.com/calendar/embed?src=60me58mrktt0lt24mijjkhddvc%40group.calendar.google.com&ctz=America%2FNew_York',
   istijabaText:
     'The Messenger of Allāh ﷺ said, “Friday has twelve meaning hours to it. There is no Muslim who asks Allāh for anything (during it) except that Allāh gives it to him so seek it during the last hour after ʿaṣr.” [Abū Dāwūd al-Sijistānī, al-Sunan #1048] [Al-Albānī: Ṣaḥīḥ]',
 };

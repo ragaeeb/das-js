@@ -7,9 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.5.2] - 2020-07-18
 
-### Fixed
+### Added
 
 - [Sync code with fork origin](https://github.com/ragaeeb/das-js/issues/159)
+- [Upgrade dependency packages](https://github.com/ragaeeb/das-js/issues/5)
+- [Add blog posts](https://github.com/ragaeeb/das-js/issues/27)
+- [Integrate calendar to show them latest events](https://github.com/ragaeeb/das-js/issues/9)
+
+### Fixed
+
+- [Nawafil timings are not reduced on mobile devices](https://github.com/ragaeeb/das-js/issues/149)
 
 ## [0.5.1] - 2020-07-06
 
