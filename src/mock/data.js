@@ -153,6 +153,7 @@ export const heroData = {
     },
   },
   timeZone: 'America/Toronto',
+  hijriAdjust: -1,
   fajrPdf: 'https://archive.org/download/fajr-letter-das/Letter_Fajr-Ishaa_Ottawa-2016-06-27.pdf',
   calendarUrl:
     'https://calendar.google.com/calendar/embed?src=60me58mrktt0lt24mijjkhddvc%40group.calendar.google.com&ctz=America%2FNew_York',

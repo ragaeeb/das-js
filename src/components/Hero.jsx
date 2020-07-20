@@ -64,6 +64,7 @@ const Header = () => {
     iqamahs,
     labels = {},
     calendarUrl,
+    hijriAdjust = 0,
   } = hero;
   const [now, setNow] = useState(new Date());
   const isLoaded = latitude && longitude;
@@ -80,7 +81,7 @@ const Header = () => {
     ? daily(labels, latitude, longitude, timeZone, now, iqamahs)
     : placeholder;
 
-  const { day, date: hijriDate, month, year } = hijri(0, now);
+  const { day, date: hijriDate, month, year } = hijri(hijriAdjust, now);
 
   return (
     <section id="hero" className="jumbotron">
