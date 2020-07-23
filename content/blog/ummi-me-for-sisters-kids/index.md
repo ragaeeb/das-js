@@ -18,7 +18,7 @@ Location: Muṣallá As-Ṣaḥāba (2835 Dumaurier Ave., Ramsey)
 
 Registration Fee: `$20` per family
 
-This event is for sisters `ONLY` and we encourage you to bring your children (all ages for girls, and boys 6-years and under) so you can supervise them while they play with the other kids. The children will get to enjoy free play, crafts and story time.
+This event is for sisters ʿONLYʿ and we encourage you to bring your children (all ages for girls, and boys 6-years and under) so you can supervise them while they play with the other kids. The children will get to enjoy free play, crafts and story time.
 
 Please pass on this message.
 

@@ -31,4 +31,4 @@ Al-Jumuʿah khuṭbah/Prayer – 1:00pm
 
 The iqāmah times will remain so unless further advised.
 
-Barākallahu feekum.
+Barākallāhu fīkum.

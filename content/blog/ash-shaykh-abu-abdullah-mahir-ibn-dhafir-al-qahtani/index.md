@@ -6,18 +6,18 @@ imageUrl: https://s7.gifyu.com/images/maher-1024x682.jpg
 thumbnailUrl: https://s7.gifyu.com/images/maher2.jpg
 ---
 
-Dar As-Sahaba presents...
+Dār As-Ṣaḥāba presents...
 
-ASH-SHAYKH ABU 'ABDULLAH MAHIR IBN DHAFIR AL-QAHTANI
-(hafidhahullah)
+ASH-SHAYKH ABU 'ABDULLAH MĀHIR IBN DHAFIR AL-QAHTANI
+(ḥāfidhahullah)
 
 LIVE IN PERSON
 IN OTTAWA, ONTARIO, CANADA...
 
-He is a Khateeb in Jami’ ul Bilaal in Jeddah, Saudi Arabia. The shaykh has studied under scholars such as Ash-Shaykh ‘Abdul-‘Azeez Bin Baz, Ash-Shaykh Muhammad Ibn 'Uthaymeen, Ash-Shaykh ‘Abdullaah al-Ghudayaan, Ash-Shaykh Saalih al-Fawzaan, Ash-Shaykh Waseullaah al-‘Abbaas, Ash-Shaykh Khidr ash-Shinqitee, Ash-Shaykh Muhammad Bazmool and others.
+He is a Khaṭīb in Jami’ ul Bilāl in Jeddah, Saudi Arabia. The shaykh has studied under scholars such as al-Shaykh ʿAbd al-ʿAzīz b. Baz, al-Shaykh Muḥammad Ibn ʿUthaymīn, al-Shaykh ʿAbd Allāh al-Ġudayān, al-Shaykh Ṣāliḥ al-Fawzān, al-Shaykh Wasī Allāh al-ʿAbbās, al-Shaykh Khiḍr ash-Shinqiṭī, al-Shaykh Muḥammad Bāzmūl and others.
 
 Date & Time:
-From December 21st - 26th, 2012, in-sha-Allah (tentative)
+From December 21st - 26th, 2012, in-sha-Allāh (tentative)
 
 Location:
 TBA - Various Locations in Ottawa, Canada

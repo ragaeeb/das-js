@@ -7,12 +7,12 @@ thumbnailUrl: https://musingsofamusafir.files.wordpress.com/2018/01/c5dliaqwmaau
 ---
 
 Taught by:
-Ash-Shaykh Abū ‘Abdir-Raḥmān Muḥammad ‘Ali ‘Ajjāl
+al-Shaykh Abū ʿAbd al-Raḥmān Muḥammad ʿAlī ‘Ajjāl
 (Graduate of the Islāmic University of Madīnah, Faculty of Ḥadīth)
 
 Summary:
 
-This lecture series is an explanation by Ash-Shaykh Ṣāliḥ Aalish-Shaykh (Ḥāfidhahullah) of Bulūġ al-Marām of al-Ḥāfidh ibn Hajr (Raḥīmahullāh)
+This lecture series is an explanation by al-Shaykh Ṣāliḥ Aalish-Shaykh (Ḥāfidhahullah) of Bulūġ al-Marām of al-Ḥāfidh b. Ḥajar (Raḥīmahullāh)
 
 [Soundcloud](https://soundcloud.com/darassahaba/explanation-of-ahadith-from-the-chapter-of-purification-of-bulug-al-maram-part-1)
 [YouTube](https://youtu.be/fVjcl--Dmwo)

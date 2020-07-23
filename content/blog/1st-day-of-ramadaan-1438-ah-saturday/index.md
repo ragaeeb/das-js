@@ -20,10 +20,11 @@ The following are the iqāmah times at Muṣallá As-Ṣaḥāba (2835 Dumaurier
 AL-FAJR PRAYER – 4:10AM (MAY 27 TO MAY 31)
 – 4:00AM (JUNE 01 TO END OF RAMAḌĀN)
 ADH-DHUHR PRAYER – 1:30PM (FIXED)
-AL-‘ʿAṢR PRAYER – 20 MIN. AFTER THE ADHAAN
+AL-ʿAṢR PRAYER – 20 MIN. AFTER THE ADHAAN
 AL-MAĠRIB PRAYER – 10 MIN. AFTER THE ADHAAN
-AL-‘ʿISHĀʾA PRAYER & AT-TARĀWĪḤ PRAYERS – 10:45PM (FIXED)
+AL-ʿISHĀʾA PRAYER & AT-TARĀWĪḤ PRAYERS – 10:45PM (FIXED)
 AL-JUMU’AH KHUṬBAH/PRAYER – 1:00PM
+
 The iqāmah times will remain so unless further advised. Due to limited space, jumu’ah, ʿishāʾ and tarāwīḥ prayers will be for brothers only.
 
 Bārak Allāhu fīkum.

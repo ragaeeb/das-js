@@ -1,7 +1,7 @@
 import React from 'react';
 import GitHubButton from 'react-github-btn';
 
-const GithubButton = () => (
+const GithubButtons = () => (
   <>
     <GitHubButton
       className="github-button"
@@ -26,4 +26,4 @@ const GithubButton = () => (
   </>
 );
 
-export default GithubButton;
+export default GithubButtons;
