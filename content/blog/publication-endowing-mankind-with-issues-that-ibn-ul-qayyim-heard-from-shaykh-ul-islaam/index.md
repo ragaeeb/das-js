@@ -1,20 +1,20 @@
 ---
-title: 'Publication: Endowing mankind with issues that Ibn-ul Qayyim heard from Shaykh ul-Islām'
+title: 'Publication: Endowing mankind with issues that Ibn al-Qayyim heard from Shaykh al-Islām'
 date: '2011-04-03T00:26:12.169Z'
-description: 'by Al-Shaykh ʿAbd al-Raḥmān Muḥammad Ali ʿAjjāl'
+description: 'by Al-Shaykh Abū ʿAbd al-Raḥmān Muḥammad ʿAlī ʿAjjāl'
 imageUrl: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1461018080l/29587295._SX318_.jpg
 ---
 
-Innal-Hamdalillaah was-Salaatu was-Salāmuala Rasulillaah wa ‘ala Aalihi wa Sahbihi wa man walaa’…
+Innal-Hamdalillaah was-Ṣalātu was-Salāmuala Rasulillaah wa ʿalá Aalihi wa Sahbihi wa man walaa’…
 wa ba’d:
 As-Salām ‘alaykum wa Raḥmatullāhi wa Barakātuh…
 ‘Ayyuhal-‘Ikhwah wal-Akhawāt (My beloved brothers and sisters in Islām)…
 May Allāh increase us and you in (all) Goodness, from whatever form or angle it comes in…
 
-We would like to present you with :
+We would like to present you with:
 Endowing mankind with issues that Ibn al-Qayyim heard from Shaykh al-Islām
 Compilation & Commentary by: Shaykh Abū ʿAbd al-Raḥmān Muḥammad ʿAlī ʿAjjāl
-Now in stock for \$20. For Further details contact us at: darulhadiths@gmail.com or buy your copy at the As-Ṣaḥāba Muṣallá
+Now in stock for \$20. For Further details contact us at: darulḥadīths@gmail.com or buy your copy at the As-Ṣaḥāba Muṣallá
 NOTE: this book is available in Arabic only.
 
 Who is Abū ‘Abdur Raḥmān Muḥammad ʿAjjāl?

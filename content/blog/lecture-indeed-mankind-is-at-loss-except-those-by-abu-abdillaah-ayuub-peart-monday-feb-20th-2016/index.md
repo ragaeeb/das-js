@@ -6,21 +6,21 @@ imageUrl: https://s7.gifyu.com/images/16903123_395660094131387_54024586549038436
 thumbnailUrl: https://s7.gifyu.com/images/16836489_395660074131389_1412881868805909540_o.jpg_nc_cat111_nc_sid8024bb_nc_ohcCbFlFke4jT0AX_lV2md_nc_htscontent.fybz1-1.jpg
 ---
 
-As-salaamu 'alaikum wa rahmatullahi wa barakaatuh,
+As-salāmu ʿalaykum wa raḥmatullāhi wa barakātuh,
 
-Bismillahi walhamdulillah was-salaatu was-salaamu 'alaa Rasoolillah
+Bismillahi walḥamdulillāh was-ṣalātu was-salāmu 'alaa Rasūlillāh
 
-Dar As-Sahaba presents...
+Dār As-Ṣaḥāba presents...
 
-Indeed Mankind is at Loss Except Those ...
+Indeed Mankind is at Loss Except Those...
 
-Speaker: Abu Abdillaah Ayuub Peart
+Speaker: Abū ʿAbd Allāh Ayyūb Peart
 
-Date & Time:  
+Date & Time:
 Monday, Feb. 20th 6:30pm
 
 Location:
-Musalla As-Sahaba
+Muṣallá As-Ṣaḥāba
 
 (2835 Dumaurier Ave., Ramsey)
 
@@ -28,4 +28,4 @@ This class is free for both brothers and sisters and we encourage you to benefit
 
 Please pass on this message.
 
-Jazakumullahu khair.
+Jazākumullahu khair.

@@ -6,9 +6,9 @@ imageUrl: https://s7.gifyu.com/images/17039270_395665184130878_57575739142312973
 thumbnailUrl: https://s7.gifyu.com/images/17016110_395664317464298_1356003363461483404_o.jpg_nc_cat106_nc_sid8024bb_nc_ohcgB0kyxrMbiIAX9IP6Ea_nc_htscontent.fybz1-1.jpg
 ---
 
-As-salaamu 'alaikum wa rahmatullahi wa barakaatuh,
+As-salāmu ʿalaykum wa raḥmatullāhi wa barakātuh,
 
-Bismillahi walhamdulillah was-salaatu was-salaamu 'alaa Rasoolillah
+Bismillahi walḥamdulillāh was-ṣalātu was-salāmu 'alaa Rasūlillāh
 
 Reminder of lecture this Sunday on:
 
@@ -18,11 +18,11 @@ Gathering 1 of 3: A Harmonious Home
 
 Speaker: Brother Nacim
 
-Date & Time:  
- Sunday, March 5th 1:00pm
+Date & Time:
+Sunday, March 5th 1:00pm
 
 Location:
-Musalla As-Sahaba
+Muṣallá As-Ṣaḥāba
 
 (2835 Dumaurier Ave., Ramsey)
 
@@ -32,4 +32,4 @@ Please note that this lecture will not be broadcast.
 
 Please pass on this message.
 
-Jazakumullahu khair.
+Jazākumullahu khair.

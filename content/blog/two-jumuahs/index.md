@@ -6,11 +6,11 @@ imageUrl: https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/03/
 thumbnailUrl: https://wallpaperaccess.com/full/935683.jpg
 ---
 
-As-salāmu ʿalaykum wa rahmatullāhi wa barakātuh,
+As-salāmu ʿalaykum wa raḥmatullāhi wa barakātuh,
 
-Bismillahi walhamdulillah was-salaatu was-salaamu 'alaa Rasoolillah
+Bismillahi walḥamdulillāh was-ṣalātu was-salāmu 'alaa Rasūlillāh
 
 Due to the ongoing COVID-19 restrictions imposed by the city and maximum capacity restrictions, we will be temporarily having two Jumʿuah prayer sessions:
 
-- 1st Khuṭbah: `1:00 PM`
-- 2nd Khuṭbah: `1:45 PM`
+- 1st Khuṭbah: ʿ1:00 PMʿ
+- 2nd Khuṭbah: ʿ1:45 PMʿ

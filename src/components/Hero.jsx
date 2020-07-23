@@ -53,7 +53,7 @@ const placeholder = {
 const onFajrPdfClicked = () => window.analytics.track('FajrTimingPdf');
 const onCalendarClicked = () => window.analytics.track('Calendar');
 
-const Header = () => {
+const Hero = () => {
   const { hero } = useContext(PortfolioContext);
   const {
     latitude,
@@ -137,4 +137,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Hero;

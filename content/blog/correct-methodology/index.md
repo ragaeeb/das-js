@@ -6,18 +6,18 @@ imageUrl: https://s7.gifyu.com/images/14435340_302749223422475_72610282526126211
 thumbnailUrl: https://s7.gifyu.com/images/14425494_302748453422552_5900295896030605932_o.jpg_nc_cat104_nc_sid8024bb_nc_ohcgpwiX_WAVZ0AX_--llH_nc_htscontent-lga3-1.jpg
 ---
 
-As-salaamu 'alaikum wa rahmatullahi wa barakaatuh,
+As-salāmu ʿalaykum wa raḥmatullāhi wa barakātuh,
 
-Bismillahi walhamdulillah was-salaatu was-salaamu 'alaa Rasoolillah
+Bismillahi walḥamdulillāh was-ṣalātu was-salāmu 'alaa Rasoolillah
 
-Dar As-Sahaba presents...
+Dār As-Ṣaḥāba presents...
 
 Characteristics of the Correct Methodology
 
 Taught by:
 
-Ash-Shaykh Dr. 'Abdur Rahman Omisan
-(Former Professor of the Islamic University of Madinah, Director of Al-Siddique Center, Hamtramck, MI, USA)
+al-Shaykh Dr. ʿAbd al-Raḥmān ʿUmaysān
+(Former Professor of the Islāmic University of Madīnah, Director of Al-Ṣiddīque Center, Hamtramck, MI, USA)
 
 Date & Time:
 
@@ -28,17 +28,17 @@ Long Weekend
 (Note: the iqaamah for Dhuhr prayer will be earlier @ 1:00pm to allow more time for the lecture)
 
 Location:
-Musalla As-Sahaba
+Muṣallá As-Ṣaḥāba
 
 (2835 Dumaurier Ave., Ramsey)
 
-This class is free for both brothers and sisters and we encourage you to benefit from this blessed knowledge and attend. Due to the small size of the Musalla, we ask you to please refrain from distracting others so we can all benefit from the lectures.
+This class is free for both brothers and sisters and we encourage you to benefit from this blessed knowledge and attend. Due to the small size of the Muṣallá, we ask you to please refrain from distracting others so we can all benefit from the lectures.
 
 Please pass on this message.
 
-Jazakumullahu khair.
+Jazākumullahu khair.
 
-Please note that this lecture will be broadcast, in-sha-Allah, at the following link:
+Please note that this lecture will be broadcast, in-shāʾ-Allāh, at the following link:
 
 MIXLR:
 
@@ -46,11 +46,11 @@ mixlr.com/dar-as-sahaba
 
 Regarding the online broadcasting, we would like to mention a few points:
 
-1. No recording please. Recording is only permitted for Dar As-Sahaba Admin.
+1. No recording please. Recording is only permitted for Dār As-Ṣaḥāba Admin.
 2. If there are any technical difficulties, please be patient and we will try to get it fixed for the following class.
 3. Due to time restrictions and our attention on the lecture, we will not be able to entertain any questions/comments from our online participants.
 
-Barakallahu feekum, we appreciate your understanding and cooperation in the above matters.
+Bārak Allāhu fīkum, we appreciate your understanding and cooperation in the above matters.
 
 For our international online participants, please consult the world clock (links below) to find out the lecture time in your local time zone.
 

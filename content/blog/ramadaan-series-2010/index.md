@@ -1,22 +1,22 @@
 ---
-title: 'RAMADAAN SERIES'
+title: 'RAMAḌĀN SERIES'
 date: '2010-07-23T00:39:54.169Z'
-description: 'by Shaykh Abu ‘Abdur-Rahman Mohamed ‘Ali'
+description: 'by Shaykh Abū ʿAbd al-Raḥmān Muḥammad ʿAlī'
 imageUrl: https://vid.alarabiya.net/images/2020/04/23/9d24cce2-e08d-4d5d-be96-0a84b347b614/9d24cce2-e08d-4d5d-be96-0a84b347b614_16x9_600x338.jpg
 thumbnailUrl: https://dubaiweek.ae/wp-content/uploads/2018/05/Ramadan-Moon.jpg
 ---
 
-As-salaamu ‘alaikum wa rahmatullahi wa barakaatuh,
+As-salāmu ʿalaykum wa raḥmatullāhi wa barakātuh,
 
-Dar As-Sahaba presents…
+Dār As-Ṣaḥāba presents…
 
-RAMADAAN SERIES
+RAMAḌĀN SERIES
 Focusing on a number of issues related
-to the month of Ramadaan
+to the month of Ramaḍān
 
 Taught by:
-Shaykh Abu ‘Abdur-Rahman Mohamed ‘Ali
-(Graduate of the Islamic University of Madeenah, Faculty of Hadeeth)
+Shaykh Abū ʿAbd al-Raḥmān Muḥammad ʿAlī
+(Graduate of the Islāmic University of Madīnah, Faculty of ḥadīth)
 
 Date & Time:
 
@@ -27,11 +27,11 @@ Date & Time:
 All lectures are from 6:30pm until 8:00pm
 
 Location:
-Musalla As-Sahaba (2835 Dumaurier Ave., Ramsey)
+Muṣallá As-Ṣaḥāba (2835 Dumaurier Ave., Ramsey)
 
 This class is free for both brothers and sisters and we encourage you to benefit from this blessed knowledge and attend.
 
 Please pass on this message.
 
 —
-Dar As-Sahaba Admin
+Dār As-Ṣaḥāba Admin

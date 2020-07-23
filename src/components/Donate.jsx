@@ -23,7 +23,7 @@ const DonateOption = ({ avatar, title, children, status }) => {
   );
 };
 
-const Header = () => {
+const Donate = () => {
   const {
     donations: { expenses = [] },
   } = useContext(PortfolioContext);
@@ -178,4 +178,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Donate;
