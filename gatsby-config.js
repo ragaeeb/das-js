@@ -108,6 +108,15 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        // https://www.gatsbyjs.org/packages/gatsby-plugin-mailchimp/
+        endpoint:
+          'https://dar-as-sahaba.us10.list-manage.com/subscribe/post?u=fb77af966072ae0c6869a5338&amp;id=4e33a0fe4b', // string; add your MC list endpoint here; see instructions below
+        timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Dar as-Sahaba Assocation`,

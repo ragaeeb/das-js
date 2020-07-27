@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.0] - 2020-07-26
+
+### Added
+
+- [Link dar-as-sahaba address with google maps](https://github.com/ragaeeb/das-js/issues/194)
+- [Add support for mailchimp](https://github.com/ragaeeb/das-js/issues/125)
+- [Added more blog posts](https://github.com/ragaeeb/das-js/issues/27)
+
 ## [0.5.5] - 2020-07-22
 
 ### Updated

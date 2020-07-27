@@ -213,9 +213,11 @@ export const contactInfo = {
   cta:
     'Feel free to drop by the muṣallá at any time to perform the congregational prayers and to partake in the activities. If you would require help with learning about Islām and wish to speak to one of the members of the administration, please contact us through the website first so that we can schedule an appointment with you at a convenient time in shā’ Allāh.',
   emailButton: 'Email Us',
+  mailingList: 'Mailing List',
   email: 'dar.as.sahaba@gmail.com',
   telButton: 'Call Us',
   tel: '+16133215459',
+  address: '2835 Dumaurier Ave, Ottawa, ON, Canada',
 };
 
 export const footerData = {
