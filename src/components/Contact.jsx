@@ -1,4 +1,5 @@
 import Fade from '@kogk/react-reveal/Fade';
+import { Link } from 'gatsby';
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import PortfolioContext from '../context/context';
@@ -6,7 +7,7 @@ import Title from './Title';
 
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);
-  const { cta, emailButton, telButton, email, tel } = contact;
+  const { cta, emailButton, mailingList, telButton, email, tel, address } = contact;
 
   const onContactClicked = (key) => () => window.analytics.track(key);
 
@@ -17,7 +18,16 @@ const Contact = () => {
         <Fade bottom duration={1000} delay={800} distance="30px">
           <div className="contact-wrapper">
             <p className="contact-wrapper__text">{cta}</p>
-            <p className="contact-wrapper__text">2835 Dumaurier Ave, Ottawa, ON, Canada</p>
+            <p className="contact-wrapper__text">
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://goo.gl/maps/14LYnHa7R9sZsQBG7"
+                style={{ color: 'white' }}
+              >
+                {address}
+              </a>
+            </p>
             <p className="contact-wrapper__text">K2B 7W3</p>
             <a
               target="_blank"
@@ -37,6 +47,11 @@ const Contact = () => {
             >
               {telButton}
             </a>
+            <Link to="newsletter">
+              <a className="cta-btn cta-btn--resume" href="newsletter">
+                {mailingList}
+              </a>
+            </Link>
           </div>
         </Fade>
       </Container>
