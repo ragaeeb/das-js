@@ -1,6 +1,10 @@
 import { describe, expect, it } from '@jest/globals';
 import { daily, isFard, monthly } from '../../src/utils/calculator';
 
+const MIDDLE_OF_THE_NIGHT = '1/2 Night Begins';
+const LAST_THIRD_OF_THE_NIGHT = 'Last 1/3 Night Begins';
+const TIMEZONE = 'America/Toronto';
+
 const salatLabels = {
   fajr: 'Fajr',
   sunrise: 'Sunrise',
@@ -8,8 +12,8 @@ const salatLabels = {
   asr: 'ʿAṣr',
   maghrib: 'Maġrib',
   isha: 'ʿIshāʾ',
-  middleOfTheNight: '1/2 Night Begins',
-  lastThirdOfTheNight: 'Last 1/3 Night Begins',
+  middleOfTheNight: MIDDLE_OF_THE_NIGHT,
+  lastThirdOfTheNight: LAST_THIRD_OF_THE_NIGHT,
 };
 
 describe('calculator', () => {
@@ -19,7 +23,7 @@ describe('calculator', () => {
         salatLabels,
         '45.3506',
         '-75.793',
-        'America/Toronto',
+        TIMEZONE,
         new Date(2020, 5, 19, 10, 24, 0),
         {
           fajr: '4:45 AM',
@@ -97,13 +101,13 @@ describe('calculator', () => {
           },
           {
             event: 'middleOfTheNight',
-            label: '1/2 Night Begins',
+            label: MIDDLE_OF_THE_NIGHT,
             time: '12:21 AM',
             value: new Date(2020, 5, 20, 4, 21, 0), // GMT-4
           },
           {
             event: 'lastThirdOfTheNight',
-            label: 'Last 1/3 Night Begins',
+            label: LAST_THIRD_OF_THE_NIGHT,
             time: '1:30 AM',
             value: new Date(2020, 5, 20, 5, 30, 0), // GMT-4
           },
@@ -116,7 +120,7 @@ describe('calculator', () => {
         salatLabels,
         '45.3506',
         '-75.793',
-        'America/Toronto',
+        TIMEZONE,
         new Date(2020, 6, 6, 16, 17, 0),
         {
           fajr: {
@@ -160,7 +164,7 @@ describe('calculator', () => {
           salatLabels,
           '45.3506',
           '-75.793',
-          'America/Toronto',
+          TIMEZONE,
           new Date(2020, 5, 19, 10, 24, 0)
         );
         expect(result.label).toEqual('June 2020');
@@ -203,13 +207,13 @@ describe('calculator', () => {
           },
           {
             event: 'middleOfTheNight',
-            label: '1/2 Night Begins',
+            label: MIDDLE_OF_THE_NIGHT,
             time: '12:19 AM',
             value: new Date(2020, 5, 2, 4, 19, 0), // GMT-4
           },
           {
             event: 'lastThirdOfTheNight',
-            label: 'Last 1/3 Night Begins',
+            label: LAST_THIRD_OF_THE_NIGHT,
             time: '1:30 AM',
             value: new Date(2020, 5, 2, 5, 30, 0), // GMT-4
           },
@@ -254,13 +258,13 @@ describe('calculator', () => {
           },
           {
             event: 'middleOfTheNight',
-            label: '1/2 Night Begins',
+            label: MIDDLE_OF_THE_NIGHT,
             time: '12:24 AM',
             value: new Date(2020, 6, 1, 4, 24, 0), // GMT-4
           },
           {
             event: 'lastThirdOfTheNight',
-            label: 'Last 1/3 Night Begins',
+            label: LAST_THIRD_OF_THE_NIGHT,
             time: '1:33 AM',
             value: new Date(2020, 6, 1, 5, 33, 0), // GMT-4
           },
@@ -272,7 +276,7 @@ describe('calculator', () => {
           salatLabels,
           '45.3506',
           '-75.793',
-          'America/Toronto',
+          TIMEZONE,
           new Date(2020, 5, 19, 10, 24, 0)
         );
         expect(result.dates).toHaveLength(30);
@@ -283,7 +287,7 @@ describe('calculator', () => {
           salatLabels,
           '45.3506',
           '-75.793',
-          'America/Toronto',
+          TIMEZONE,
           new Date(2020, 6, 19, 10, 24, 0)
         );
         expect(result.dates).toHaveLength(31);
