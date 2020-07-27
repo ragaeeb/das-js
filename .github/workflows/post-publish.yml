@@ -1,0 +1,31 @@
+name: Post-publish Workflows
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test for public javascript library vulnerabilities
+        uses: lirantal/is-website-vulnerable@master
+        with:
+          scan-url: 'https://dar-as-sahaba.com'
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running Page Speed Insights (Mobile)
+        uses: jakepartusch/psi-action@v1
+        id: psi_mobile
+        with:
+          url: 'https://dar-as-sahaba.com'
+          threshold: 90
+          strategy: mobile
+      - name: Running Page Speed Insights (Desktop)
+        uses: jakepartusch/psi-action@v1
+        id: psi_desktop
+        with:
+          url: 'https://dar-as-sahaba.com'
+          threshold: 96
+          strategy: desktop
