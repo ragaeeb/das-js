@@ -2,7 +2,7 @@
 title: "Tonight's 40 Aḥadīth Class"
 date: '2010-03-07T20:46:54.169Z'
 description: 'Sunday, March 7th - CANCELLED'
-imageUrl: https://www.4kotob.com/wp-content/uploads/الأربعين-النووية-في-الأحاديث-الصحيحة-للإمام-النووي،-مع-زيادة-ابن-رجب-702x336.jpg
+imageUrl: https://content3.jdmagicbox.com/comp/def_content/libraries/default-libraries-6.jpg
 thumbnailUrl: http://safeeratalislam.sabbora.com/wp-content/uploads/2018/02/WhatsApp-Image-2018-02-02-at-5.02.14-PM.jpeg
 ---
 

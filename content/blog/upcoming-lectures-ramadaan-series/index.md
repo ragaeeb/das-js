@@ -3,7 +3,7 @@ title: 'Upcoming Lectures'
 date: '2009-07-24T15:34:54.169Z'
 description: 'RAMAḌĀN SERIES'
 imageUrl: https://s7.gifyu.com/images/ramadaan-series-2009.jpg
-thumbnailUrl: https://i2-prod.birminghammail.co.uk/incoming/article14668938.ece/ALTERNATES/s1200/Ramadan.jpg
+thumbnailUrl: https://muslimskeptic.com/wpcom-113638781/wp-content/uploads/2019/05/ramadan-half-full-moon.jpg
 ---
 
 As-salāmu ʿalaykum wa raḥmatullāhi wa barakātuh,
