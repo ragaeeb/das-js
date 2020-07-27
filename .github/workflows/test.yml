@@ -8,5 +8,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - uses: bahmutov/npm-install@master
       - name: Run Jest
         uses: stefanoeb/jest-action@1.0.3
