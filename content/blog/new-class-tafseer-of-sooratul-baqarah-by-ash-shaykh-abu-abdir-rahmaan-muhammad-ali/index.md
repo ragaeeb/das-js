@@ -2,7 +2,7 @@
 title: 'NEW CLASS: Tafsīr of Sūrah al-Baqarah'
 date: '2014-10-19T12:17:32.169Z'
 description: "by Ash-Shaykh Abu 'Abdir-Rahmaan Muhammad 'Ali"
-imageUrl: https://i2.wp.com/see.news/wp-content/uploads/2020/04/Quran.png
+imageUrl: http://www.islamicstall.com/media/catalog/category/catergory_banner_pic_of_islamic_books.jpg
 thumbnailUrl: https://media.islamicity.org/wp-content/uploads/2019/09/Quran_isp.jpg
 ---
 
