@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "blog": ["index.md"],
+    "tests": ["*.test.js", "cypress/*/**"],
+    "user-interface": ["*.jsx"]
+  }
+}
