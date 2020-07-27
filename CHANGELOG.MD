@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Add support for mailchimp](https://github.com/ragaeeb/das-js/issues/125)
 - [Remove duplicate CSS properties](https://github.com/ragaeeb/das-js/issues/164)
 - [Add support for Google Pagespeed Insights](https://github.com/ragaeeb/das-js/issues/174)
+- [Auto-label PRs based on file patterns](https://github.com/ragaeeb/das-js/issues/179)
 - [Link dar-as-sahaba address with google maps](https://github.com/ragaeeb/das-js/issues/194)
 
 ## [0.5.5] - 2020-07-22
