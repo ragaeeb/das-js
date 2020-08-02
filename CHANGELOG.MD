@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.1] - 2020-08-01
+
+### Added
+
+- [Update gatsby monorepo](https://github.com/ragaeeb/das-js/pull/203)
+- [Update dependency eslint-plugin-react to v7.20.5](https://github.com/ragaeeb/das-js/pull/204)
+- [Update jest monorepo to v26.2.2](https://github.com/ragaeeb/das-js/pull/205)
+- [Update dependency @babel/plugin-transform-runtime to v7.11.0](https://github.com/ragaeeb/das-js/pull/206)
+- [Update dependency eslint to v7.6.0](https://github.com/ragaeeb/das-js/pull/207)
+- [Update dependency react-chartjs-2 to v2.10.0](https://github.com/ragaeeb/das-js/pull/208)
+- [Added more blog posts](https://github.com/ragaeeb/das-js/issues/27)
+- [Add contact form](https://github.com/ragaeeb/das-js/issues/195)
+
 ## [0.6.0] - 2020-07-26
 
 ### Added
