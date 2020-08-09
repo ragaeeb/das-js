@@ -2,7 +2,7 @@
 title: 'Qurʾān for Beginners, every Tuesday'
 date: '2009-10-25T17:41:45.169Z'
 description: 'Free for Brothers Only'
-imageUrl: https://www.uscatholic.org/sites/default/files/styles/section_feature_large/public/article-images/quran_flickr.jpg
+imageUrl: https://hamiltonmosque.com/wp-content/uploads/2014/06/the-generous-quran-mushaf-cover.jpg
 thumbnailUrl: https://thesaudiexpat.com/wp-content/uploads/2020/01/Holy-Quran-1280x720.jpg
 ---
 

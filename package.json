@@ -3,7 +3,7 @@
   "private": true,
   "homepage": "https://ragaeeb.github.io/das-js",
   "description": "Dar as-Sahābah website",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -52,6 +52,7 @@
     "react-dom": "16.13.1",
     "react-github-btn": "1.2.0",
     "react-helmet": "6.1.0",
+    "react-icons": "3.10.0",
     "react-scroll": "1.8.0",
     "react-tilt": "0.1.4"
   },
@@ -59,7 +60,6 @@
     "@babel/plugin-transform-runtime": "7.11.0",
     "babel-eslint": "10.1.0",
     "babel-jest": "26.2.2",
-    "cypress": "4.11.0",
     "babel-preset-gatsby": "0.5.5",
     "dotenv": "8.2.0",
     "eslint": "7.6.0",

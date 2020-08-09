@@ -1,11 +1,29 @@
 import { Link as RouteLink } from 'gatsby';
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
+import {
+  FaAngleUp,
+  FaFacebook,
+  FaInstagram,
+  FaSoundcloud,
+  FaTelegram,
+  FaTwitter,
+  FaYoutube,
+} from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import { githubButtons } from '../../mock/data';
 import GithubButtons from '../GithubButtons/GithubButtons';
 import GitHash from './GitHash';
+
+const brandToNode = {
+  facebook: <FaFacebook />,
+  instagram: <FaInstagram />,
+  soundcloud: <FaSoundcloud />,
+  telegram: <FaTelegram />,
+  twitter: <FaTwitter />,
+  youtube: <FaYoutube />,
+};
 
 const Footer = () => {
   const { footer } = useContext(PortfolioContext);
@@ -19,7 +37,7 @@ const Footer = () => {
       <Container>
         <span className="back-to-top">
           <Link to="hero" smooth duration={1000}>
-            <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
+            <FaAngleUp size="2em" />
           </Link>
         </span>
         <div className="social-links">
@@ -35,7 +53,7 @@ const Footer = () => {
                   target="_blank"
                   aria-label={name}
                 >
-                  <i className={`fa fa-${name} fa-inverse`} />
+                  {brandToNode[name]}
                 </a>
               );
             })}
