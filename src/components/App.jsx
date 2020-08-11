@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import LazyLoad from 'react-lazyload';
 import { PortfolioProvider } from '../context/context';
 import { aboutData, contactInfo, donationsData, footerData, heroData } from '../mock/data';
 import About from './About';
@@ -28,10 +29,18 @@ function App() {
     <ErrorBoundary>
       <PortfolioProvider value={{ hero, about, donations, contact, footer }}>
         <Hero />
-        <Projects />
-        <About />
-        <Donate />
-        <Contact />
+        <LazyLoad height={100} once>
+          <Projects />
+        </LazyLoad>
+        <LazyLoad>
+          <About />
+        </LazyLoad>
+        <LazyLoad>
+          <Donate />
+        </LazyLoad>
+        <LazyLoad>
+          <Contact />
+        </LazyLoad>
         <Footer />
       </PortfolioProvider>
     </ErrorBoundary>

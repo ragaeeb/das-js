@@ -12,8 +12,6 @@ import {
 } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
-import { githubButtons } from '../../mock/data';
-import GithubButtons from '../GithubButtons/GithubButtons';
 import GitHash from './GitHash';
 
 const brandToNode = {
@@ -28,7 +26,6 @@ const brandToNode = {
 const Footer = () => {
   const { footer } = useContext(PortfolioContext);
   const { networks } = footer;
-  const { isEnabled } = githubButtons;
 
   const onSocialClicked = (name) => () => window.analytics.track(name);
 
@@ -60,7 +57,6 @@ const Footer = () => {
         </div>
         <hr />
         <p className="footer__text">© {new Date().getFullYear()} Dar As-Sahaba Association</p>
-        {isEnabled && <GithubButtons />}
         <GitHash />
         <RouteLink style={{ color: 'white' }} to="privacy">
           Privacy Policy
