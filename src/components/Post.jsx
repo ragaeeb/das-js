@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Tilt from 'react-tilt';
 
 const Post = ({ node }) => {
@@ -43,7 +44,7 @@ const Post = ({ node }) => {
                 }}
               >
                 <div data-tilt className="thumbnail rounded">
-                  <img className="preview" src={pic} alt={title} />
+                  <LazyLoadImage alt={title} className="preview" src={pic} />
                 </div>
               </Tilt>
             </a>

@@ -1,18 +1,39 @@
 import React, { useContext } from 'react';
 import { Container, Toast } from 'react-bootstrap';
 import { Pie } from 'react-chartjs-2';
+import {
+  FaCreditCard,
+  FaDonate,
+  FaHeart,
+  FaMicrophone,
+  FaMoneyBillAlt,
+  FaMoneyCheckAlt,
+  FaPaypal,
+} from 'react-icons/fa';
 import PortfolioContext from '../context/context';
 import { stringToColour } from '../utils/stringUtils';
 import ScreenFade from './ScreenFade';
 import Title from './Title';
 
+const FONT_SIZE = '2em';
+
+const avatarToNode = {
+  directDeposit: <FaMoneyCheckAlt size={FONT_SIZE} color="green" />,
+  heart: <FaHeart size={FONT_SIZE} color="red" />,
+  interac: <FaCreditCard size={FONT_SIZE} color="#ebab1f" />,
+  khutbah: <FaMicrophone size={FONT_SIZE} />,
+  moneyIcon: <FaDonate size={FONT_SIZE} color="green" />,
+  money: <FaMoneyBillAlt size={FONT_SIZE} color="darkgreen" />,
+  paypal: <FaPaypal size={FONT_SIZE} color="#003087" />,
+};
+
 const DonateOption = ({ avatar, title, children, status }) => {
   return (
     <Toast style={{ maxWidth: '100%' }}>
       <Toast.Header closeButton={false}>
-        <img src={avatar} width="20px" height="20px" className="rounded mr-2" alt="" />
+        {avatarToNode[avatar]}
         <strong className="mr-auto">
-          <h4>{title}</h4>
+          <h4>&nbsp;{title}</h4>
         </strong>
         <small>{status}</small>
       </Toast.Header>
@@ -59,7 +80,7 @@ const Donate = () => {
           <h2>Why Donate?</h2>
           <center>
             <DonateOption
-              avatar="https://img.icons8.com/plasticine/2x/money.png"
+              avatar="money"
               title="Seeking the Pleasure of Allāh"
               status="(Al-Baqarah 2:262)"
             >
@@ -67,20 +88,14 @@ const Donate = () => {
                 '{Those who spend their wealth in the Cause of Allah, and do not follow up their gifts with reminders of their generosity or with injury, their reward is with their Lord. On them shall be no fear, nor shall they grieve}'
               }
             </DonateOption>
-            <DonateOption
-              avatar="https://blacklabelagency.com/wp-content/uploads/2017/08/money-icon.png"
-              title="Collect Your Reward"
-            >
+            <DonateOption avatar="moneyIcon" title="Collect Your Reward">
               For as long as the muṣallá remains open by your donations, you are collecting your
               reward for every person who is establishing the prayer, for every lesson that is being
               organized and every Muslim who is learning from the lesson, from every lost youth
               seeking the truth and changes their life around by way of it. You are collecting your
               reward for everyone that is affected by your good deeds.
             </DonateOption>
-            <DonateOption
-              avatar="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/160px-Heart_coraz%C3%B3n.svg.png"
-              title="Help Spread the Daʿwah"
-            >
+            <DonateOption avatar="heart" title="Help Spread the Daʿwah">
               When you participate in online giving, you’re also helping to streamline
               administrative overhead costs – thus, putting more of your dollars to work in keeping
               the muṣallá running.
@@ -93,10 +108,7 @@ const Donate = () => {
         <ScreenFade>
           <h2>Ways to Donate</h2>
           <center>
-            <DonateOption
-              avatar="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/250_Paypal_logo-512.png"
-              title="PayPal"
-            >
+            <DonateOption avatar="paypal" title="PayPal">
               {' '}
               It is possible and convenient to give online (either one time or automatically) using
               your PayPal account. It’s easy and it’s secure. May Allāh reward you!
@@ -112,10 +124,7 @@ const Donate = () => {
                 Donate via PayPal
               </a>
             </DonateOption>
-            <DonateOption
-              avatar="https://static.wixstatic.com/media/d16608_9f68dcfa6514454b83b9c966106bcdde~mv2.jpg/v1/fill/w_314,h_314,al_c,lg_1,q_85/d16608_9f68dcfa6514454b83b9c966106bcdde~mv2.jpg"
-              title="E-Transfer"
-            >
+            <DonateOption avatar="interac" title="E-Transfer">
               {' '}
               If you would like to make manual donations from your bank, you can easily donate money
               via e-transfer to the email address:{' '}
@@ -127,19 +136,13 @@ const Donate = () => {
               <br />
               Please use the answer: <strong>maintenance expense</strong>.
             </DonateOption>
-            <DonateOption
-              avatar="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/money_bag-512.png"
-              title="Direct Deposit"
-            >
+            <DonateOption avatar="directDeposit" title="Direct Deposit">
               If you would like your monthly donation amount to be automatically deducted from your
               bank account, we have a direct-deposit form available that you can fill out. Simply
               drop by the muṣallá when any of the administration is there and ask for the form so
               that we can get you set up in shā’ Allah.
             </DonateOption>
-            <DonateOption
-              avatar="https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-39-512.png"
-              title="After Jumuʿah Khuṭbah"
-            >
+            <DonateOption avatar="khutbah" title="After Jumuʿah Khuṭbah">
               After the Friday sermon, donations for the muṣallá are collected. Sometimes there are
               baked goods and food that are also being sold for fundraising for the muṣallá. Please
               donate generously for the sake of Allāh.

@@ -3,7 +3,7 @@ title: 'NEW CLASS: Waṣiyyah for the Student of Knowledge'
 date: '2014-10-19T12:14:32.169Z'
 description: 'by Ash-Shaykh Abū ʿAbd al-Raḥmān Muḥammad ʿAlī'
 imageUrl: https://www.uscatholic.org/sites/default/files/styles/section_feature_large/public/article-images/quran_flickr.jpg
-thumbnailUrl: https://www.islamicwisdom.net/wp-content/uploads/2012/07/LJ2m3L4.jpg
+thumbnailUrl: https://i.ytimg.com/vi/KYLR2El62fI/maxresdefault.jpg
 ---
 
 As-salāmu ʿalaykum wa raḥmatullāhi wa barakātuh,

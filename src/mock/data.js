@@ -97,7 +97,10 @@ export const heroData = {
       5: '1:00 PM',
       6: '1:00 PM',
       7: ['1:00 PM', '1:45 PM'],
-      8: ['1:00 PM', '1:45 PM'],
+      8: {
+        1: ['1:00 PM', '1:45 PM'],
+        10: '1:00 PM',
+      },
       9: '1:00 PM',
       10: '1:00 PM',
       11: '12:30 PM',
@@ -249,8 +252,4 @@ export const footerData = {
       url: 'https://www.youtube.com/channel/UC4JRttylAMmZubEmFOjX7Vg',
     },
   ],
-};
-
-export const githubButtons = {
-  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };
