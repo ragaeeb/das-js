@@ -2,8 +2,8 @@
 title: 'Rights of the Relatives'
 date: '2009-07-20T23:48:54.169Z'
 description: 'Shaykh Muḥammad Ṣāliḥ al-ʿUthaymīn'
-imageUrl: http://30masjids.ca/wp-content/uploads/2011/08/Day-5-taric-toronto-and-region-islamic-congregation-five-mihrabs-panoramic.jpg
-thumbnailUrl: http://30masjids.ca/wp-content/uploads/2011/08/Day-5-taric-toronto-and-region-islamic-congregation-west-view-from-highways-400-401.jpg
+imageUrl: https://64.media.tumblr.com/5f557646e37b903e68cf413ee8d6ed91/tumblr_mznbokAOfK1r5gx4jo1_1280.jpg
+thumbnailUrl: https://64.media.tumblr.com/2cf3e883e76044b709ec318a9ae62799/29fb838e6a1b26c4-07/s500x750/e4a70ac7220b47710d7237e70f630e580359dc7a.png
 ---
 
 Shaykh Muḥammad Ṣāliḥ al-ʿUthaymīn [1]
