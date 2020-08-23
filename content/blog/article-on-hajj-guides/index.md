@@ -10,7 +10,7 @@ As salāmu ʿalaikum wa raḥmatullāhi wa barakātuh,
 
 For those who are planning on making ḥajj, attached is an article on ḥajj and below is a link to quick reference guides in various languages available for download.
 
-http://fatwa-online.com/downloads/dow006/index.htm
+`http://fatwa-online.com/downloads/dow006/index.htm`
 
 Also, below is a link containing numerous fatawaa from the scholars related to ḥajj and various other issues. We hope that this will be of benefit.
 
