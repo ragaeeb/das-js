@@ -2,8 +2,8 @@
 title: '1st day of Ramaḍān 1436 AH'
 date: '2015-06-16T23:53:32.169Z'
 description: 'Thursday, June 18th, 2015, in shā’ Allāh'
-imageUrl: https://images.thestar.com/PYXxLHk_4VgZr7xZfMkCYCn9J4s=/1086x688/smart/filters:cb(2700061000)/https://www.thespec.com/content/dam/thespec/opinion/contributors/2017/06/06/for-muslims-ramadan-is-a-month-of-charity-and-forgiveness/B823387220Z.1_20170606141630_000_GAE1T5VV7.2_Gallery.jpg
-thumbnailUrl: https://kawa-news.com/wp-content/uploads/2020/04/Arabic-Asia-ConvertImage-820x500.jpg
+imageUrl: https://s8.gifyu.com/images/2015-Ramadaan-Calendar-pdf.jpg
+thumbnailUrl: https://s8.gifyu.com/images/2015-Ramadaan-Calendar-pdf.md.jpg
 ---
 
 As-salaamu 'alaikum wa raḥmatullāhi wa barakātuh,

@@ -2,8 +2,8 @@
 title: 'NEW CLASS: Explanation of the Aḥadīth from the Chapter of Purification of Bulūġ al-Marām'
 date: '2014-10-19T12:02:32.169Z'
 description: "by Ash-Shaykh Abu 'Abdir-Rahmaan Muhammad 'Ali - LIVE IN PERSON"
-imageUrl: https://inkoffaith.com/wp-content/uploads/2019/03/Wudhu.jpg
-thumbnailUrl: https://cdn.shortpixel.ai/spai/w_692+q_lossy+ret_img+to_webp/https://www.greenprophet.com/wp-content/uploads/2011/11/eco-wudhu-water-environment-740x360.jpg
+imageUrl: https://s8.gifyu.com/images/explanation-purification-bulugh.jpg
+thumbnailUrl: https://s8.gifyu.com/images/explanation-purification-bulugh.md.jpg
 ---
 
 As-salāmu ʿalaykum wa raḥmatullāhi wa barakātuh,

@@ -2,7 +2,7 @@
 title: "Explanation of the Prophet's Prayer Described"
 date: '2010-03-24T07:41:54.169Z'
 description: 'Intensive Course'
-imageUrl: https://images-na.ssl-images-amazon.com/images/I/51Y-tku3mgL.jpg
+imageUrl: https://s8.gifyu.com/images/Prayer-Described.jpg
 thumbnailUrl: https://cdn11.bigcommerce.com/s-jwsaz/images/stencil/1280x1280/products/2814/9321/The_Abridged_Prophets_Prayer_Described_1__01321.1529824761.jpg
 ---
 

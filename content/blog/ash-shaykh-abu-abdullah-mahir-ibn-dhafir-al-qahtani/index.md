@@ -2,7 +2,7 @@
 title: "ASH-SHAYKH ABU 'ABDULLAH MAHIR IBN DHAFIR AL-QAHTANI"
 date: '2012-11-18T21:06:32.169Z'
 description: 'LIVE IN PERSON'
-imageUrl: https://s7.gifyu.com/images/maher-1024x682.jpg
+imageUrl: https://s8.gifyu.com/images/ottawalectures.png
 thumbnailUrl: https://s7.gifyu.com/images/maher2.jpg
 ---
 

@@ -2,7 +2,7 @@
 title: 'Lectures on An-Niyyah & The Explanation of the Ḥadīth: Verily the Ḥalāl is Clear and the ḥarām is Clear'
 date: '2008-06-12T05:37:54.169Z'
 description: 'Friday, June 13th at As-Ṣaḥāba Library @ 7:00pm'
-imageUrl: https://64.media.tumblr.com/be76d03b361344940e606e2f62816cd3/tumblr_pjqrje2PqF1qb0bzxo1_1280.jpg
+imageUrl: https://s8.gifyu.com/images/hadeeth-1-2-of-40-ahadeeth-an-nawawee-pdf.jpg
 thumbnailUrl: https://64.media.tumblr.com/e3906fcd24a394dcef84ac011e0b721f/tumblr_o2b9o371vL1v4cegfo1_1280.jpg
 ---
 

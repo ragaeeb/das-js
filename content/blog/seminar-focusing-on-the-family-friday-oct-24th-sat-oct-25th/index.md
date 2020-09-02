@@ -2,8 +2,8 @@
 title: 'Seminar Focusing On The Family'
 date: '2008-10-19T14:25:54.169Z'
 description: 'Friday, Oct. 24th and Sat. Oct. 25th'
-imageUrl: https://64.media.tumblr.com/6d05e1c3cfa51577fd482f19fdefa0a9/tumblr_pitke1fmQ21wf2d1yo1_540.jpg
-thumbnailUrl: https://64.media.tumblr.com/14d34e9d1daf4e650d699184ad51f787/tumblr_oqh06jRnlf1rnqolfo1_640.jpg
+imageUrl: https://s8.gifyu.com/images/Guidelines-Blissful-Family.gif
+thumbnailUrl: https://s8.gifyu.com/images/2008-family-seminar-8x12-BW-flyer.md.jpg
 ---
 
 As salāmu ʿalaikum wa raḥmatullāhi wa barakātuh,
