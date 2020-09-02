@@ -1,5 +1,5 @@
 ---
-title: 'Shaykh Abū ʿAbd al-Raḥmān's Classes to Resume This Weekend'
+title: "Shaykh Abū ʿAbd al-Raḥmān's Classes to Resume This Weekend"
 date: '2008-10-09T10:40:54.169Z'
 description: 'in-shāʾ Allāh'
 imageUrl: https://64.media.tumblr.com/a68c153460cf175dba4ed6bc9f1e669a/tumblr_nswry6aPE61tnk5zlo1_1280.jpg

@@ -42,7 +42,7 @@ August 30th – room: Azrieli theather 102
 
 A map of the university campus, including the location of the Azrieli Theatre, can be found by clicking on the following link (The Azrieli Theatre is #31 on the map):
 
-http://www.doe.carleton.ca/contact.php
+`http://www.doe.carleton.ca/contact.php`
 
 Brothers should enter the theatre from the door on the left and sit in the seats that are the centre of the room.
 

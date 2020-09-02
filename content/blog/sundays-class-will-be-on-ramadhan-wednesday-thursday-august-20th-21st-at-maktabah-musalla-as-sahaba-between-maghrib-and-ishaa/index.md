@@ -1,5 +1,5 @@
 ---
-title: 'Sunday's Class will be on Ramaḍān, Wednesday, Thursday, August 20th, 21st at Maktabah'
+title: "Sunday's Class will be on Ramaḍān, Wednesday, Thursday, August 20th, 21st at Maktabah"
 date: '2008-08-19T13:00:54.169Z'
 description: 'Muṣallá As-Ṣaḥāba between Maġrib and ʿIshā'
 imageUrl: https://64.media.tumblr.com/8912a6221727f7cc022acfe88b8bd457/e09e5b30858ba05b-9e/s1280x1920/79ac8ba43c6f93497fa65bb626afac9b7aa3210f.jpg

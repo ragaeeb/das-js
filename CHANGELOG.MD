@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.4] - 2020-09-02
+
+### Updated
+
+- [Added more blog posts](https://github.com/ragaeeb/das-js/issues/27)
+- [Upgrade dependency packages](https://github.com/ragaeeb/das-js/issues/5)
+
 ## [0.6.3] - 2020-08-23
 
 ### Updated

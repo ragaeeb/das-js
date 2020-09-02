@@ -26,7 +26,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         </p>
         {imageUrl && (
           <div className="project-wrapper__image">
-            <img src={imageUrl} alt={title} className="full" />
+            <img loading="lazy" src={imageUrl} alt={title} className="full" />
           </div>
         )}
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
