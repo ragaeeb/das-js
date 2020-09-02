@@ -45,6 +45,6 @@ Camping checklist to make your stay more comfortable.
 – Foil
 
 Website suggestion to check out for recipe ideas
-http://www.koa.com/recipes/campfirecooking.htm
+`http://www.koa.com/recipes/campfirecooking.htm`
 
 Bārak Allāhu fīkum.
