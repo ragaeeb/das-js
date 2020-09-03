@@ -8,6 +8,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@main
-      #- uses: bahmutov/npm-install@master
+      - name: Install modules
+        run: yarn
       - name: Run Jest
-        uses: stefanoeb/jest-action@1.0.3
+        run: yarn test

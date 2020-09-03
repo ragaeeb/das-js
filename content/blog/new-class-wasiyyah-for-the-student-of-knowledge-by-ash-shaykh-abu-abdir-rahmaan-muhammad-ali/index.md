@@ -2,7 +2,7 @@
 title: 'NEW CLASS: Waṣiyyah for the Student of Knowledge'
 date: '2014-10-19T12:14:32.169Z'
 description: 'by Ash-Shaykh Abū ʿAbd al-Raḥmān Muḥammad ʿAlī'
-imageUrl: https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg
+imageUrl: https://pbs.twimg.com/media/B1ATioSIAAAqECq.jpg
 thumbnailUrl: https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
 ---
 

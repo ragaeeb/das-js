@@ -3,7 +3,7 @@ title: 'RAMAḌĀN SERIES'
 date: '2010-07-23T00:39:54.169Z'
 description: 'by Shaykh Abū ʿAbd al-Raḥmān Muḥammad ʿAlī'
 imageUrl: https://vid.alarabiya.net/images/2020/04/23/9d24cce2-e08d-4d5d-be96-0a84b347b614/9d24cce2-e08d-4d5d-be96-0a84b347b614_16x9_600x338.jpg
-thumbnailUrl: https://dubaiweek.ae/wp-content/uploads/2018/05/Ramadan-Moon.jpg
+thumbnailUrl: https://64.media.tumblr.com/b39c5039c05c376503c244214863e0f9/tumblr_nljrj4Nawv1s1vn29o1_500.jpg
 ---
 
 As-salāmu ʿalaykum wa raḥmatullāhi wa barakātuh,

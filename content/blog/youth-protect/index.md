@@ -1,8 +1,8 @@
 ---
-title: LECTURE - 'Oh Youth! Be mindful of Allāh and Allāh will protect you'
+title: "LECTURE - 'Oh Youth! Be mindful of Allāh and Allāh will protect you'"
 date: '2016-12-23T13:38:45.169Z'
 description: 'by Brother Ayuub Peart - Saturday, December 24th, 2016'
-imageUrl: https://images.indianexpress.com/2020/04/ramadan_1200.jpg
+imageUrl: https://s8.gifyu.com/images/youth_protect.jpg
 thumbnailUrl: https://menafn.com/updates/pr/2020-03/11/KT_77b5d902-9image_story.jpg
 ---
 

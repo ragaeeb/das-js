@@ -2,11 +2,11 @@
 title: '1st day of Ramaḍān, 1431AH'
 date: '2010-08-10T19:34:45.169Z'
 description: 'Wednesday, August 11th, 2010'
-imageUrl: https://i.ebayimg.com/00/s/NTM1WDg1Ng==/z/7iwAAOSwyi5crO15/$_57.JPG
-thumbnailUrl: https://amp.thenational.ae/image/policy:1.853141:1556971870/42-19770248.jpg
+imageUrl: https://s8.gifyu.com/images/2010_Ramadaan_Calendar-pdf.jpg
+thumbnailUrl: https://s8.gifyu.com/images/2010_Ramadaan_Calendar-pdf.md.jpg
 ---
 
-[2010 Ramadan Calendar](https://drive.google.com/file/d/1Ohlpvhy3to7B1Toc_LkdyeuFCf8jBzoz)
+[2010 Ramaḍān Calendar](https://drive.google.com/file/d/1Ohlpvhy3to7B1Toc_LkdyeuFCf8jBzoz)
 
 As-salaamu ‘alaikum wa raḥmatullāhi wa barakātuh,
 
@@ -23,7 +23,7 @@ Dār As-Ṣaḥāba Admin
 
 --
 
-HJC – 1st day of Ramadān 1431 – Wednesday 11 August 2010…
+HJC – 1st day of Ramaḍān 1431 – Wednesday 11 August 2010…
 
 Official Decision and Announcement of the High Judiciary Council of Saudi Arabia…
 

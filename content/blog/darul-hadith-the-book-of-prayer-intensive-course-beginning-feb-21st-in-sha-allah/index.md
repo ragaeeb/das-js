@@ -2,7 +2,7 @@
 title: 'The Book of Prayer Intensive Course'
 date: '2009-02-08T23:01:54.169Z'
 description: 'Beginning Feb. 21st, in-shāʾ-Allāh'
-imageUrl: https://images.pexels.com/photos/1294229/pexels-photo-1294229.jpeg
+imageUrl: https://sites.google.com/site/darulhadiths/darul-hadith_prayer-course-large.jpg
 thumbnailUrl: https://images.pexels.com/photos/1294229/pexels-photo-1294229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
 ---
 

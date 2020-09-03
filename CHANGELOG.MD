@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.4] - 2020-09-02
+
+### Updated
+
+- [Added more blog posts](https://github.com/ragaeeb/das-js/issues/27)
+- [Upgrade dependency packages](https://github.com/ragaeeb/das-js/issues/5)
+- [Use lazy loading for blog post images](https://github.com/ragaeeb/das-js/issues/228)
+
 ## [0.6.3] - 2020-08-23
 
 ### Updated
@@ -274,7 +282,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - [Display timings for prev/next dates](https://github.com/ragaeeb/das-js/issues/1)
 - [Each react fragment should have a unique key](https://github.com/ragaeeb/das-js/issues/2)
-- [Add link to Ramadan schedule PDF](https://github.com/ragaeeb/das-js/issues/3)
+- [Add link to Ramaḍān schedule PDF](https://github.com/ragaeeb/das-js/issues/3)
 - [Timings and About section are getting overlapped on some phones](https://github.com/ragaeeb/das-js/issues/4)
 - [Upgrade dependency packages](https://github.com/ragaeeb/das-js/issues/5)
 - [Add changelog](https://github.com/ragaeeb/das-js/issues/6)
