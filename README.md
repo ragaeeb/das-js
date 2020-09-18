@@ -2,6 +2,24 @@ Tutorials: +[Prayer Timings](http://ior.ad/75n0)
 
 # Gatsby Simplefolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobidev/gatsby-simplefolio?color=blue)](https://github.com/cobidev/gatsby-simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobidev/gatsby-simplefolio) ![GitHub forks](https://img.shields.io/github/forks/cobidev/gatsby-simplefolio)
 
+If we ever want to import an image directly which Gatsby can process we can do it like this:
+
+Let's say we wanted to include image from 'src/images/das_bg.jpg', we can do:
+
+```
+
+import dasBg from '../images/das_bg.jpg';
+
+```
+
+And then in the `render()`
+
+```
+<img src={dasBg} />
+```
+
+Learned from tutorial [Level Up Tutorials: Scott Tolinski - Pro Gatsby 2](https://www.leveluptutorials.com/tutorials/pro-gatsby-2)
+
 ## A clean, beautiful and responsive portfolio template for Developers
 
 <h2>
