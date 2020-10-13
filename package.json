@@ -20,7 +20,7 @@
   "dependencies": {
     "@kogk/react-reveal": "1.2.3",
     "adhan": "4.0.1",
-    "bootstrap": "4.5.2",
+    "bootstrap": "4.5.3",
     "chart.js": "2.9.3",
     "gatsby": "2.24.62",
     "gatsby-cli": "2.12.99",
