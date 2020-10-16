@@ -3,7 +3,7 @@ title: 'LECTURE SERIES - Words About Al-Manhaj (The Methodology)'
 date: '2011-12-17T22:19:32.169Z'
 description: 'by al-Shaykh Abū ʿAbd al-Raḥmān Muḥammad ʿAlī ʿAjjāl'
 imageUrl: https://pbs.twimg.com/profile_images/880508130861477889/3R-RVbhL_400x400.jpg
-thumbnailUrl: https://introvertedniqabi.files.wordpress.com/2019/04/maxresdefault.jpg
+thumbnailUrl: https://64.media.tumblr.com/678d85b7d362919bcf6ebbae5ed209f3/b74219b1b75e51a1-af/s1280x1920/f8bbb666d7107a88970677b68733b3c6522cb585.jpg
 ---
 
 As-salāmu ʿalaykum wa raḥmatullāhi wa barakātuh,
@@ -38,7 +38,7 @@ We would like to mention a few points:
 
 For our international WIZIQ participants, please consult the world clock (links below) to find out the lecture time in your local time zone.
 
-http://www.timeanddate.com/worldclock/full.html
+https://www.timeanddate.com/worldclock
 
 http://www.worldtimezone.com/
 

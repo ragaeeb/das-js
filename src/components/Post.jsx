@@ -24,12 +24,7 @@ const Post = ({ node }) => {
       {pic && (
         <Col lg={8} sm={12}>
           <div className="project-wrapper__image">
-            <a
-              href={node.fields.slug || '#!'}
-              target="_blank"
-              aria-label="Project Link"
-              rel="noopener noreferrer"
-            >
+            <Link to={node.fields.slug}>
               <Tilt
                 options={{
                   reverse: false,
@@ -47,7 +42,7 @@ const Post = ({ node }) => {
                   <LazyLoadImage alt={title} className="preview" src={pic} />
                 </div>
               </Tilt>
-            </a>
+            </Link>
           </div>
         </Col>
       )}
