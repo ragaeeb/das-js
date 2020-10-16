@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.7] - 2020-10-16
+
+### Added
+
+- [Added more blog posts](https://github.com/ragaeeb/das-js/issues/27)
+
+### Fixed
+
+- Fixed broken thumbnail links.
+
+### Updated
+
+- [Update dependency eslint-plugin-react to v7.21.4](https://github.com/ragaeeb/das-js/pull/234)
+- [Update dependency preact to v10.5.4](https://github.com/ragaeeb/das-js/pull/235)
+- [Update gatsby monorepo](https://github.com/ragaeeb/das-js/pull/236)
+- [Update dependency eslint-config-prettier to v6.12.0](https://github.com/ragaeeb/das-js/pull/237)
+- [Update dependency eslint to v7.11.0](https://github.com/ragaeeb/das-js/pull/238)
+- [Update dependency eslint-plugin-import to v2.22.1](https://github.com/ragaeeb/das-js/pull/239)
+- [Update dependency eslint-plugin-cypress to v2.11.2](https://github.com/ragaeeb/das-js/pull/240)
+- [Update dependency bootstrap to v4.5.3](https://github.com/ragaeeb/das-js/pull/244)
+- [Update dependency @babel/plugin-transform-runtime to v7.12.1](https://github.com/ragaeeb/das-js/pull/245)
+
 ## [0.6.6] - 2020-09-17
 
 ### Added

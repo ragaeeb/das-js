@@ -49,7 +49,7 @@ Barakallahu feekum, we appreciate your understanding and cooperation in the abov
 
 For our international online participants, please consult the world clock (links below) to find out the lecture time in your local time zone.
 
-http://www.timeanddate.com/worldclock/full.html
+https://www.timeanddate.com/worldclock
 
 http://www.worldtimezone.com/
 

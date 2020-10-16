@@ -3,7 +3,7 @@ title: 'Fundraising BBQ'
 date: '2013-06-02T10:11:32.169Z'
 description: "All proceeds will support future da'wah projects"
 imageUrl: https://s7.gifyu.com/images/bbq-2011.jpg
-thumbnailUrl: https://chowhound1.cbsistatic.com/thumbnail/800/0/chowhound1.cbsistatic.com/blog-media/2019/05/best-grilling-bbq-cookbooks-chowhound.jpg
+thumbnailUrl: https://64.media.tumblr.com/49269c7df5f362bc2c54c774301971be/b74219b1b75e51a1-27/s1280x1920/29c01de7b58548fde3839403ea98854ed4ab35c3.jpg
 ---
 
 As-Salāmu 'alaykum wa raḥmatullaahi wa barakātuh,
