@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@main
       - uses: bahmutov/npm-install@master
       - name: Create Release Notes
-        uses: docker://decathlon/release-notes-generator-action:2.0.1@sha256:01678361e2f7123bf6743cdf3f69aad2bb9c0f0025925fc92d306db0c49e9e2b
+        uses: docker://decathlon/release-notes-generator-action:2.1.0@sha256:daf108fce8f2bc51021a84860bfb2c29af50f4a1ab145e604ee901a1c9bca0bd
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
           OUTPUT_FOLDER: temp_release_notes
