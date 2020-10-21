@@ -78,7 +78,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "26.4.2",
     "lint-staged": "10.4.0",
-    "preact-render-to-string": "5.1.10",
+    "preact-render-to-string": "5.1.11",
     "prettier": "2.1.2"
   },
   "repository": {
