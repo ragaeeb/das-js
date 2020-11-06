@@ -2,7 +2,7 @@
 title: 'ʿIshāʾ & Tarawīḥ Prayers'
 date: '2009-09-04T00:04:54.169Z'
 description: 'From the 15th to the end of Ramaḍān at Muṣallá As-Ṣaḥāba'
-imageUrl: https://repository.mysalaam.com/images/iep/galleries/images/original/201705311117223450.jpg
+imageUrl: https://64.media.tumblr.com/70304d999d3e8e9202d6f00a64ca8f69/tumblr_oht1oxv5Wi1vmurero1_1280.jpg
 thumbnailUrl: https://www.allahsword.com/images/books/salah/salah_main@2x.png
 ---
 

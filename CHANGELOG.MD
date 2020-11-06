@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.8] - 2020-11-05
+
+### Updated
+
+- Fixed broken link.
+- [Update jest monorepo to v26.6.3](https://github.com/ragaeeb/das-js/pull/241)
+- [Update gatsby monorepo](https://github.com/ragaeeb/das-js/pull/252)
+- [Update dependency lint-staged to v10.5.1](https://github.com/ragaeeb/das-js/pull/253)
+- [Update dependency eslint-config-prettier to v6.15.0](https://github.com/ragaeeb/das-js/pull/254)
+- [Update dependency preact to v10.5.5](https://github.com/ragaeeb/das-js/pull/255)
+- [Update dependency chart.js to v2.9.4](https://github.com/ragaeeb/das-js/pull/256)
+- [Update dependency eslint-plugin-react to v7.21.5](https://github.com/ragaeeb/das-js/pull/257)
+- [Update dependency react-bootstrap to v1.4.0](https://github.com/ragaeeb/das-js/pull/261)
+- [Update dependency preact-render-to-string to v5.1.11](https://github.com/ragaeeb/das-js/pull/262)
+- [Update dependency react-lazyload to v3.1.0](https://github.com/ragaeeb/das-js/pull/263)
+- [Update dependency eslint to v7.12.1](https://github.com/ragaeeb/das-js/pull/264)
+- [Update dependency eslint-plugin-jsx-a11y to v6.4.1](https://github.com/ragaeeb/das-js/pull/265)
+
 ## [0.6.7] - 2020-10-16
 
 ### Added
