@@ -2,8 +2,8 @@
 title: "Explanation of Imām al-Nawawī's 40 Ḥadīth"
 date: '2009-10-04T22:12:54.169Z'
 description: '(Explanation & Memorization) – Explanation taken from Shaykh Ibn ʿUthaymīn and Shaykh Ibn Rajab al-Ḥanbalī (raḥīmahumullah)'
-imageUrl: https://propakistani.pk/how-to/wp-content/uploads/2020/04/best-quran-reading-mobile-apps-1536x1155.jpg
-thumbnailUrl: https://www1.cbn.com/sites/default/files/styles/original/public/media/standard/images/quran_si.jpg
+imageUrl: https://64.media.tumblr.com/a85dfeae08ddd41523990f843a79b252/e8967f4126065cb8-3e/s1280x1920/4cbb716fdb3329192df114a4566124f0f850704b.jpg
+thumbnailUrl: https://64.media.tumblr.com/192efcc9880cbc8180a0a7114f01a31a/254ac966e95b488b-ad/s1280x1920/52bd32bd69bcc242fd8e4734a631969b0d64bb77.jpg
 ---
 
 Taught by:
