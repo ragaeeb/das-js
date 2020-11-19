@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.9] - 2020-11-19
+
+### Updated
+
+- [Add blog posts](https://github.com/ragaeeb/das-js/issues/27)
+- [Update react monorepo to v17 (major)](https://github.com/ragaeeb/das-js/pull/260)
+- [Update crazy-max/ghaction-github-status action to v2](https://github.com/ragaeeb/das-js/pull/268)
+- [Update react monorepo](https://github.com/ragaeeb/das-js/pull/270)
+- [Update dependency react-chartjs-2 to v2.11.1](https://github.com/ragaeeb/das-js/pull/271)
+- [Update gatsby monorepo](https://github.com/ragaeeb/das-js/pull/272)
+- [Update dependency eslint-config-airbnb to v18.2.1](https://github.com/ragaeeb/das-js/pull/273)
+- [Update dependency eslint to v7.13.0](https://github.com/ragaeeb/das-js/pull/274)
+- [Update dependency preact to v10.5.7](https://github.com/ragaeeb/das-js/pull/276)
+- [Update dependency preact-render-to-string to v5.1.12](https://github.com/ragaeeb/das-js/pull/277)
+
 ## [0.6.8] - 2020-11-05
 
 ### Updated
