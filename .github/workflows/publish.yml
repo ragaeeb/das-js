@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check GitHub Status
-        uses: crazy-max/ghaction-github-status@v1
+        uses: crazy-max/ghaction-github-status@v2
       - uses: actions/checkout@main
       #- uses: bahmutov/npm-install@master
       - uses: enriikke/gatsby-gh-pages-action@v2
