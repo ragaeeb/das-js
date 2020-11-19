@@ -2,8 +2,8 @@
 title: "Tonight's 40 Aḥadīth Class (Sunday, June 20th, 2010)"
 date: '2010-05-09T13:09:54.169Z'
 description: 'Cancelled'
-imageUrl: http://www.jibreelinstitute.com/wp-content/uploads/2013/11/fortyHadithBannerPost.jpg
-thumbnailUrl: https://image.alkawthartv.com/image/855x495/2017/07/30/636370141128110197.jpg
+imageUrl: https://64.media.tumblr.com/281bb9fa3e4adf48b084f6501f19d8d1/tumblr_plcpb7X1CQ1ud3wpno1_540.jpg
+thumbnailUrl: https://64.media.tumblr.com/484f6b4b011d00ae9a192f4f6002419d/tumblr_mzrpjgekZC1t4q19uo1_540.jpg
 ---
 
 As-salāmu ʿalaykum wa raḥmatullāhi wa barakātuh,
