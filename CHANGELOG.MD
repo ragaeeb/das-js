@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Updated
 
 - [Add blog posts](https://github.com/ragaeeb/das-js/issues/27)
+- [Update react monorepo to v17 (major)](https://github.com/ragaeeb/das-js/pull/260)
+- [Update react monorepo](https://github.com/ragaeeb/das-js/pull/270)
 - [Update dependency react-chartjs-2 to v2.11.1](https://github.com/ragaeeb/das-js/pull/271)
 - [Update gatsby monorepo](https://github.com/ragaeeb/das-js/pull/272)
 - [Update dependency eslint-config-airbnb to v18.2.1](https://github.com/ragaeeb/das-js/pull/273)
