@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.11] - 2020-12-06
+
+### Updated
+
+- [Update dependency eslint-plugin-prettier to v3.2.0](https://github.com/ragaeeb/das-js/pull/291)
+- [Update dependency lint-staged to v10.5.3](https://github.com/ragaeeb/das-js/pull/292)
+- [Update dependency eslint to v7.15.0](https://github.com/ragaeeb/das-js/pull/293)
+- [Update dependency husky to v4.3.4](https://github.com/ragaeeb/das-js/pull/294)
+- [Update fajr times](https://github.com/ragaeeb/das-js/pull/296)
+- [Update dependency eslint-config-prettier to v7](https://github.com/ragaeeb/das-js/pull/297)
+
+## [0.6.10] - 2020-12-02
+
+### Updated
+
+- [Update dependency prettier to v2.2.1](https://github.com/ragaeeb/das-js/pull/283)
+- [Update dependency eslint to v7.14.0](https://github.com/ragaeeb/das-js/pull/284)
+- [Update gatsby monorepo](https://github.com/ragaeeb/das-js/pull/285)
+- [Update dependency lint-staged to v10.5.2](https://github.com/ragaeeb/das-js/pull/286)
+- [Update dependency react-icons to v4](https://github.com/ragaeeb/das-js/pull/287)
+- [Update dependency react-lazy-load-image-component to v1.5.1](https://github.com/ragaeeb/das-js/pull/288)
+- [Update Jumuah Time](https://github.com/ragaeeb/das-js/pull/290)
+
 ## [0.6.9] - 2020-11-19
 
 ### Updated
