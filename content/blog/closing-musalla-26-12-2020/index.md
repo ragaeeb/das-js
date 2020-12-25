@@ -2,8 +2,8 @@
 title: 'Muṣallá Closing'
 date: '2020-12-25T20:23:17.290Z'
 description: 'Until further notice'
-imageUrl: 'https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg'
-thumbnailUrl: 'https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg'
+imageUrl: https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg
+thumbnailUrl: https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg
 ---
 
 Due to the new COVID-19 Provincewide Shutdown measures, we have decided to keep the Muṣallá CLOSED until further notice as a precaution.
