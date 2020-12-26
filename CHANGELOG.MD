@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.12] - 2020-12-25
+
+### Updated
+
+- [Update dependency husky to v4.3.6](https://github.com/ragaeeb/das-js/pull/299)
+- [Update gatsby monorepo](https://github.com/ragaeeb/das-js/pull/300)
+- [Update dependency @babel/plugin-transform-runtime to v7.12.10](https://github.com/ragaeeb/das-js/pull/301)
+- [Update dependency eslint-plugin-prettier to v3.3.0](https://github.com/ragaeeb/das-js/pull/303)
+- [Update dependency eslint to v7.16.0](https://github.com/ragaeeb/das-js/pull/304)
+- [Update dependency eslint-config-prettier to v7.1.0](https://github.com/ragaeeb/das-js/pull/305)
+- [Bump node-notifier from 8.0.0 to 8.0.1](https://github.com/ragaeeb/das-js/pull/306)
+- [Add new lockdown blog](https://github.com/ragaeeb/das-js/pull/308)
+
 ## [0.6.11] - 2020-12-06
 
 ### Updated
