@@ -2,8 +2,8 @@
 title: '1st day of Ramaḍān'
 date: '2014-06-28T13:06:32.169Z'
 description: 'Sunday, June 29th, 2014, in shā’ Allāh and attached 1435 AH / 2014 Ramaḍān Calendar'
-imageUrl: https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ4QUpi5A5LIMlvuqf26M1xPy2CIOQqXjGmjg&usqp=CAU
-thumbnailUrl: https://www.eatright.org/-/media/eatrightimages/health/lifestyle/cultureandtraditions/ramadan_the_practice_of_fasting-542563100.jpg
+imageUrl: https://64.media.tumblr.com/8b8eac517ffaae81f54d523abeb8f86f/tumblr_n2hv40kmEI1s00wkso1_540.jpg
+thumbnailUrl: https://64.media.tumblr.com/3751a2de0e8747313ab437f485f17a08/70a220a7cd08fd94-fa/s400x600/2fcdf3235405bc30b19a98c9e864eaa12a3c3382.jpg
 ---
 
 As-salāmu ʿalaykum wa raḥmatullāhi wa barakātuh,

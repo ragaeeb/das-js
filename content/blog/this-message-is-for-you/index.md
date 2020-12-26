@@ -2,8 +2,8 @@
 title: 'This Message Is For You'
 date: '2009-07-19T05:33:54.169Z'
 description: 'By Mahmoud Murad (with slight modifications)'
-imageUrl: https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Frogerdooley%2Ffiles%2F2014%2F05%2Fpencil-paper-e1398989606156.jpg
-thumbnailUrl: https://res.cloudinary.com/jerrick/image/upload/fl_progressive,q_auto,w_1024/5d71c3737a2b50001bc02b78.png
+imageUrl: https://64.media.tumblr.com/ed39c18859cc38ebc1a6cdb35bdbe3eb/tumblr_o1ovzz06FE1tmvwc5o1_540.jpg
+thumbnailUrl: https://64.media.tumblr.com/58dffce21ce2635ee6b36d0487b5c111/tumblr_okm68lvCew1qb47plo1_500.jpg
 ---
 
 In the Name of Allāh, the Beneficent, the Merciful
