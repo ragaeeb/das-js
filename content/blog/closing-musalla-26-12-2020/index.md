@@ -1,8 +1,8 @@
 ---
-title: 'Muṣallá Closing'
+title: 'Temporary Closure of the Muṣallá'
 date: '2020-12-25T20:23:17.290Z'
-description: 'Until further notice'
-imageUrl: https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg
+description: 'Temporary Closure of the Muṣallá  due to Covid-19 Provincewide Shutdown'
+imageUrl: https://64.media.tumblr.com/a1eba0f091d31cec05a7e6fd52c13149/a29cdf00e96cf348-bd/s540x810/fed5fddb1eb9c1d23a656639145bb61df79fba64.png
 thumbnailUrl: https://64.media.tumblr.com/a1eba0f091d31cec05a7e6fd52c13149/a29cdf00e96cf348-bd/s540x810/fed5fddb1eb9c1d23a656639145bb61df79fba64.png
 ---
 
