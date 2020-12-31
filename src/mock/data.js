@@ -231,8 +231,7 @@ export const contactInfo = {
   emailButton: 'Email Us',
   mailingList: 'Mailing List',
   email: 'dar.as.sahaba@gmail.com',
-  contactForm:
-    'https://docs.google.com/forms/d/e/1FAIpQLSc5iea7SYnK1Mn3aesPLoTcAHIKxiAqDIpZB95WWb4IyU_d_w/viewform',
+  mapUrl: 'https://goo.gl/maps/14LYnHa7R9sZsQBG7',
   telButton: 'Call Us',
   tel: '+16133215459',
   address: '2835 Dumaurier Ave, Ottawa, ON, Canada',
