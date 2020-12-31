@@ -2,7 +2,7 @@
 title: 'LECTURE: The Prostrations of Forgetfulness'
 date: '2016-10-14T14:14:45.169Z'
 description: 'with Al-Shaykh Abū ʿAbd al-Raḥmān Muḥammad ʿAlī'
-imageUrl: https://cdn2.tstatic.net/jateng/foto/bank/images/sujud-syukur.jpg
+imageUrl: https://64.media.tumblr.com/8287956e6181ba3de99cc8c767342bc9/7f69ef6ac4c2c1a1-5c/s540x810/a3f3002e6eb8cf22a103aa900a6229480fd34dcb.jpg
 thumbnailUrl: https://storage.nu.or.id/storage/post/16_9/big/1385955865.jpg
 ---
 
