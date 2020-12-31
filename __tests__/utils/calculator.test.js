@@ -3,7 +3,6 @@ import { daily, isFard, monthly } from '../../src/utils/calculator';
 
 const MIDDLE_OF_THE_NIGHT = '1/2 Night Begins';
 const LAST_THIRD_OF_THE_NIGHT = 'Last 1/3 Night Begins';
-const TIMEZONE = 'America/Toronto';
 
 const salatLabels = {
   fajr: 'Fajr',
@@ -17,43 +16,49 @@ const salatLabels = {
 };
 
 describe('calculator', () => {
+  let params = {};
+
+  beforeEach(() => {
+    params = {
+      fajrAngle: 12,
+      ishaAngle: 12,
+      latitude: '45.3506',
+      longitude: '-75.793',
+      method: 'NauticalTwilight',
+      timeZone: 'America/Toronto',
+    };
+  });
+
   describe('daily', () => {
     it('should calculate the proper time for Ottawa', () => {
-      const result = daily(
-        salatLabels,
-        '45.3506',
-        '-75.793',
-        TIMEZONE,
-        new Date(2020, 5, 19, 10, 24, 0),
-        {
-          fajr: '4:45 AM',
-          dhuhr: {
-            6: '12:30 PM',
+      const result = daily(salatLabels, params, new Date(2020, 5, 19, 10, 24, 0), {
+        fajr: '4:45 AM',
+        dhuhr: {
+          6: '12:30 PM',
+        },
+        asr: {
+          6: {
+            1: '5:00 PM',
+            22: '5:15 PM',
+            24: '5:20 PM',
+            28: '6:00 PM',
           },
-          asr: {
-            6: {
-              1: '5:00 PM',
-              22: '5:15 PM',
-              24: '5:20 PM',
-              28: '6:00 PM',
-            },
+        },
+        maghrib: {
+          6: {
+            1: '6:30 PM',
+            11: '6:45 PM',
+            18: '6:50 PM',
           },
-          maghrib: {
-            6: {
-              1: '6:30 PM',
-              11: '6:45 PM',
-              18: '6:50 PM',
-            },
+        },
+        isha: {
+          6: {
+            1: '7:30 PM',
+            11: '7:45 PM',
+            21: '7:50 PM',
           },
-          isha: {
-            6: {
-              1: '7:30 PM',
-              11: '7:45 PM',
-              21: '7:50 PM',
-            },
-          },
-        }
-      );
+        },
+      });
       expect(result).toEqual({
         date: 'Friday, June 19, 2020',
         istijaba: false,
@@ -116,29 +121,22 @@ describe('calculator', () => {
     });
 
     it('should calculate the proper iqamah times for July 6, 2020', () => {
-      const result = daily(
-        salatLabels,
-        '45.3506',
-        '-75.793',
-        TIMEZONE,
-        new Date(2020, 6, 6, 16, 17, 0),
-        {
-          fajr: {
-            7: {
-              1: '4:15 AM',
-              11: '4:25 AM',
-              21: '4:40 AM',
-            },
+      const result = daily(salatLabels, params, new Date(2020, 6, 6, 16, 17, 0), {
+        fajr: {
+          7: {
+            1: '4:15 AM',
+            11: '4:25 AM',
+            21: '4:40 AM',
           },
-          isha: {
-            7: {
-              1: '10:30 PM',
-              11: '10:20 PM',
-              21: '10:10 PM',
-            },
+        },
+        isha: {
+          7: {
+            1: '10:30 PM',
+            11: '10:20 PM',
+            21: '10:10 PM',
           },
-        }
-      );
+        },
+      });
 
       expect(result.timings[0].iqamah).toEqual('4:15 AM');
       expect(result.timings[5].iqamah).toEqual('10:30 PM');
@@ -160,13 +158,7 @@ describe('calculator', () => {
 
     describe('monthly', () => {
       it('should have proper label and timings', () => {
-        const result = monthly(
-          salatLabels,
-          '45.3506',
-          '-75.793',
-          TIMEZONE,
-          new Date(2020, 5, 19, 10, 24, 0)
-        );
+        const result = monthly(salatLabels, params, new Date(2020, 5, 19, 10, 24, 0));
         expect(result.label).toEqual('June 2020');
         expect(result.dates[0].timings).toEqual([
           {
@@ -272,24 +264,12 @@ describe('calculator', () => {
       });
 
       it('should have 30 days for June', () => {
-        const result = monthly(
-          salatLabels,
-          '45.3506',
-          '-75.793',
-          TIMEZONE,
-          new Date(2020, 5, 19, 10, 24, 0)
-        );
+        const result = monthly(salatLabels, params, new Date(2020, 5, 19, 10, 24, 0));
         expect(result.dates).toHaveLength(30);
       });
 
       it('should have 31 days for July', () => {
-        const result = monthly(
-          salatLabels,
-          '45.3506',
-          '-75.793',
-          TIMEZONE,
-          new Date(2020, 6, 19, 10, 24, 0)
-        );
+        const result = monthly(salatLabels, params, new Date(2020, 6, 19, 10, 24, 0));
         expect(result.dates).toHaveLength(31);
       });
     });
