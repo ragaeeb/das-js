@@ -7,9 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      #- uses: bahmutov/npm-install@master
       - uses: enriikke/gatsby-gh-pages-action@v2
         env:
+          CHATWOOT_TOKEN: ${{ secrets.CHATWOOT_TOKEN }}
+          MAILCHIMP_ENDPOINT: ${{ secrets.MAILCHIMP_ENDPOINT }}
           SEGMENT_PROD_KEY: ${{ secrets.SEGMENT_PROD_KEY }}
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
         with:

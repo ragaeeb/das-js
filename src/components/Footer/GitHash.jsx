@@ -1,5 +1,6 @@
 import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
+import json from '../../../package.json';
 
 const GitHash = () => (
   <StaticQuery
@@ -11,20 +12,18 @@ const GitHash = () => (
         }
       }
     `}
-    render={({ gitCommit }) => {
-      return (
-        <p className="footer__text">
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href={`https://github.com/ragaeeb/das-js/commit/${gitCommit.hash}`}
-          >
-            {gitCommit.hash}
-          </a>{' '}
-          [{new Date(gitCommit.date).toLocaleString()}]
-        </p>
-      );
-    }}
+    render={({ gitCommit }) => (
+      <p className="footer__text">
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href={`${json.repository.url}/commit/${gitCommit.hash}`}
+        >
+          {gitCommit.hash}
+        </a>{' '}
+        [{new Date(gitCommit.date).toLocaleString()}]
+      </p>
+    )}
   />
 );
 

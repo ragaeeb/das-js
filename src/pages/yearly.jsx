@@ -33,7 +33,7 @@ const buildDataSet = (label) => {
 };
 
 const Graph = () => {
-  const { latitude, longitude, timeZone, labels } = heroData;
+  const { calculation, labels } = heroData;
   const [now, setNow] = useState(new Date());
 
   const nextYear = (delta = 1) => () => {
@@ -44,7 +44,7 @@ const Graph = () => {
     window.analytics.track(delta === 1 ? 'NextYearTimings' : 'PrevYearTimings');
   };
 
-  const { dates, label } = yearly(labels, latitude, longitude, timeZone, now);
+  const { dates, label } = yearly(labels, calculation, now);
 
   const data = {
     datasets: [

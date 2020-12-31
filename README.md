@@ -1,5 +1,7 @@
 Tutorials: +[Prayer Timings](http://ior.ad/75n0)
 
+[![das-js](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/qnmnp9/master&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/qnmnp9/runs)
+
 # Gatsby Simplefolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobidev/gatsby-simplefolio?color=blue)](https://github.com/cobidev/gatsby-simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobidev/gatsby-simplefolio) ![GitHub forks](https://img.shields.io/github/forks/cobidev/gatsby-simplefolio)
 
 If we ever want to import an image directly which Gatsby can process we can do it like this:

@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.0] - 2020-12-30
+
+### Added
+
+- [Add cypress](https://github.com/ragaeeb/das-js/issues/56)
+- [Set up cypress runs on cypress.io](https://github.com/ragaeeb/das-js/issues/82)
+- [Add chatwoot support](https://github.com/ragaeeb/das-js/issues/275)
+
+### Updated
+
+- [Refactor code to make it easier to adapt to any other masajid](https://github.com/ragaeeb/das-js/pull/312)
+- [Update dependency gatsby to v2.29.3](https://github.com/ragaeeb/das-js/pull/314)
+- [Update dependency eslint-plugin-react to v7.22.0](https://github.com/ragaeeb/das-js/pull/315)
+- [Update dependency preact to v10.5.8](https://github.com/ragaeeb/das-js/pull/316)
+
 ## [0.6.12] - 2020-12-25
 
 ### Updated

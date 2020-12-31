@@ -23,13 +23,11 @@ const getLabel = (event, label, onClick, link) => {
   return label;
 };
 
-const renderSunnah = (event, label, time) => {
-  return (
-    <div key={event} className="sunan" data-cy="sunan">
-      {label} <span className="text-color-main">{time}</span>
-    </div>
-  );
-};
+const renderSunnah = (event, label, time) => (
+  <div key={event} className="sunan" data-cy="sunan">
+    {label} <span className="text-color-main">{time}</span>
+  </div>
+);
 
 const renderTiming = (fajrPdf, fajrOnClick) => ({ label, time, iqamah, event }) => {
   if (!isFard(event)) {
@@ -56,9 +54,7 @@ const onCalendarClicked = () => window.analytics.track('Calendar');
 const Hero = () => {
   const { hero } = useContext(PortfolioContext);
   const {
-    latitude,
-    longitude,
-    timeZone,
+    calculation,
     fajrPdf,
     istijabaText,
     iqamahs,
@@ -67,7 +63,7 @@ const Hero = () => {
     hijriAdjust = 0,
   } = hero;
   const [now, setNow] = useState(new Date());
-  const isLoaded = latitude && longitude;
+  const isLoaded = !!calculation;
 
   const nextDay = (delta = 1) => () => {
     const newDate = new Date(now.valueOf());
@@ -78,7 +74,7 @@ const Hero = () => {
   };
 
   const { date, timings, istijaba } = isLoaded
-    ? daily(labels, latitude, longitude, timeZone, now, iqamahs)
+    ? daily(labels, calculation, now, iqamahs)
     : placeholder;
 
   const { day, date: hijriDate, month, year } = hijri(hijriAdjust, now);

@@ -7,15 +7,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@main
-
       - name: Cypress run
-        uses: cypress-io/github-action@v1.25.2
+        uses: cypress-io/github-action@v2
         with:
           start: npm run test:e2e:ci
           record: true
           browser: chrome
           headless: true
+          wait-on: 'http://localhost:8000'
         env:
-          # pass the Dashboard record key as an environment variable
+          CHATWOOT_TOKEN: ${{ secrets.CHATWOOT_TOKEN }}
+          MAILCHIMP_ENDPOINT: ${{ secrets.MAILCHIMP_ENDPOINT }}
+          SEGMENT_PROD_KEY: ${{ secrets.SEGMENT_PROD_KEY }}
+          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
