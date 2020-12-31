@@ -15,7 +15,7 @@ jobs:
           browser: chrome
           headless: true
           wait-on: 'http://localhost:8000'
-          wait-on-timeout: 120
+          wait-on-timeout: 1
         env:
           CHATWOOT_TOKEN: ${{ secrets.CHATWOOT_TOKEN }}
           MAILCHIMP_ENDPOINT: ${{ secrets.MAILCHIMP_ENDPOINT }}
