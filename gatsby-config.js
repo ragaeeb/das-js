@@ -113,9 +113,17 @@ module.exports = {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
         // https://www.gatsbyjs.org/packages/gatsby-plugin-mailchimp/
-        endpoint:
-          'https://dar-as-sahaba.us10.list-manage.com/subscribe/post?u=fb77af966072ae0c6869a5338&amp;id=4e33a0fe4b', // string; add your MC list endpoint here; see instructions below
+        endpoint: process.env.MAILCHIMP_ENDPOINT, // should be something like https://dar-as-sahaba.a10.list-manage.com/subscribe/post?u=abcd&amp;id=1234
         timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+      },
+    },
+    {
+      resolve: `gatsby-plugin-chatwoot`,
+      options: {
+        baseUrl: 'https://app.chatwoot.com', // Required
+        websiteToken: process.env.CHATWOOT_TOKEN, // Required
+        includeInDevelopment: true, // Optional
+        chatwootSettings: {}, // Optional
       },
     },
     {

@@ -1,9 +1,9 @@
 {
   "name": "das-js",
   "private": true,
-  "homepage": "https://ragaeeb.github.io/das-js",
+  "homepage": "https://dar-as-sahaba.com",
   "description": "Dar as-Sahābah website",
-  "version": "0.6.12",
+  "version": "0.7.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -24,6 +24,7 @@
     "chart.js": "2.9.4",
     "gatsby": "2.29.3",
     "gatsby-cli": "2.16.2",
+    "gatsby-plugin-chatwoot": "^1.1.0",
     "gatsby-plugin-feed": "2.10.0",
     "gatsby-plugin-mailchimp": "5.2.2",
     "gatsby-plugin-manifest": "2.9.1",
