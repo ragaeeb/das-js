@@ -10,7 +10,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          start: npm run test:e2e:ci
+          command: npm run test:e2e:ci
           record: true
           browser: chrome
           headless: true

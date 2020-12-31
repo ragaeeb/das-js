@@ -1,10 +1,15 @@
 describe('Timings', () => {
-  it('should show the correct gregorian date', () => {
+  before(() => {
     cy.visit('/');
+  });
+
+  beforeEach(() => {
     cy.get('[data-cy="gregorian"]').as('gregorian');
     cy.get('[data-cy="hijri"]').as('hijri');
     cy.get('[data-cy="timings"]').as('timings');
+  });
 
+  it('should show the correct gregorian date', () => {
     cy.get('@gregorian')
       .invoke('text')
       .should('contain', new Date().getDate().toString())
@@ -12,22 +17,12 @@ describe('Timings', () => {
   });
 
   it('should show the correct hijri date', () => {
-    cy.visit('/');
-    cy.get('[data-cy="gregorian"]').as('gregorian');
-    cy.get('[data-cy="hijri"]').as('hijri');
-    cy.get('[data-cy="timings"]').as('timings');
-
     cy.get('@hijri')
       .invoke('text')
       .should('match', /144\d{1} H/);
   });
 
   it('should show the prayer timings', () => {
-    cy.visit('/');
-    cy.get('[data-cy="gregorian"]').as('gregorian');
-    cy.get('[data-cy="hijri"]').as('hijri');
-    cy.get('[data-cy="timings"]').as('timings');
-
     const timings = [
       'Fajr \\d{1}:\\d{2} AM\\s+\\d{1}:\\d{2} AM',
       'Sunrise \\d{1}:\\d{2} AM',
