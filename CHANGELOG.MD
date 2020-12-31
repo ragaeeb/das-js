@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- [Add cypress](https://github.com/ragaeeb/das-js/issues/56)
+- [Set up cypress runs on cypress.io](https://github.com/ragaeeb/das-js/issues/82)
 - [Add chatwoot support](https://github.com/ragaeeb/das-js/issues/275)
 
 ### Updated

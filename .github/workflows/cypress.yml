@@ -7,14 +7,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@main
-
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
           start: npm run test:e2e:ci
           record: true
           browser: chrome
-          headless: true
         env:
           CHATWOOT_TOKEN: ${{ secrets.CHATWOOT_TOKEN }}
           MAILCHIMP_ENDPOINT: ${{ secrets.MAILCHIMP_ENDPOINT }}
