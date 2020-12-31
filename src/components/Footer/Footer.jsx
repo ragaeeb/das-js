@@ -12,6 +12,7 @@ import {
 } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import Copyright from './Copyright';
 import GitHash from './GitHash';
 
 const brandToNode = {
@@ -56,7 +57,7 @@ const Footer = () => {
             })}
         </div>
         <hr />
-        <p className="footer__text">© {new Date().getFullYear()} Dar As-Sahaba Association</p>
+        <Copyright />
         <GitHash />
         <RouteLink style={{ color: 'white' }} to="privacy">
           Privacy Policy

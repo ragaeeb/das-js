@@ -1,6 +1,12 @@
 export const heroData = {
-  latitude: '45.3506',
-  longitude: '-75.793',
+  calculation: {
+    fajrAngle: 12,
+    ishaAngle: 12,
+    latitude: '45.3506',
+    longitude: '-75.793',
+    method: 'NauticalTwilight',
+    timeZone: 'America/Toronto',
+  },
   labels: {
     fajr: 'Fajr',
     sunrise: 'Sunrise',
@@ -152,7 +158,6 @@ export const heroData = {
       12: '7:30 PM',
     },
   },
-  timeZone: 'America/Toronto',
   hijriAdjust: -1,
   fajrPdf: 'https://archive.org/download/fajr-letter-das/Letter_Fajr-Ishaa_Ottawa-2016-06-27.pdf',
   calendarUrl:
@@ -200,6 +205,9 @@ export const aboutData = {
 };
 
 export const donationsData = {
+  directDeposit:
+    'If you would like your monthly donation amount to be automatically deducted from your bank account, we have a direct-deposit form available that you can fill out. Simply drop by the muṣallá when any of the administration is there and ask for the form so that we can get you set up in shā’ Allah.',
+  etransfer: 'dar.as.sahaba@hotmail.com',
   expenses: [
     { label: 'Rent', value: 3400 },
     { label: 'Utilities', value: 600 },
@@ -207,6 +215,14 @@ export const donationsData = {
     { label: 'Phone/Internet', value: 117 },
     { label: 'Supplies', value: 160 },
   ],
+  khutbah:
+    'After the Friday sermon, donations for the muṣallá are collected. Sometimes there are baked goods and food that are also being sold for fundraising for the muṣallá. Please donate generously for the sake of Allāh.',
+  paypal:
+    'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=M36T4MXQHLUHJ&source=url',
+  reminderDawah:
+    'When you participate in online giving, you’re also helping to streamline administrative overhead costs – thus, putting more of your dollars to work in keeping the muṣallá running.',
+  reminderReward:
+    'For as long as the muṣallá remains open by your donations, you are collecting your reward for every person who is establishing the prayer, for every lesson that is being organized and every Muslim who is learning from the lesson, from every lost youth seeking the truth and changes their life around by way of it. You are collecting your reward for everyone that is affected by your good deeds.',
 };
 
 export const contactInfo = {
@@ -249,4 +265,8 @@ export const footerData = {
       url: 'https://www.youtube.com/channel/UC4JRttylAMmZubEmFOjX7Vg',
     },
   ],
+};
+
+export const privacyPolicy = {
+  effectiveDate: '18 July 2020',
 };

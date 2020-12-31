@@ -24,7 +24,7 @@ const renderRow = ({ timings }, index) => {
 };
 
 const Monthly = () => {
-  const { latitude, longitude, timeZone, labels } = heroData;
+  const { calculation, labels } = heroData;
   const [now, setNow] = useState(new Date());
 
   const nextMonth = (delta = 1) => () => {
@@ -35,7 +35,7 @@ const Monthly = () => {
     window.analytics.track(delta === 1 ? 'NextMonthTimings' : 'PrevMonthTimings');
   };
 
-  const { dates, label } = monthly(labels, latitude, longitude, timeZone, now);
+  const { dates, label } = monthly(labels, calculation, now);
   const [headings] = dates;
   const [fajr, sunrise, dhuhr, asr, maghrib, isha] = headings.timings;
 
