@@ -10,11 +10,9 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          command: npm run test:e2e:ci
+          start: npm run test:e2e:ci
           record: true
           browser: chrome
-          headless: true
-          wait-on: 'http://localhost:8000'
         env:
           CHATWOOT_TOKEN: ${{ secrets.CHATWOOT_TOKEN }}
           MAILCHIMP_ENDPOINT: ${{ secrets.MAILCHIMP_ENDPOINT }}
