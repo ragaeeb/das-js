@@ -15,7 +15,7 @@
     "clean": "gatsby clean",
     "test": "jest",
     "cy:open": "cypress open",
-    "cy:run": "cypress run --record",
+    "cy:run": "cypress run",
     "test:e2e:ci": "START_SERVER_AND_TEST_INSECURE=1 start-server-and-test develop http://localhost:8000 cy:run"
   },
   "dependencies": {
