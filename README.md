@@ -1,8 +1,11 @@
 Tutorials: +[Prayer Timings](http://ior.ad/75n0)
 
 [![das-js](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/qnmnp9/master&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/qnmnp9/runs)
-
-# Gatsby Simplefolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobidev/gatsby-simplefolio?color=blue)](https://github.com/cobidev/gatsby-simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobidev/gatsby-simplefolio) ![GitHub forks](https://img.shields.io/github/forks/cobidev/gatsby-simplefolio)
+![Gatsby Build](https://github.com/ragaeeb/das-js/workflows/Gatsby%20Build/badge.svg)
+![Tests](https://github.com/ragaeeb/das-js/workflows/Tests/badge.svg)
+![Deploy release](https://github.com/ragaeeb/das-js/workflows/Deploy%20release/badge.svg)
+![Check Markdown links](https://github.com/ragaeeb/das-js/workflows/Check%20Markdown%20links/badge.svg)
+[![GitHub](https://img.shields.io/github/license/ragaeeb/das-js?color=blue)](https://github.com/ragaeeb/das-js/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/ragaeeb/das-js) ![GitHub forks](https://img.shields.io/github/forks/ragaeeb/das-js)
 
 If we ever want to import an image directly which Gatsby can process we can do it like this:
 
@@ -281,11 +284,7 @@ SEGMENT_DEV_KEY=pSENTvy
 
 ## Authors
 
-- **Jacobo Martinez** - [https://github.com/cobidev](https://github.com/cobidev)
-
-## Status
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2365af6f-820a-4fb8-83e6-69a66f686dfe/deploy-status)](https://app.netlify.com/sites/gatsby-simplefolio/deploys)
+- **Ragaeeb Haq** - [https://github.com/ragaeeb](https://github.com/ragaeeb)
 
 ## License 📄
 
@@ -293,4 +292,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments 🎁
 
-I was motivated to create this project because I wanted to contribute on something useful for the dev community, thanks to [ZTM Community](https://github.com/zero-to-mastery) and [Andrei](https://github.com/aneagoie)
+The app is a fork of the beautiful [Gatsby Simplefolio](https://github.com/cobidev/gatsby-simplefolio) by [Jacobo Martinez](https://github.com/cobidev) with several modifications to adapt the content to be suitable for masājid.
