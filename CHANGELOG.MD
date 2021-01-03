@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.1] - 2021-01-02
+
+### Fixed
+
+- [Privacy policy doesnt scale on mobile](https://github.com/ragaeeb/das-js/issues/318)
+
+### Updated
+
+- [Update dependency eslint to v7.17.0](https://github.com/ragaeeb/das-js/pull/319)
+- Update `README.MD`.
+
 ## [0.7.0] - 2020-12-30
 
 ### Added

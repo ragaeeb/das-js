@@ -125,6 +125,7 @@ const Donate = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   href={paypal}
+                  data-cy="paypal"
                 >
                   Donate via PayPal
                 </a>

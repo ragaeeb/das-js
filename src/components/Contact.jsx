@@ -42,7 +42,7 @@ const Contact = () => {
             >
               {telButton}
             </a>
-            <Link to="newsletter">
+            <Link to="newsletter" data-cy="newsletter">
               <a className="cta-btn cta-btn--resume" href="newsletter">
                 {mailingList}
               </a>

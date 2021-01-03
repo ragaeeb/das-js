@@ -50,6 +50,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   target="_blank"
                   aria-label={name}
+                  data-cy={name}
                 >
                   {brandToNode[name]}
                 </a>
@@ -59,7 +60,7 @@ const Footer = () => {
         <hr />
         <Copyright />
         <GitHash />
-        <RouteLink style={{ color: 'white' }} to="privacy">
+        <RouteLink style={{ color: 'white' }} to="privacy" data-cy="privacy">
           Privacy Policy
         </RouteLink>
       </Container>

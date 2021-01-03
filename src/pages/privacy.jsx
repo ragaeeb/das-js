@@ -25,9 +25,10 @@ export default () => (
     }) => (
       <>
         <SEO title="Privacy Policy" description="Terms and Conditions" />
-        <section id="hero" className="jumbotron">
+        <section id="hero" className="jumbotron" style={{ display: 'inline-flex' }}>
           <Container>
             <h2>Privacy Policy</h2>
+            <br />
             <p>
               Your privacy is important to us. It is the policy of {description} to respect your
               privacy regarding any information we may collect from you across our website,{' '}

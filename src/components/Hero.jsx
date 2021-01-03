@@ -91,12 +91,22 @@ const Hero = () => {
         )}
         {isLoaded && (
           <h3 data-cy="gregorian">
-            <button type="button" onClick={nextDay(-1)} className="arrow-button cta-btn">
+            <button
+              type="button"
+              onClick={nextDay(-1)}
+              className="arrow-button cta-btn"
+              data-cy="prev"
+            >
               &lt;
             </button>
             &nbsp;
             {date}&nbsp;
-            <button type="button" onClick={nextDay()} className="arrow-button cta-btn">
+            <button
+              type="button"
+              onClick={nextDay()}
+              className="arrow-button cta-btn"
+              data-cy="next"
+            >
               &gt;
             </button>
           </h3>
@@ -112,18 +122,19 @@ const Hero = () => {
             rel="noopener noreferrer"
             href={calendarUrl}
             onClick={onCalendarClicked}
+            data-cy="calendar"
           >
             <button type="button" className="cta-btn cta-btn--hero">
               Calendar
             </button>
           </a>
           <Link to="monthly">
-            <button type="button" className="cta-btn cta-btn--hero">
+            <button type="button" className="cta-btn cta-btn--hero" data-cy="monthly">
               Monthly Schedule
             </button>
           </Link>
           <Link to="yearly">
-            <button type="button" className="cta-btn cta-btn--hero">
+            <button type="button" className="cta-btn cta-btn--hero" data-cy="yearly">
               Annual
             </button>
           </Link>
