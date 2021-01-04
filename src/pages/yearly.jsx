@@ -41,7 +41,9 @@ const Graph = () => {
     newDate.setFullYear(newDate.getFullYear() + delta);
     setNow(newDate);
 
-    window.analytics.track(delta === 1 ? 'NextYearTimings' : 'PrevYearTimings');
+    if (window.analytics) {
+      window.analytics.track(delta === 1 ? 'NextYearTimings' : 'PrevYearTimings');
+    }
   };
 
   const { dates, label } = yearly(labels, calculation, now);

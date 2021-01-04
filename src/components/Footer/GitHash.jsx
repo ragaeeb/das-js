@@ -13,11 +13,12 @@ const GitHash = () => (
       }
     `}
     render={({ gitCommit }) => (
-      <p className="footer__text">
+      <p className="footer__text" data-cy="lastUpdate">
         <a
           rel="noopener noreferrer"
           target="_blank"
           href={`${json.repository.url}/commit/${gitCommit.hash}`}
+          data-cy="git"
         >
           {gitCommit.hash}
         </a>{' '}

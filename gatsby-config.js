@@ -1,13 +1,15 @@
 const git = require('git-rev-sync');
 require('dotenv').config();
 
+const pack = require('./package.json');
+
 module.exports = {
   siteMetadata: {
-    title: `Dar as-Sahaba`,
+    title: pack.author,
     lang: 'en',
-    description: `Dār as-Ṣaḥābah Association`,
-    author: `Dar as-Sahaba`,
-    siteUrl: 'https://dar-as-sahaba.com',
+    description: pack.description,
+    author: pack.author,
+    siteUrl: pack.homepage,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -61,7 +63,7 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-sentry',
+      resolve: '@sentry/gatsby',
       options: {
         dsn: process.env.SENTRY_DSN,
         tags: { git_commit: git.short() },
@@ -129,8 +131,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Dar as-Sahaba Assocation`,
-        short_name: `Dar as-Sahaba`,
+        name: pack.description,
+        short_name: pack.author,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#02aab0`,

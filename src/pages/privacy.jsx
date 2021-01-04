@@ -3,7 +3,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import SEO from '../components/seo';
-import { privacyPolicy } from '../mock/data';
+import { footerData } from '../mock/data';
 import '../style/main.scss';
 
 export default () => (
@@ -25,9 +25,10 @@ export default () => (
     }) => (
       <>
         <SEO title="Privacy Policy" description="Terms and Conditions" />
-        <section id="hero" className="jumbotron">
+        <section id="hero" className="jumbotron" style={{ display: 'inline-flex' }}>
           <Container>
             <h2>Privacy Policy</h2>
+            <br />
             <p>
               Your privacy is important to us. It is the policy of {description} to respect your
               privacy regarding any information we may collect from you across our website,{' '}
@@ -62,7 +63,7 @@ export default () => (
               around privacy and personal information. If you have any questions about how we handle
               user data and personal information, feel free to contact us.
             </p>
-            <p>This policy is effective as of {privacyPolicy.effectiveDate}.</p>
+            <p>This policy is effective as of {footerData.privacyPolicy.effectiveDate}.</p>
           </Container>
         </section>
       </>

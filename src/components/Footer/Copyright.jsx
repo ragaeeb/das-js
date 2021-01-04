@@ -13,7 +13,7 @@ const GitHash = () => (
       }
     `}
     render={({ site }) => (
-      <p className="footer__text">
+      <p className="footer__text" data-cy="copyright">
         © {new Date().getFullYear()} {site.siteMetadata.description}
       </p>
     )}
