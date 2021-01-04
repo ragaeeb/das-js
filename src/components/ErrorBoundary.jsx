@@ -1,4 +1,4 @@
-import Sentry from 'gatsby-plugin-sentry';
+import { captureException, configureScope } from '@sentry/browser';
 import React from 'react';
 
 export default class ErrorBoundary extends React.Component {
@@ -9,12 +9,12 @@ export default class ErrorBoundary extends React.Component {
 
   componentDidCatch(error, errorInfo) {
     this.setState({ error });
-    Sentry.configureScope((scope) => {
+    configureScope((scope) => {
       Object.keys(errorInfo).forEach((key) => {
         scope.setExtra(key, errorInfo[key]);
       });
     });
-    Sentry.captureException(error);
+    captureException(error);
   }
 
   render() {
