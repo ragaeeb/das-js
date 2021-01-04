@@ -11,6 +11,17 @@
 <h2>
   <img src="https://github.com/ragaeeb/das-js/blob/master/examples/example.gif" alt="Islamic Simplefolio" width="600px" />
   <br>
+  <img src="https://github.com/ragaeeb/das-js/blob/master/examples/monthly.jpg" alt="Monthly Schedule" width="600px" />
+  <br>
+  <img src="https://github.com/ragaeeb/das-js/blob/master/examples/yearly.jpg" alt="Yearly Schedule" width="600px" />
+  <br>
+  <img src="https://github.com/ragaeeb/das-js/blob/master/examples/all_posts.jpg" alt="All Posts" width="600px" />
+  <br>
+  <img src="https://github.com/ragaeeb/das-js/blob/master/examples/sample_post.jpg" alt="Sample Post" width="600px" />
+  <br>
+  <img src="https://github.com/ragaeeb/das-js/blob/master/examples/mailing_list.jpg" alt="Newsletter" width="600px" />
+  <br>
+  <img src="https://github.com/ragaeeb/das-js/blob/master/examples/privacy.jpg" alt="Privacy Policy" width="600px" />
 </h2>
 
 ## Features
@@ -48,6 +59,8 @@ Go to a domain name registration platform and register a domain name. In this ex
 
 ### Cloudflare
 
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/cloudflare_dns.jpg" alt="Nameserver settings on Cloudflare" />
+
 `Cloudflare` provides websites a set of free services such as `DDOS` protection and other speed optimizations that will be useful. We will be changing our name servers to Cloudflare to let it route our traffic.
 
 1. Go to [Cloudflare](https://cloudflare.com), create an account, and then `Add a Site`.
@@ -61,7 +74,11 @@ Go to a domain name registration platform and register a domain name. In this ex
 9. Save the settings.
 10. Go back on `Cloudflare` and click the `Recheck Nameservers` button.
 
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/namecheap_dns.jpg" alt="Nameserver Settings on Namecheap" />
+
 At this point this may take some time (ie: usually an hour or so) to change the nameservers over.
+
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/cloudflare_success.jpg" alt="Cloudflare success message" />
 
 ### Technical Part (Cloning & Configuration)
 
@@ -79,7 +96,11 @@ This section modifies what appears at the very top of the page such as prayer ti
 
 These are configured using `12` degrees for the Fajr and ʿIshāʾ twilight angles (ie: Nautical Twilight) for the most accurate version of calculating the `Fajr` time instead of using the other conventions. Note that using other conventions that your region and other masājid in your area may be using may not result in the most accurate time which is vitally important because it may during the month of Ramaḍān eating Suḥūr later than the allowed time, or praying Fajr before its actual entrance! [Read more about this here](https://ia802902.us.archive.org/32/items/fajr-letter-das/Letter_Fajr-Ishaa_Ottawa-2016-06-27.pdf). Change these at your own discretion.
 
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/geo.jpg" alt="Getting latitude and longitude for an address" />
+
 The only values you should need to modify here are `latitude`, `longitude` and replace those numbers with the exact geographical coordinates for [your Islāmic centre](https://www.latlong.net/convert-address-to-lat-long.html). You will also need to replace the `timeZone` which you can find [here](http://www.timezoneconverter.com/cgi-bin/findzone).
+
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/timezone.png" alt="Getting a timezone for your location" />
 
 ```javascript
 export const heroData = {
@@ -137,6 +158,8 @@ If your timings for a prayer will always be a fixed pattern, you can just includ
 This means that no matter what time of the year, the iqāmah for Fajr will always be `20 minutes` after the aḏān and the iqāmah for Dhuhr will always be `5 minutes` after the aḏān. You can replace it with any text there and it will show up, it does not have to follow the `+X minutes` pattern, although this is a good convention to use to remain consistent.
 
 ###### Multiple Iqāmahs
+
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/iqamahs.jpg" alt="Setting multiple iqāmah times" />
 
 If you have more than one congregational prayer (ie: you hold a second jamāʿah), you can enter it in a list like this:
 
@@ -204,6 +227,8 @@ export const heroData = {
 
 Sometimes you may need some additional details you want to provide to your audience regarding specific prayers. For example if your `Fajr` prayer timing differs from the other masājid in your locality, you may want to explain why. You can do this by adding the specific prayer you want to add this link for with the URL you want to link that prayer to.
 
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/fajr_link.jpg" alt="Attaching a link to Fajr timing" />
+
 The following example shows both the Fajr and Dhuhr prayer labels that will be rendered as clickable links.
 
 ```javascript
@@ -219,6 +244,8 @@ export const heroData = {
 
 ###### Calendar Link
 
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/calendar.jpg" alt="Google Calendar link" />
+
 Instead of duplicating your events information on the website, it is optimal for you to create your events on `Google Calendar` and then link to it on the website so your audience can see the most up to date information about it.
 
 ```javascript
@@ -230,6 +257,8 @@ export const heroData = {
 ```
 
 If you don't want to include a calendar link, simply remove the `calendarUrl` entry from `data.js`.
+
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/calendar_share.jpg" alt="Making a Google Calendar public" />
 
 To create a calendar for your Islāmic centre:
 
@@ -243,7 +272,11 @@ To create a calendar for your Islāmic centre:
 8. Scroll down to `Integrate Calendar`, and copy the `Public URL to the calendar` value.
 9. This is the URL we will use in the `calendarUrl` to allow your audience to access your centre's events.
 
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/calendar_url.jpg" alt="Getting the Calendar URL" />
+
 ###### Sāʾ al-Istijābah
+
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/istijaba.jpg" alt="Last Hour on Friday" />
 
 You can display a reminder for all those who visit your website at the time when duʿāʾ is accepted in the last hour of Friday. You can show them a hadith or some custom text in the `istijabaText` field. If you do not want to display anything, then remove that.
 
@@ -256,6 +289,8 @@ export const heroData = {
 ```
 
 ##### About Section
+
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/about.jpg" alt="About Us Section" />
 
 This is the information that will be displayed right underneath the updates. You can add as many services as you want by copying and pasting the `title`, and `body` patterns.
 
@@ -279,6 +314,8 @@ export const aboutData = {
 ```
 
 ##### Donate Section
+
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/donate.jpg" alt="Donate Section" />
 
 You can set all the ways your audience can donate to your Islāmic centre here.
 
@@ -307,6 +344,8 @@ export const donationsData = {
 
 ##### Footer Section
 
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/footer.png" alt="Footer Section" />
+
 Set your center's social media information here. You can set platforms such as [twitter](https://twitter.com), [soundcloud](https://soundcloud.com), [instagram](https://instagram.com), [facebook](https://facebook.com), [telegram](https://t.me), and [youtube](https://youtube.com).
 
 Set the `effectiveDate` to the date your website launched live to enforce the `Privacy Policy` for your users.
@@ -326,6 +365,8 @@ export const footerData = {
 ```
 
 ##### Contact Section
+
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/contact.jpg" alt="Contact Section" />
 
 Set your centre's contact information here. The email address will automatically be scrambled to be protected from spam bots but should be visible to the user.
 
@@ -384,6 +425,8 @@ Here we will be creating various accounts needed to get the most of your website
 
 ##### Chatwoot
 
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/chatwoot.jpg" alt="Chatwoot setup" />
+
 Chatwoot is used to allow your audience to message you directly from your website. You can reply either using the Chatwoot app, or via email.
 
 1. Go to [chatwoot.com](https://chatwoot.com).
@@ -399,6 +442,8 @@ Chatwoot is used to allow your audience to message you directly from your websit
 
 ##### Cypress.io
 
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/cypress.jpg" alt="Cypress setup" />
+
 Cypress.io is used for end-to-end testing of your website to ensure it stays up and running.
 
 1. Go to [cypress.io](https://cypress.io).
@@ -413,6 +458,8 @@ Cypress.io is used for end-to-end testing of your website to ensure it stays up 
 10. In the value paste the record key you were given `cypress run --record --key PASTE_THIS_VALUE_IN`.
 
 ##### Mailchimp
+
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/mailchimp.jpg" alt="Mailchimp setup" />
 
 Mailchimp is used to allow you to manage your mailing lists for free. You will be able to send out emails to your audience, have them sign up, or unsubscribe at any time without having to manage all of this yourself.
 
@@ -431,6 +478,8 @@ Mailchimp is used to allow you to manage your mailing lists for free. You will b
 
 ##### GitHub Access Token
 
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/github_access_token.png" alt="GitHub Access Token setup" />
+
 To allow automated updates to the website, you will need to create a GitHub access token. You can see some details on that [here](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token).
 
 1. Go to your GitHub [Personal Access Tokens](https://github.com/settings/tokens).
@@ -445,6 +494,8 @@ To allow automated updates to the website, you will need to create a GitHub acce
 10. In the value paste the copied token.
 
 ##### Segment.io and Amplitude
+
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/amplitude.png" alt="Amplitude setup" />
 
 To maintain analytics of your audience we use `Segment.io` and `Amplitude`. The benefit of this is that you can switch your analytics providers at any time in the future.
 
@@ -476,6 +527,8 @@ To maintain analytics of your audience we use `Segment.io` and `Amplitude`. The 
 26. It should now all be connected.
 
 ##### Sentry.io
+
+<img src="https://github.com/ragaeeb/das-js/blob/master/examples/sentry.png" alt="Sentry.io setup" />
 
 To track technical failures and bugs we use the `sentry.io` platform.
 
