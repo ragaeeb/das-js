@@ -1,6 +1,7 @@
 const { CalculationParameters, PrayerTimes, SunnahTimes, Coordinates } = require('adhan');
 
 const ONE_HOUR = 60 * 60 * 1000;
+const FRIDAY = 5;
 
 const formatTime = (t, timeZone) => {
   const time = new Date(t).toLocaleTimeString('en-US', {
@@ -99,7 +100,7 @@ const daily = (
 
   return {
     ...result,
-    istijaba: now.getDay() === 5 && nextPrayer === 'maghrib' && diff < ONE_HOUR,
+    istijaba: now.getDay() === FRIDAY && nextPrayer === 'maghrib' && diff < ONE_HOUR,
   };
 };
 

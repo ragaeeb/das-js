@@ -76,7 +76,7 @@ const Donate = () => {
 
   const totalExpenses = expenseData.datasets[0].data.reduce((total, current) => total + current, 0);
 
-  const onDonateClicked = () => window.analytics.track('PaypalDonateClicked');
+  const onDonateClicked = () => window.analytics && window.analytics.track('PaypalDonateClicked');
 
   return (
     <section id="donate" className="jumbotron">

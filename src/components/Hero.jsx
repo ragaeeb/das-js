@@ -6,13 +6,13 @@ import { daily, getJumuahTime, isFard } from '../utils/calculator';
 import hijri from '../utils/hijri';
 
 const getLabel = (event, label, onClick, link) => {
-  if (event === 'fajr') {
+  if (onClick && link) {
     return (
       <a
         target="_blank"
-        onClick={onClick}
+        onClick={onClick(event)}
         rel="noopener noreferrer"
-        className="hero-title fajr"
+        className="hero-title attached"
         href={link}
       >
         {label}
@@ -29,14 +29,15 @@ const renderSunnah = (event, label, time) => (
   </div>
 );
 
-const renderTiming = (fajrPdf, fajrOnClick) => ({ label, time, iqamah, event }) => {
+const renderTiming = (links, onClick) => ({ label, time, iqamah, event }) => {
   if (!isFard(event)) {
     return renderSunnah(event, label, time);
   }
 
   return (
     <React.Fragment key={label}>
-      {getLabel(event, label, fajrOnClick, fajrPdf)} <span className="text-color-main">{time}</span>
+      {getLabel(event, label, onClick, links[event])}{' '}
+      <span className="text-color-main">{time}</span>
       {iqamah && <small className="iqamah">&nbsp;{iqamah}</small>}
       <br />
     </React.Fragment>
@@ -48,14 +49,15 @@ const placeholder = {
   timings: [],
 };
 
-const onFajrPdfClicked = () => window.analytics.track('FajrTimingPdf');
-const onCalendarClicked = () => window.analytics.track('Calendar');
+const onLinkClicked = (event) => () =>
+  window.analytics && window.analytics.track(`${event}TimingPdf`);
+const onCalendarClicked = () => window.analytics && window.analytics.track('Calendar');
 
 const Hero = () => {
   const { hero } = useContext(PortfolioContext);
   const {
     calculation,
-    fajrPdf,
+    links,
     istijabaText,
     iqamahs,
     labels = {},
@@ -82,7 +84,7 @@ const Hero = () => {
   return (
     <section id="hero" className="jumbotron">
       <Container>
-        {istijaba && (
+        {istijaba && istijabaText && (
           <>
             <h2 data-cy="istijaba">{istijabaText}</h2>
             <br />
@@ -113,21 +115,23 @@ const Hero = () => {
         )}
         <h2 data-cy="hijri">{`${day}, ${hijriDate} ${month} ${year} H`}</h2>
         <h1 className="hero-title" data-cy="timings">
-          {timings.map(renderTiming(fajrPdf, onFajrPdfClicked))}
+          {timings.map(renderTiming(links, onLinkClicked))}
           {isLoaded && renderSunnah('jumuah', labels.jumuah, getJumuahTime(now, iqamahs))}
         </h1>
         <p className="hero-cta">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={calendarUrl}
-            onClick={onCalendarClicked}
-            data-cy="calendar"
-          >
-            <button type="button" className="cta-btn cta-btn--hero">
-              Calendar
-            </button>
-          </a>
+          {calendarUrl && (
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={calendarUrl}
+              onClick={onCalendarClicked}
+              data-cy="calendar"
+            >
+              <button type="button" className="cta-btn cta-btn--hero">
+                Calendar
+              </button>
+            </a>
+          )}
           <Link to="monthly">
             <button type="button" className="cta-btn cta-btn--hero" data-cy="monthly">
               Monthly Schedule

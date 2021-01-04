@@ -32,7 +32,9 @@ const Monthly = () => {
     newDate.setMonth(newDate.getMonth() + delta);
     setNow(newDate);
 
-    window.analytics.track(delta === 1 ? 'NextMonthTimings' : 'PrevMonthTimings');
+    if (window.analytics) {
+      window.analytics.track(delta === 1 ? 'NextMonthTimings' : 'PrevMonthTimings');
+    }
   };
 
   const { dates, label } = monthly(labels, calculation, now);

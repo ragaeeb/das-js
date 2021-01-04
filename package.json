@@ -1,10 +1,24 @@
 {
-  "name": "das-js",
+  "name": "islamic-simplefolio",
   "private": true,
   "homepage": "https://dar-as-sahaba.com",
-  "description": "Dar as-Sahābah website",
-  "version": "0.7.0",
+  "author": "Dar as-Sahaba",
+  "description": "Dār as-Ṣaḥābah Association",
+  "version": "0.8.0",
   "license": "MIT",
+  "contributors": [
+    {
+      "name": "Ragaeeb Haq",
+      "url": "https://github.com/ragaeeb"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ragaeeb/das-js"
+  },
+  "bugs": {
+    "url": "https://github.com/ragaeeb/das-js/issues"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -20,6 +34,7 @@
   },
   "dependencies": {
     "@kogk/react-reveal": "1.2.3",
+    "@sentry/gatsby": "5.29.2",
     "adhan": "4.0.1",
     "bootstrap": "4.5.3",
     "chart.js": "2.9.4",
@@ -34,7 +49,6 @@
     "gatsby-plugin-react-helmet": "3.7.0",
     "gatsby-plugin-sass": "2.8.0",
     "gatsby-plugin-segment-js": "3.6.0",
-    "gatsby-plugin-sentry": "1.0.1",
     "gatsby-plugin-sharp": "2.11.2",
     "gatsby-plugin-sitemap": "2.9.0",
     "gatsby-remark-copy-linked-files": "2.7.0",
@@ -64,12 +78,10 @@
     "babel-eslint": "10.1.0",
     "babel-jest": "26.6.3",
     "babel-preset-gatsby": "0.9.1",
-    "cypress": "6.2.0",
     "dotenv": "8.2.0",
     "eslint": "7.17.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "7.1.0",
-    "eslint-plugin-cypress": "2.11.2",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-prettier": "3.3.0",
@@ -82,15 +94,7 @@
     "jest": "26.6.3",
     "lint-staged": "10.5.3",
     "preact-render-to-string": "5.1.12",
-    "prettier": "2.2.1",
-    "start-server-and-test": "1.11.7"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ragaeeb/das-js"
-  },
-  "bugs": {
-    "url": "https://github.com/ragaeeb/das-js/issues"
+    "prettier": "2.2.1"
   },
   "husky": {
     "hooks": {

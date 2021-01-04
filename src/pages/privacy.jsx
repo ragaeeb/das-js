@@ -3,7 +3,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import SEO from '../components/seo';
-import { privacyPolicy } from '../mock/data';
+import { footerData } from '../mock/data';
 import '../style/main.scss';
 
 export default () => (
@@ -63,7 +63,7 @@ export default () => (
               around privacy and personal information. If you have any questions about how we handle
               user data and personal information, feel free to contact us.
             </p>
-            <p>This policy is effective as of {privacyPolicy.effectiveDate}.</p>
+            <p>This policy is effective as of {footerData.privacyPolicy.effectiveDate}.</p>
           </Container>
         </section>
       </>

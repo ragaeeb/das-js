@@ -159,7 +159,9 @@ export const heroData = {
     },
   },
   hijriAdjust: -1,
-  fajrPdf: 'https://archive.org/download/fajr-letter-das/Letter_Fajr-Ishaa_Ottawa-2016-06-27.pdf',
+  links: {
+    fajr: 'https://archive.org/download/fajr-letter-das/Letter_Fajr-Ishaa_Ottawa-2016-06-27.pdf',
+  },
   calendarUrl:
     'https://calendar.google.com/calendar/embed?src=60me58mrktt0lt24mijjkhddvc%40group.calendar.google.com&ctz=America%2FNew_York',
   istijabaText:
@@ -234,7 +236,7 @@ export const contactInfo = {
   mapUrl: 'https://goo.gl/maps/14LYnHa7R9sZsQBG7',
   telButton: 'Call Us',
   tel: '+16133215459',
-  address: '2835 Dumaurier Ave, Ottawa, ON, Canada',
+  address: '2835 Dumaurier Ave, Ottawa, ON, Canada. K2B 7W3',
 };
 
 export const footerData = {
@@ -264,8 +266,7 @@ export const footerData = {
       url: 'https://www.youtube.com/channel/UC4JRttylAMmZubEmFOjX7Vg',
     },
   ],
-};
-
-export const privacyPolicy = {
-  effectiveDate: '18 July 2020',
+  privacyPolicy: {
+    effectiveDate: '18 July 2020',
+  },
 };

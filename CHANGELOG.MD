@@ -5,7 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.7.1] - 2021-01-02
+## [0.8.0] - 2021-01-04
+
+### Added
+
+- [Allow any prayer label to be linkable](https://github.com/ragaeeb/das-js/issues/326)
 
 ### Fixed
 
@@ -13,8 +17,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Updated
 
-- [Update dependency eslint to v7.17.0](https://github.com/ragaeeb/das-js/pull/319)
-- Update `README.MD`.
+- [Update dependency eslint to v7.17.0](https://github.com/ragaeeb/das-js/pull/319).
+- [Update dependency preact to v10.5.9](https://github.com/ragaeeb/das-js/pull/321).
+- [Update dependency eslint-plugin-prettier to v3.3.1](https://github.com/ragaeeb/das-js/pull/322).
+- [Use official sentry plugin](https://github.com/ragaeeb/das-js/issues/323).
+- [Disable cypress](https://github.com/ragaeeb/das-js/issues/324).
+- [Seed the brand information from package.json](https://github.com/ragaeeb/das-js/issues/325).
+- [Update README.MD](https://github.com/ragaeeb/das-js/issues/327).
 
 ## [0.7.0] - 2020-12-30
 

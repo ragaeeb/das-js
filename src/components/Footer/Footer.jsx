@@ -28,7 +28,7 @@ const Footer = () => {
   const { footer } = useContext(PortfolioContext);
   const { networks } = footer;
 
-  const onSocialClicked = (name) => () => window.analytics.track(name);
+  const onSocialClicked = (name) => () => window.analytics && window.analytics.track(name);
 
   return (
     <footer className="footer navbar-static-bottom">
