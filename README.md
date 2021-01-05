@@ -80,6 +80,74 @@ At this point this may take some time (ie: usually an hour or so) to change the 
 
 <img src="https://github.com/ragaeeb/das-js/blob/master/examples/cloudflare_success.jpg" alt="Cloudflare success message" />
 
+11. Go to the `DNS` section.
+12. Add the following `A` records:
+
+```json
+[
+  {
+    "type": "A",
+    "name": "@",
+    "content": "185.199.111.153",
+    "ttl": "Auto",
+    "proxyStatus": "Proxied"
+  },
+  {
+    "type": "A",
+    "name": "@",
+    "content": "185.199.110.153",
+    "ttl": "Auto",
+    "proxyStatus": "Proxied"
+  },
+  {
+    "type": "A",
+    "name": "@",
+    "content": "185.199.109.153",
+    "ttl": "Auto",
+    "proxyStatus": "Proxied"
+  },
+  {
+    "type": "A",
+    "name": "@",
+    "content": "185.199.108.153",
+    "ttl": "Auto",
+    "proxyStatus": "Proxied"
+  },
+  {
+    "type": "MX",
+    "name": "@",
+    "mailServer": "mx1.improvmx.com.",
+    "priority": "10",
+    "ttl": "Auto"
+  },
+  {
+    "type": "MX",
+    "name": "@",
+    "mailServer": "mx2.improvmx.com.",
+    "priority": "20",
+    "ttl": "Auto"
+  },
+  {
+    "type": "TXT",
+    "name": "@",
+    "content": "v=spf1 include:spf.efwd.registrar-servers.com include:spf.improvmx.com ~all",
+    "ttl": "Auto"
+  }
+]
+```
+
+13. Go to SSL/TLS, and enable `Full`.
+14. Go to `Speed` and enable `Auto Minify` to all: `Javascript`, `CSS`, and `HTML`.
+15. Disable `Brotli` compression.
+16. Enable `Rocket Loader`.
+17. Go to `Page Rules`.
+18. Click `Create Page Rule`.
+19. For `URL matches` set it to: `http://yourdomain.com/*`, in the setting select `Always Use HTTPS`. Click `Save`.
+20. Click `Create Page Rule`.
+21. For `URL matches` set it to: `http://www.yourdomain.com/*`, in the setting select `Always Use HTTPS`. Click `Save`.
+22. For `URL matches` set it to: `https://www.yourdomain.com/*`, in the setting select `Cache Level` and choose `Cache Everything`. Click `Save`.
+23. Enable all the rules.
+
 ### Technical Part (Cloning & Configuration)
 
 This is the slightly technical part. But you won't have to download any tools, but you will have to create a few accounts to get everything to work properly.
@@ -542,7 +610,23 @@ To track technical failures and bugs we use the `sentry.io` platform.
 8. In the `Name` put: `SENTRY_DSN`
 9. In the value paste the copied `dsn` value.
 
----
+#### Blog Posts
+
+We will need to delete all the content in the `/content/blog` folder so we can start fresh.
+
+#### GitHub Settings
+
+1. Go to the Repository settings, then `Overview`.
+2. Ensure `Issues` and `Wikis` are checked.
+3. Under `Custom domain` enter your domain (without the https://www.).
+4. `Enforce HTTPS` should be unchecked.
+
+#### Mail Forwarding
+
+1. Go to [https://app.improvmx.com](https://app.improvmx.com).
+2. Set your domain name, and add the gmail address you want to forward it to.
+3. An email will be sent to your inbox, validate it.
+4. Follow the steps here to send emails using Gmail [https://improvmx.com/guides/send-emails-using-gmail](https://improvmx.com/guides/send-emails-using-gmail).
 
 ## Technologies used 🛠️
 
