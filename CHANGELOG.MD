@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- [Privacy policy doesnt scale on mobile](https://github.com/ragaeeb/das-js/issues/318)
+- [Omitting links key results in crash](https://github.com/ragaeeb/das-js/issues/332)
 
 ## [0.8.0] - 2021-01-04
 
