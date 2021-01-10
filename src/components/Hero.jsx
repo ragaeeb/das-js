@@ -57,7 +57,7 @@ const Hero = () => {
   const { hero } = useContext(PortfolioContext);
   const {
     calculation,
-    links,
+    links = {},
     istijabaText,
     iqamahs,
     labels = {},

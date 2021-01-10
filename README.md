@@ -144,7 +144,7 @@ At this point this may take some time (ie: usually an hour or so) to change the 
 18. Click `Create Page Rule`.
 19. For `URL matches` set it to: `http://yourdomain.com/*`, in the setting select `Always Use HTTPS`. Click `Save`.
 20. Click `Create Page Rule`.
-21. For `URL matches` set it to: `http://www.yourdomain.com/*`, in the setting select `Always Use HTTPS`. Click `Save`.
+21. For `URL matches` set it to: `www.yourdomain.com/*`, in the setting select `Forwarding URL` with `301 - Permanent Redirect` and set the redirect to `https//yourdomain.com/$1`. Click `Save`.
 22. For `URL matches` set it to: `https://www.yourdomain.com/*`, in the setting select `Cache Level` and choose `Cache Everything`. Click `Save`.
 23. Enable all the rules.
 
