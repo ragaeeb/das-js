@@ -36,7 +36,7 @@
     "@kogk/react-reveal": "1.2.3",
     "@sentry/gatsby": "6.0.3",
     "adhan": "4.0.1",
-    "bootstrap": "4.5.3",
+    "bootstrap": "4.6.0",
     "chart.js": "2.9.4",
     "gatsby": "2.31.1",
     "gatsby-cli": "2.18.0",
