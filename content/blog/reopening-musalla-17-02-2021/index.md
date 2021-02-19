@@ -2,8 +2,8 @@
 title: 'Muṣallá As-Sahaba Re-Opening'
 date: '2021-02-17T02:50:12.841Z'
 description: 'Muṣallá As-Sahaba Re-Opening for All Prayers and Only 1 Jumuʿah Prayer'
-imageUrl: https://64.media.tumblr.com/a1eba0f091d31cec05a7e6fd52c13149/a29cdf00e96cf348-bd/s540x810/fed5fddb1eb9c1d23a656639145bb61df79fba64.png
-thumbnailUrl: https://64.media.tumblr.com/4523bfe783bc108b4df4d8189ea7905d/tumblr_oijrj1BJkn1r6xg0co1_1280.jpg
+imageUrl: https://64.media.tumblr.com/bab6646e5df6c22fd8d61d181b373b32/tumblr_nkh9xfzSzk1r2tdsbo3_400.jpg
+thumbnailUrl: https://images.pexels.com/photos/2427797/pexels-photo-2427797.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=640
 ---
 
 Alḥamdulillāh, as the COVID-19 Provincewide Shutdown restrictions have eased in Ottawa, **<span style="text-decoration: underline">starting Wednesday, February 17th, 2021, Musalla As-Ṣaḥāba will open for all daily prayers</span>**.
