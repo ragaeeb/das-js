@@ -5,7 +5,7 @@ import { Alert, Button, Col, Container, Form } from 'react-bootstrap';
 import SEO from '../components/seo';
 import '../style/main.scss';
 
-export default () => {
+const newsletter = () => {
   const [submissionResult, setSubmissionResult] = useState(null);
 
   const handleSubmit = async (event) => {
@@ -99,3 +99,5 @@ export default () => {
     </>
   );
 };
+
+export default newsletter;

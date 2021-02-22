@@ -5,6 +5,40 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.8.4] - 2021-02-21
+
+### Updated
+
+- [Update dependency node-sass to v5](https://github.com/ragaeeb/das-js/pull/266)
+- [Update dependency @sentry/gatsby to v6.2.0](https://github.com/ragaeeb/das-js/pull/343)
+- [Update gatsby monorepo](https://github.com/ragaeeb/das-js/pull/344)
+- [Update dependency @babel/plugin-transform-runtime to v7.12.17](https://github.com/ragaeeb/das-js/pull/345)
+- [Update dependency react-lazyload to v3.2.0](https://github.com/ragaeeb/das-js/pull/346)
+- [Update dependency lint-staged to v10.5.4](https://github.com/ragaeeb/das-js/pull/347)
+- [Update dependency react-icons to v4.2.0](https://github.com/ragaeeb/das-js/pull/348)
+- [Update dependency eslint to v7.20.0](https://github.com/ragaeeb/das-js/pull/350)
+- [Update dependency react-bootstrap to v1.5.0](https://github.com/ragaeeb/das-js/pull/351)
+- [Update dependency eslint-config-prettier to v8](https://github.com/ragaeeb/das-js/pull/353)
+- [Update dependency husky to v5.1.0](https://github.com/ragaeeb/das-js/pull/354)
+
+## [0.8.3] - 2021-02-18
+
+### Added
+
+- [Add blog for reopening of musalla](https://github.com/ragaeeb/das-js/pull/352)
+
+## [0.8.2] - 2021-02-01
+
+### Updated
+
+- [Update gatsby monorepo](https://github.com/ragaeeb/das-js/pull/334)
+- [Update dependency preact to v10.5.12](https://github.com/ragaeeb/das-js/pull/336)
+- [Update dependency eslint to v7.19.0](https://github.com/ragaeeb/das-js/pull/337)
+- [Update dependency eslint-config-prettier to v7.2.0](https://github.com/ragaeeb/das-js/pull/338)
+- [Update dependency @sentry/gatsby to v6](https://github.com/ragaeeb/das-js/pull/339)
+- [Update dependency bootstrap to v4.6.0](https://github.com/ragaeeb/das-js/pull/340)
+- [Update dependency husky to v5.0.8](https://github.com/ragaeeb/das-js/pull/342)
+
 ## [0.8.1] - 2021-01-04
 
 ### Updated
