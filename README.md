@@ -658,6 +658,15 @@ And then in the `render()`
 
 Learned from tutorial [Level Up Tutorials: Scott Tolinski - Pro Gatsby 2](https://www.leveluptutorials.com/tutorials/pro-gatsby-2)
 
+### Updating the Website
+
+Each update to the website should consist of the following:
+
+1. Bump up the package version in `package.json` and `package-lock.json`.
+2. Update the `CHANGELOG.MD` to include all the changes that have gone into the release.
+3. Create a GitHub milestone matching the new website version and include all the issues and pull-requests into that milestone.
+4. Once everything is merged, create a GitHub release and name it the new version of the website.
+
 ## Authors
 
 - **Ragaeeb Haq** - [https://github.com/ragaeeb](https://github.com/ragaeeb)
