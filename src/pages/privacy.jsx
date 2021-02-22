@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 import { footerData } from '../mock/data';
 import '../style/main.scss';
 
-export default () => (
+const privacy = () => (
   <StaticQuery
     query={graphql`
       {
@@ -70,3 +70,5 @@ export default () => (
     )}
   />
 );
+
+export default privacy;

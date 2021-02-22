@@ -11,7 +11,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 // https://github.com/LasaleFamine/string-normalize-es6/blob/master/src/index.js
-const normalize = (input) => input.normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+const normalize = (input) => input && input.normalize && input.normalize('NFKD').replace(/[\u0300-\u036f]/g, '') ;
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
