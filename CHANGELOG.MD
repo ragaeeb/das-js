@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.8.4] - 2021-02-21
 
+### Fixed
+
+- [Normalize NPE](https://github.com/ragaeeb/das-js/issues/355)
+- [Guard against NPE for Object.keys](https://github.com/ragaeeb/das-js/issues/356)
+
 ### Updated
 
 - [Update dependency node-sass to v5](https://github.com/ragaeeb/das-js/pull/266)
