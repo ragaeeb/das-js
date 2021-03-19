@@ -35,7 +35,7 @@
   "dependencies": {
     "@kogk/react-reveal": "1.2.3",
     "@sentry/gatsby": "6.2.2",
-    "adhan": "4.0.3",
+    "adhan": "4.1.0",
     "bootstrap": "4.6.0",
     "chart.js": "2.9.4",
     "gatsby": "3.1.1",
