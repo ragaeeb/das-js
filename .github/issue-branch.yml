@@ -1,0 +1,5 @@
+branches:
+    - label: bug
+      skip: false
+    - label: '*'
+      skip: true
