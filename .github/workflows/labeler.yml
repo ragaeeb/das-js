@@ -1,14 +1,11 @@
-name: Auto Label
+name: 'Pull Request Labeler'
 on:
-  pull_request:
-    types: [opened, synchronize]
+    - pull_request
 
 jobs:
-  auto-label:
-    name: Auto Label
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@main
-      - uses: banyan/auto-label@1.2
-        env:
-          GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+    triage:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/labeler@main
+              with:
+                  repo-token: '${{ secrets.REPO_ACCESS_TOKEN }}'

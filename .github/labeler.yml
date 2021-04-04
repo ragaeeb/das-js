@@ -1,0 +1,11 @@
+# https://github.com/actions/labeler
+
+documentation:
+    - '*.MD'
+
+dependencies:
+    - 'package.json'
+
+# Add 'test' label to any change to *.test.js files within the source dir
+tests:
+    - src/**/*.test.js

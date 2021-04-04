@@ -1,4 +1,4 @@
-import Fade from '@kogk/react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 import { Link } from 'gatsby';
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
@@ -27,7 +27,7 @@ const Contact = () => {
     <section id="contact">
       <Container>
         <Title title="Contact" />
-        <Fade bottom duration={1000} delay={800} distance="30px">
+        <Fade duration={1000} delay={800}>
           <div className="contact-wrapper">
             <p className="contact-wrapper__text">{cta}</p>
             <p className="contact-wrapper__text">{getMapLink(mapUrl, address)}</p>

@@ -5,7 +5,7 @@ import App from '../components/App';
 import SEO from '../components/seo';
 import '../style/main.scss';
 
-export const pages = ({ data }) => {
+const pages = ({ data }) => {
   const { title, lang, description } = data.site.siteMetadata;
 
   return (

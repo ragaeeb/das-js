@@ -1,3 +1,6 @@
+[![time tracker](https://wakatime.com/badge/github/ragaeeb/das-js.svg)](https://wakatime.com/badge/github/ragaeeb/das-js)
+[![Known Vulnerabilities](https://snyk.io/test/github/ragaeeb/das-js/badge.svg)](https://snyk.io/test/github/ragaeeb/das-js)
+
 # [![das-js](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/qnmnp9/master&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/qnmnp9/runs)
 
 ![Gatsby Build](https://github.com/ragaeeb/das-js/workflows/Gatsby%20Build/badge.svg)
