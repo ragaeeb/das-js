@@ -8,7 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
       - name: Cypress run
-        uses: cypress-io/github-action@v2.9.7
+        uses: cypress-io/github-action@v2.9.10
         with:
           start: npm run test:e2e:ci
           record: true
