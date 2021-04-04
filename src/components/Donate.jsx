@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Container, Toast } from 'react-bootstrap';
 import { Pie } from 'react-chartjs-2';
+import { Fade } from 'react-awesome-reveal';
 import {
   FaCreditCard,
   FaDonate,
@@ -12,7 +13,6 @@ import {
 } from 'react-icons/fa';
 import PortfolioContext from '../context/context';
 import { stringToColour } from '../utils/stringUtils';
-import ScreenFade from './ScreenFade';
 import Title from './Title';
 
 const FONT_SIZE = '2em';
@@ -41,6 +41,8 @@ const DonateOption = ({ avatar, title, children, status }) => (
     </Toast.Body>
   </Toast>
 );
+
+const ScreenFade = () => <Fade duration={1000} delay={500} />;
 
 const Donate = () => {
   const {
