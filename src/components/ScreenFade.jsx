@@ -1,4 +1,4 @@
-import Fade from '@kogk/react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 import React, { useEffect, useState } from 'react';
 
 const ScreenFade = (props) => {
@@ -17,11 +17,8 @@ const ScreenFade = (props) => {
 
   return (
     <Fade
-      left={isDesktop}
-      bottom={isMobile}
       duration={1000}
       delay={500}
-      distance="30px"
       {...props}
     />
   );
