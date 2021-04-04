@@ -1,17 +1,26 @@
-# Trigger the workflow on milestone events
+name: Release notes on Milestone closure
 on:
-  milestone:
-    types: [closed]
-name: Milestone Closure
+    milestone:
+        types: [closed]
+
 jobs:
-  create-release-notes:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@main
-      - uses: bahmutov/npm-install@master
-      - name: Create Release Notes
-        uses: docker://decathlon/release-notes-generator-action:2.1.0@sha256:daf108fce8f2bc51021a84860bfb2c29af50f4a1ab145e604ee901a1c9bca0bd
-        env:
-          GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
-          OUTPUT_FOLDER: temp_release_notes
-          USE_MILESTONE_TITLE: 'true'
+    create-release-notes:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@master
+            - name: Create Release Notes
+              uses: Decathlon/release-notes-generator-action@v3.1.4
+              env:
+                  GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+                  OUTPUT_FOLDER: temp_release_notes
+                  USE_MILESTONE_TITLE: 'true'
+            - name: Upload Release Notes to Wiki
+              uses: Decathlon/wiki-page-creator-action@v2.0.3
+              env:
+                  ACTION_MAIL: release@users.noreply.github.com
+                  ACTION_NAME: release
+                  GH_PAT: ${{ secrets.REPO_PAT }}
+                  MD_FOLDER: temp_release_notes
+                  OWNER: ragaeeb
+                  REPO_NAME: das-js
+                  SKIP_MD: README.md
