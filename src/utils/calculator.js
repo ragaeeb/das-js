@@ -76,7 +76,7 @@ const reduceIqamahs = (now, iqamahs) => {
   );
 };
 
-const getJumuahTime = (now, iqamahs) => reduceIqamahs(now, iqamahs).jumuah;
+const getIqamahTime = (now, iqamahs, id) => reduceIqamahs(now, iqamahs)[id];
 
 const daily = (
   salatLabels,
@@ -155,6 +155,6 @@ module.exports = {
   daily,
   monthly,
   yearly,
-  getJumuahTime,
+  getIqamahTime,
   isFard,
 };
