@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import PortfolioContext from '../context/context';
-import { daily, getJumuahTime, isFard } from '../utils/calculator';
+import { daily, getIqamahTime, isFard } from '../utils/calculator';
 import hijri from '../utils/hijri';
 
 const getLabel = (event, label, onClick, link) => {
@@ -23,11 +23,12 @@ const getLabel = (event, label, onClick, link) => {
   return label;
 };
 
-const renderSunnah = (event, label, time) => (
-  <div key={event} className="sunan" data-cy="sunan">
-    {label} <span className="text-color-main">{time}</span>
-  </div>
-);
+const renderSunnah = (event, label, time) =>
+  time && (
+    <div key={event} className="sunan" data-cy="sunan">
+      {label} <span className="text-color-main">{time}</span>
+    </div>
+  );
 
 const renderTiming = (links, onClick) => ({ label, time, iqamah, event }) => {
   if (!isFard(event)) {
@@ -116,7 +117,9 @@ const Hero = () => {
         <h2 data-cy="hijri">{`${day}, ${hijriDate} ${month} ${year} H`}</h2>
         <h1 className="hero-title" data-cy="timings">
           {timings.map(renderTiming(links, onLinkClicked))}
-          {isLoaded && renderSunnah('jumuah', labels.jumuah, getJumuahTime(now, iqamahs))}
+          {isLoaded && renderSunnah('jumuah', labels.jumuah, getIqamahTime(now, iqamahs, 'jumuah'))}
+          {isLoaded &&
+            renderSunnah('tarawih', labels.tarawih, getIqamahTime(now, iqamahs, 'tarawih'))}
         </h1>
         <p className="hero-cta">
           {calendarUrl && (

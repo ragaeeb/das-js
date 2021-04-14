@@ -17,8 +17,18 @@ export const heroData = {
     middleOfTheNight: '1/2 Night Begins',
     lastThirdOfTheNight: 'Last 1/3 Night Begins',
     jumuah: 'Khuṭbah al-Jumuʿah',
+    tarawih: 'Tarawīḥ',
   },
   iqamahs: {
+    tarawih: {
+      4: {
+        13: '9:30 PM',
+        27: '10:00 PM',
+      },
+      5: {
+        1: '10:00 PM',
+      },
+    },
     fajr: {
       1: {
         1: '6:45 AM',

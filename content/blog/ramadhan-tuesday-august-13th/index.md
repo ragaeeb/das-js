@@ -15,12 +15,12 @@ Fast when you see the crescent. If it is obscured to you, then complete thirty d
 
 Also, this year due to COVID-19 Provincewide Shutdown measures [Emergency Brake and Stay-at-Home order](/closing-musalla-03-04-2021), there will NO ifṭār in the muṣallá.
 
-At-Tarawīḥ prayers will be available at As-Ṣaḥāba Muṣallá, however, will be limiting capacity to 15% occupancy of the room (with masks and social distancing measures). That means, a maximum of 15 people will be permitted in the Muṣallá for all prayers (the 5 daily prayers, al-jumuʿah prayers & at-tarawīḥ prayers) on a first come first served basis for brothers only.
+Al-Tarawīḥ prayers will be available at As-Ṣaḥāba Muṣallá, however, will be limiting capacity to 15% occupancy of the room (with masks and social distancing measures). That means, a maximum of 15 people will be permitted in the Muṣallá for all prayers (the 5 daily prayers, al-jumuʿah prayers & al-Tarawīḥ prayers) on a first come first served basis for brothers only.
 
-Al-ʿIshāʾ & at-Tarawīh Prayers Iqāmah Times
+Al-ʿIshāʾ & at-Tarawīḥ Prayers Iqāmah Times
 
-Ramaḍān 1st - 14th (April 13th - 26th) = 9:30pm
-Ramaḍān 15th - 29/30th (April 27th - May 11/12th) = 10:00pm
+- Ramaḍān 1st - 14th (April 13th - 26th) = 9:30pm
+- Ramaḍān 15th - 29/30th (April 27th - May 11/12th) = 10:00pm
 
 The remaining prayer calendar/timings and iqāmah times at Muṣallá As-Ṣaḥāba (2835 Dumaurier Ave, Ramsey area) will be available shortly on our website. The iqāmah times will remain so unless further advised.
 

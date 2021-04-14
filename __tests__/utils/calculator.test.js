@@ -1,5 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
-import { daily, isFard, monthly } from '../../src/utils/calculator';
+import { beforeEach, describe, expect, it } from '@jest/globals';
+import { daily, getIqamahTime, isFard, monthly } from '../../src/utils/calculator';
 
 const MIDDLE_OF_THE_NIGHT = '1/2 Night Begins';
 const LAST_THIRD_OF_THE_NIGHT = 'Last 1/3 Night Begins';
@@ -153,6 +153,31 @@ describe('calculator', () => {
         ['jumuah', 'sunrise', 'middleOfTheNight', 'lastThirdOfTheNight'].forEach((key) =>
           expect(isFard(key)).toBe(false)
         );
+      });
+    });
+
+    describe('getIqamahTime', () => {
+      it('should get the time for Jumuah', () => {
+        const result = getIqamahTime(
+          new Date(2020, 5, 19, 10, 24, 0),
+          {
+            jumuah: {
+              6: {
+                1: '12:30 PM',
+                11: '12:45 PM',
+                21: '12:50 PM',
+              },
+            },
+          },
+          'jumuah'
+        );
+
+        expect(result).toEqual('12:45 PM');
+      });
+
+      it('should be undefined', () => {
+        const result = getIqamahTime(new Date(2020, 5, 19, 10, 24, 0), {}, 'jumuah');
+        expect(result).toBeUndefined();
       });
     });
 
