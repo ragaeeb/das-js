@@ -42,8 +42,6 @@ const DonateOption = ({ avatar, title, children, status }) => (
   </Toast>
 );
 
-const ScreenFade = () => <Fade duration={1000} delay={500} />;
-
 const Donate = () => {
   const {
     donations: {
@@ -84,7 +82,7 @@ const Donate = () => {
     <section id="donate" className="jumbotron">
       <Container>
         <Title title="Donate" />
-        <ScreenFade>
+        <Fade duration={1000} delay={500}>
           <h2>Why Donate?</h2>
           <center>
             <DonateOption
@@ -107,11 +105,11 @@ const Donate = () => {
               </DonateOption>
             )}
           </center>
-        </ScreenFade>
+        </Fade>
         <br />
         <br />
         <br />
-        <ScreenFade>
+        <Fade duration={1000} delay={500}>
           <h2>Ways to Donate</h2>
           <center>
             {paypal && (
@@ -156,11 +154,11 @@ const Donate = () => {
               </DonateOption>
             )}
           </center>
-        </ScreenFade>
+        </Fade>
         <br />
         <br />
         <br />
-        <ScreenFade>
+        <Fade duration={1000} delay={500}>
           <h2>
             Our Monthly Expenses:{' '}
             {totalExpenses.toLocaleString('en-CA', { style: 'currency', currency: 'CAD' })}
@@ -179,7 +177,7 @@ const Donate = () => {
               },
             }}
           />
-        </ScreenFade>
+        </Fade>
         <br />
         <br />
         <br />
