@@ -22,7 +22,7 @@ Bismillāhir Raḥmānir Raḥīm
 
 As-salāmu ʿalaykum wa raḥmatulaahi wa barakātuhu
 
-This is to inform you that the remain classes for the book of Prayer will be held inshaAllāh in [Loeb Building](http://www2.carleton.ca/campus/) room C164 until further notice.
+This is to inform you that the remain classes for the book of Prayer will be held inshaAllāh in [Loeb Building](http://www.carleton.ca/campus/) room C164 until further notice.
 
 The class will start at 4pm inshaAllāh, please try to be on time. For those who are not familiar with the University please find attach the map of the school with buildings code and parking.
 For our class the building Code is LA (Loeb) or number 15 (Black and white map). C represent the position of the of the branch and 164 with the 1 representing the floor which is the 1st floor. Note that the main floor is the 2nd floor so you will need to go down the stairs to reach the 1st floor.

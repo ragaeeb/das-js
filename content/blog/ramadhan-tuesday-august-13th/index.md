@@ -22,11 +22,14 @@ Al-ʿIshāʾ & at-Tarawīḥ Prayers Iqāmah Times
 - Ramaḍān 1st - 14th (April 13th - 26th) = 9:30pm
 - Ramaḍān 15th - 29/30th (April 27th - May 11/12th) = 10:00pm
 
-The remaining prayer calendar/timings and iqāmah times at Muṣallá As-Ṣaḥāba (2835 Dumaurier Ave, Ramsey area) will be available shortly on our website. The iqāmah times will remain so unless further advised.
-
 Al-Jumuʿah Prayers
 First Khuṭbah: 1:00pm
 Second Khuṭbah: 1:45pm
+
+The remaining prayer calendar/timings and iqāmah times at Muṣallá As-Ṣaḥāba (2835 Dumaurier Ave, Ramsey area) will be available shortly on our website. The iqāmah times will remain so unless further advised.
+
+[Iqāmah Times](https://drive.google.com/file/d/1xQxiDljHD-X4i3pD7Ks5H6AIiHwT3LAf)
+[Calendar](https://drive.google.com/file/d/102x4mY4VHeEW6xLDe8DEIOIOGjUfK0P_)
 
 For more information regarding COVID-19 guidelines and restrictions within the City of Ottawa, visit https://ottawa.ca/en/health-and-public-safety/covid-19-ottawa
 
