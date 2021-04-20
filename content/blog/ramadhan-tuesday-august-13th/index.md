@@ -8,27 +8,29 @@ thumbnailUrl: https://64.media.tumblr.com/2b55a27e30f876bed12a32ba17eb214a/56f20
 
 As-salāmu ʿalaikum wa raḥmatullāhi wa barakātuh,
 
-This is to inform you that the 1st day of Ramaḍān is Tuesday, April 13, 2021, in-shāʾ-Allah.
+This is to inform you that the <span style="text-decoration: underline; color: #0B5394">**1st day of Ramaḍān is Tuesday, April 13, 2021, in-shāʾ-Allah.**</span>
 
 Fast when you see the crescent. If it is obscured to you, then complete thirty days of Shaʿbān. And break your fast when you see the crescent. If it is obscured to you then fast thirty days.
 [transmitted by al-Bukhārī and Muslim].
 
-Also, this year due to COVID-19 Provincewide Shutdown measures [Emergency Brake and Stay-at-Home order](/closing-musalla-03-04-2021), there will NO ifṭār in the muṣallá.
+Also, this year due to **COVID-19 Provincewide Shutdown measures [Emergency Brake and Stay-at-Home order](/closing-musalla-03-04-2021),** <span style="text-decoration: underline; color: red">**there will NO ifṭār in the muṣallá.**</span>
 
-Al-Tarawīḥ prayers will be available at As-Ṣaḥāba Muṣallá, however, will be limiting capacity to 15% occupancy of the room (with masks and social distancing measures). That means, a maximum of 15 people will be permitted in the Muṣallá for all prayers (the 5 daily prayers, al-jumuʿah prayers & al-Tarawīḥ prayers) on a first come first served basis for brothers only.
+<span style="text-decoration: underline">**Al-Tarawīḥ prayers will be available at As-Ṣaḥāba Muṣallá, however, will be limiting capacity to 15% occupancy of the room (with masks and social distancing measures).**</span> That means, a <span style="text-decoration: underline; color: red">**maximum of 15 people will be permitted in the Muṣallá for all prayers**</span> (the 5 daily prayers, al-jumuʿah prayers & al-Tarawīḥ prayers) on a first come first served basis for brothers only.
 
-Al-ʿIshāʾ & at-Tarawīḥ Prayers Iqāmah Times
+<span style="text-decoration: underline">**Al-ʿIshāʾ & at-Tarawīḥ Prayers Iqāmah Times**</span>
 
-- Ramaḍān 1st - 14th (April 13th - 26th) = 9:30pm
-- Ramaḍān 15th - 29/30th (April 27th - May 11/12th) = 10:00pm
+Ramaḍān 1st - 14th (April 13th - 26th) = **9:30pm**</br>
+Ramaḍān 15th - 29/30th (April 27th - May 11/12th) = **10:00pm**
 
-Al-Jumuʿah Prayers
-First Khuṭbah: 1:00pm
-Second Khuṭbah: 1:45pm
+<span style="text-decoration: underline">**Al-Jumuʿah Prayers**</span>
+
+First Khuṭbah: **1:00pm**</br>
+Second Khuṭbah: **1:45pm**
 
 The remaining prayer calendar/timings and iqāmah times at Muṣallá As-Ṣaḥāba (2835 Dumaurier Ave, Ramsey area) will be available shortly on our website. The iqāmah times will remain so unless further advised.
 
 [Iqāmah Times](https://drive.google.com/file/d/1xQxiDljHD-X4i3pD7Ks5H6AIiHwT3LAf)
+
 [Calendar](https://drive.google.com/file/d/102x4mY4VHeEW6xLDe8DEIOIOGjUfK0P_)
 
 For more information regarding COVID-19 guidelines and restrictions within the City of Ottawa, visit https://ottawa.ca/en/health-and-public-safety/covid-19-ottawa
