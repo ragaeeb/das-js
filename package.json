@@ -33,7 +33,7 @@
     "test:e2e:ci": "START_SERVER_AND_TEST_INSECURE=1 start-server-and-test develop http://localhost:8000 cy:run"
   },
   "dependencies": {
-    "@sentry/gatsby": "6.2.5",
+    "@sentry/gatsby": "6.3.5",
     "adhan": "4.1.0",
     "bootstrap": "4.6.0",
     "chart.js": "2.9.4",
