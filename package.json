@@ -33,13 +33,13 @@
     "test:e2e:ci": "START_SERVER_AND_TEST_INSECURE=1 start-server-and-test develop http://localhost:8000 cy:run"
   },
   "dependencies": {
+    "@ragaeeb/gatsby-plugin-chatwoot": "1.1.1",
     "@sentry/gatsby": "6.3.5",
     "adhan": "4.1.0",
     "bootstrap": "5.0.0",
     "chart.js": "2.9.4",
     "gatsby": "3.4.2",
     "gatsby-cli": "3.4.1",
-    "gatsby-plugin-chatwoot": "1.1.0",
     "gatsby-plugin-feed": "3.4.0",
     "gatsby-plugin-mailchimp": "5.2.2",
     "gatsby-plugin-manifest": "3.4.0",

@@ -80,7 +80,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-chatwoot`,
+      resolve: `@ragaeeb/gatsby-plugin-chatwoot`,
       options: {
         baseUrl: 'https://app.chatwoot.com', // Required
         websiteToken: process.env.CHATWOOT_TOKEN, // Required
