@@ -57,7 +57,6 @@ const Footer = () => {
               );
             })}
         </div>
-        <hr />
         <Copyright />
         <GitHash />
         <RouteLink style={{ color: 'white' }} to="privacy" data-cy="privacy">
