@@ -1,6 +1,6 @@
 ---
 title: 'ʿĪd Al-Fiṭr 1442H Announced for May 13th, 2021'
-date: '2021-03-13T14:22:37.121Z'
+date: '2021-05-12T14:22:37.121Z'
 imageUrl: https://s3.gifyu.com/images/eid_fitr_salat.png
 thumbnailUrl: https://s3.gifyu.com/images/eid_fitr_salat.png
 ---
