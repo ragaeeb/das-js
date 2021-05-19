@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { version, repository } from '../../../package.json';
+import packageData from '../../../package.json';
 
-const GitHash = () => {
-  const [tag, setTag] = useState({ html_url: '', published_at: '', tag_name: `v${version}` });
+export const GitHash = () => {
+  const [tag, setTag] = useState({
+    html_url: '',
+    published_at: '',
+    tag_name: `v${packageData.version}`,
+  });
 
   useEffect(() => {
-    const repo = repository.url.substring('https://github.com/'.length);
-    fetch(`https://api.github.com/repos/${repo}/releases/tags/v${version}`)
+    const repo = packageData.repository.url.substring('https://github.com/'.length);
+    fetch(`https://api.github.com/repos/${repo}/releases/tags/v${packageData.version}`)
       .then((response) => response.json())
       .then((data) => setTag(data));
   }, []);

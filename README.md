@@ -16,8 +16,6 @@
   <br>
   <img src="https://github.com/ragaeeb/das-js/blob/master/examples/monthly.jpg" alt="Monthly Schedule" width="600px" />
   <br>
-  <img src="https://github.com/ragaeeb/das-js/blob/master/examples/yearly.jpg" alt="Yearly Schedule" width="600px" />
-  <br>
   <img src="https://github.com/ragaeeb/das-js/blob/master/examples/all_posts.png" alt="All Posts" width="600px" />
   <br>
   <img src="https://github.com/ragaeeb/das-js/blob/master/examples/sample_post.jpg" alt="Sample Post" width="600px" />

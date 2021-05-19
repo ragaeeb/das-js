@@ -5,7 +5,6 @@ import { aboutData, contactInfo, donationsData, footerData, heroData } from '../
 import About from './About';
 import Contact from './Contact';
 import Donate from './Donate';
-import ErrorBoundary from './ErrorBoundary';
 import Footer from './Footer/Footer';
 import Hero from './Hero';
 import Projects from './Projects';
@@ -26,24 +25,22 @@ function App() {
   }, []);
 
   return (
-    <ErrorBoundary>
-      <PortfolioProvider value={{ hero, about, donations, contact, footer }}>
-        <Hero />
-        <LazyLoad height={100} once>
-          <Projects />
-        </LazyLoad>
-        <LazyLoad>
-          <About />
-        </LazyLoad>
-        <LazyLoad>
-          <Donate />
-        </LazyLoad>
-        <LazyLoad>
-          <Contact />
-        </LazyLoad>
-        <Footer />
-      </PortfolioProvider>
-    </ErrorBoundary>
+    <PortfolioProvider value={{ hero, about, donations, contact, footer }}>
+      <Hero />
+      <LazyLoad height={100} once>
+        <Projects />
+      </LazyLoad>
+      <LazyLoad>
+        <About />
+      </LazyLoad>
+      <LazyLoad>
+        <Donate />
+      </LazyLoad>
+      <LazyLoad>
+        <Contact />
+      </LazyLoad>
+      <Footer />
+    </PortfolioProvider>
   );
 }
 

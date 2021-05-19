@@ -140,11 +140,6 @@ const Hero = () => {
               Monthly Schedule
             </button>
           </Link>
-          <Link to="yearly">
-            <button type="button" className="cta-btn cta-btn--hero" data-cy="yearly">
-              Annual
-            </button>
-          </Link>
         </p>
       </Container>
     </section>
