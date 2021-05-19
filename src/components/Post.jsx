@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import Tilt from 'react-tilt';
+import Tilt from 'react-parallax-tilt';
 
 const Post = ({ node }) => {
   const { title = node.fields.slug, imageUrl, thumbnailUrl } = node.frontmatter;
@@ -25,19 +25,7 @@ const Post = ({ node }) => {
         <Col lg={8} sm={12}>
           <div className="project-wrapper__image">
             <Link to={node.fields.slug}>
-              <Tilt
-                options={{
-                  reverse: false,
-                  max: 8,
-                  perspective: 1000,
-                  scale: 1,
-                  speed: 300,
-                  transition: true,
-                  axis: null,
-                  reset: true,
-                  easing: 'cubic-bezier(.03,.98,.52,.99)',
-                }}
-              >
+              <Tilt>
                 <div data-tilt className="thumbnail rounded">
                   <LazyLoadImage alt={title} className="preview" src={pic} />
                 </div>
