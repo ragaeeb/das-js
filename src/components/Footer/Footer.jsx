@@ -13,7 +13,7 @@ import {
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import Copyright from './Copyright';
-import GitHash from './GitHash';
+import { GitHash } from './GitHash';
 
 const brandToNode = {
   facebook: <FaFacebook />,

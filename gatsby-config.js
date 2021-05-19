@@ -1,4 +1,3 @@
-const git = require('git-rev-sync');
 require('dotenv').config();
 
 const pack = require('./package.json');
@@ -59,16 +58,6 @@ module.exports = {
       options: {
         name: `images`,
         path: `src/images`,
-      },
-    },
-    {
-      resolve: '@sentry/gatsby',
-      options: {
-        dsn: process.env.SENTRY_DSN,
-        tags: { git_commit: git.short() },
-        release: git.long(),
-        environment: process.env.NODE_ENV,
-        enabled: process.env.NODE_ENV === 'production',
       },
     },
     {
