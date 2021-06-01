@@ -51,7 +51,7 @@ const getIqamahInRange = (day, monthData) => {
     return monthData.join(', ');
   }
 
-  const ranges = Object.keys(monthData);
+  const ranges = Object.keys(monthData || {});
 
   for (let i = ranges.length - 1; i >= 0; i -= 1) {
     const range = ranges[i];
