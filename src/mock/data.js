@@ -20,15 +20,6 @@ export const heroData = {
     tarawih: 'Tarawīḥ',
   },
   iqamahs: {
-    tarawih: {
-      4: {
-        13: '9:30 PM',
-        27: '10:00 PM',
-      },
-      5: {
-        1: '10:00 PM',
-      },
-    },
     fajr: {
       1: {
         1: '6:45 AM',
@@ -186,33 +177,27 @@ export const aboutData = {
   services: [
     {
       title: 'Five Daily Ṣalawāt',
-      body:
-        'The muṣallá is open to allow Muslims (both brothers and sisters) a location to pray their five daily ṣalawāt.',
+      body: 'The muṣallá is open to allow Muslims (both brothers and sisters) a location to pray their five daily ṣalawāt.',
     },
     {
       title: 'Ṣalat al-Jumʿuah',
-      body:
-        'Every week, salat-ul-Jumʿuah is held at Dār As-Ṣaḥāba (due to limited space, for brothers only), where the khaṭīb deliver the khuṭbah strictly adhering to the Qur’ān & the Sunnah.',
+      body: 'Every week, salat-ul-Jumʿuah is held at Dār As-Ṣaḥāba (due to limited space, for brothers only), where the khaṭīb deliver the khuṭbah strictly adhering to the Qur’ān & the Sunnah.',
     },
     {
       title: 'Ṣalat al-Tarawīḥ',
-      body:
-        'During the month of Ramaḍān, every evening Ṣalat al-Tarawīḥ is held (due to limited space, for brothers only).',
+      body: 'During the month of Ramaḍān, every evening Ṣalat al-Tarawīḥ is held (due to limited space, for brothers only).',
     },
     {
       title: 'Ṣalat al-ʿĪd',
-      body:
-        'For both ʿĪd al-Fiṭr and ʿĪd al-Aḍḥá, Dār As-Ṣaḥāba holds ʿĪd prayers for the community at a neighbouring park, weather permitting, or community centre.',
+      body: 'For both ʿĪd al-Fiṭr and ʿĪd al-Aḍḥá, Dār As-Ṣaḥāba holds ʿĪd prayers for the community at a neighbouring park, weather permitting, or community centre.',
     },
     {
       title: 'Lectures',
-      body:
-        'A few knowledgeable brothers remind us of the importance of various facets of our dīn in weekly gatherings. Occasionally, tele-lectures of our esteemed scholars are streamed via the internet at the muṣallá for all to hear.',
+      body: 'A few knowledgeable brothers remind us of the importance of various facets of our dīn in weekly gatherings. Occasionally, tele-lectures of our esteemed scholars are streamed via the internet at the muṣallá for all to hear.',
     },
     {
       title: 'Distributing reading and audio/visual materials',
-      body:
-        'To those who are interested about Islām, we have provided copies of the Qur’an with translations in the English and French languages; for non-Arabic speaking Muslims, we have also provided translated copies of the Qur’ān in other languages such as Spanish, Somali, Farsi, Urdu, Pashto, etc. As well, we have provided books and tapes/CDs for people ranging from those interested in Islām to those that are interested in further pursuing Islām academically.',
+      body: 'To those who are interested about Islām, we have provided copies of the Qur’an with translations in the English and French languages; for non-Arabic speaking Muslims, we have also provided translated copies of the Qur’ān in other languages such as Spanish, Somali, Farsi, Urdu, Pashto, etc. As well, we have provided books and tapes/CDs for people ranging from those interested in Islām to those that are interested in further pursuing Islām academically.',
     },
   ],
 };
@@ -239,8 +224,7 @@ export const donationsData = {
 };
 
 export const contactInfo = {
-  cta:
-    'Feel free to drop by the muṣallá at any time to perform the congregational prayers and to partake in the activities. If you would require help with learning about Islām and wish to speak to one of the members of the administration, please contact us through the website first so that we can schedule an appointment with you at a convenient time in shā’ Allāh.',
+  cta: 'Feel free to drop by the muṣallá at any time to perform the congregational prayers and to partake in the activities. If you would require help with learning about Islām and wish to speak to one of the members of the administration, please contact us through the website first so that we can schedule an appointment with you at a convenient time in shā’ Allāh.',
   emailButton: 'Email Us',
   mailingList: 'Mailing List',
   email: 'dar.as.sahaba@gmail.com',
