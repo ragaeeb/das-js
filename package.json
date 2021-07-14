@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@ragaeeb/gatsby-plugin-chatwoot": "1.1.2",
-    "adhan": "4.2.0",
+    "adhan": "4.2.1",
     "bootstrap": "5.0.1",
     "chart.js": "3.4.1",
     "gatsby": "3.7.2",
