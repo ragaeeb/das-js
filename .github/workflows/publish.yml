@@ -18,6 +18,6 @@ jobs:
           SEGMENT_PROD_KEY: ${{ secrets.SEGMENT_PROD_KEY }}
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
         with:
-          access-token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          access-token: ${{ secrets.REPO_PAT }}
           deploy-branch: gh-pages
           gatsby-args: --verbose

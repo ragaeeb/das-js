@@ -1,11 +1,11 @@
 on: issues
 name: Create Default Labels
 jobs:
-    labels:
-        name: DefaultLabelsActions
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@main
-            - uses: lannonbr/issue-label-manager-action@3.0.0
-              env:
-                  GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+  labels:
+    name: DefaultLabelsActions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - uses: lannonbr/issue-label-manager-action@3.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.REPO_PAT }}
