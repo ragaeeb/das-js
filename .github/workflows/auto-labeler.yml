@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: Renato66/auto-label@v2.2.0
         with:
-          repo-token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          repo-token: ${{ secrets.REPO_PAT }}
           ignore-comments: true
           labels-synonyms: '{"bug":["error","fix"]}'

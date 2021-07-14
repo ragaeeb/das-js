@@ -8,7 +8,7 @@ jobs:
       - name: Run pull request stats
         uses: flowwer-dev/pull-request-stats@v2.0.0
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          token: ${{ secrets.REPO_PAT }}
           repositories: 'ragaeeb/das-js'
           period: 30
           charts: true

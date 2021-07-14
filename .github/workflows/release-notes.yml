@@ -1,26 +1,26 @@
 name: Release notes on Milestone closure
 on:
-    milestone:
-        types: [closed]
+  milestone:
+    types: [closed]
 
 jobs:
-    create-release-notes:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@master
-            - name: Create Release Notes
-              uses: Decathlon/release-notes-generator-action@v3.1.5
-              env:
-                  GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
-                  OUTPUT_FOLDER: temp_release_notes
-                  USE_MILESTONE_TITLE: 'true'
-            - name: Upload Release Notes to Wiki
-              uses: Decathlon/wiki-page-creator-action@v2.0.3
-              env:
-                  ACTION_MAIL: release@users.noreply.github.com
-                  ACTION_NAME: release
-                  GH_PAT: ${{ secrets.REPO_PAT }}
-                  MD_FOLDER: temp_release_notes
-                  OWNER: ragaeeb
-                  REPO_NAME: das-js
-                  SKIP_MD: README.md
+  create-release-notes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Create Release Notes
+        uses: Decathlon/release-notes-generator-action@v3.1.5
+        env:
+          GITHUB_TOKEN: ${{ secrets.REPO_PAT }}
+          OUTPUT_FOLDER: temp_release_notes
+          USE_MILESTONE_TITLE: 'true'
+      - name: Upload Release Notes to Wiki
+        uses: Decathlon/wiki-page-creator-action@v2.0.3
+        env:
+          ACTION_MAIL: release@users.noreply.github.com
+          ACTION_NAME: release
+          GH_PAT: ${{ secrets.REPO_PAT }}
+          MD_FOLDER: temp_release_notes
+          OWNER: ragaeeb
+          REPO_NAME: das-js
+          SKIP_MD: README.md

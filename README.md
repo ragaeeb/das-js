@@ -370,13 +370,11 @@ export const aboutData = {
   services: [
     {
       title: 'Five Daily Ṣalawāt',
-      body:
-        'The muṣallá is open to allow Muslims (both brothers and sisters) a location to pray their five daily ṣalawāt.',
+      body: 'The muṣallá is open to allow Muslims (both brothers and sisters) a location to pray their five daily ṣalawāt.',
     },
     {
       title: 'Ṣalat al-Jumʿuah',
-      body:
-        'Every week, salat-ul-Jumʿuah is held (due to limited space, for brothers only), where the khaṭīb deliver the khuṭbah strictly adhering to the Qur’ān & the Sunnah.',
+      body: 'Every week, salat-ul-Jumʿuah is held (due to limited space, for brothers only), where the khaṭīb deliver the khuṭbah strictly adhering to the Qur’ān & the Sunnah.',
     },
   ],
 };
@@ -559,7 +557,7 @@ To allow automated updates to the website, you will need to create a GitHub acce
 6. In your GitHub repository, go to `Settings`.
 7. Go to `Secrets` on the left.
 8. Click `New Repository Secret`.
-9. In the `Name` put: `REPO_ACCESS_TOKEN`
+9. In the `Name` put: `REPO_PAT`
 10. In the value paste the copied token.
 
 ##### Segment.io and Amplitude

@@ -10,6 +10,11 @@ module.exports = {
     author: pack.author,
     siteUrl: pack.homepage,
   },
+  flags: {
+    PARALLEL_SOURCING: true,
+    LMDB_STORE: true,
+    FAST_DEV: true,
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
