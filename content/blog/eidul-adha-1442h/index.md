@@ -1,9 +1,18 @@
 ---
 title: 1442 H / 2021 - 'Eid-ul-Adha Prayer = Tuesday, July 20th, 2021
-date: '2021-07-17T00:22:02.763Z'
+date: '2021-07-19T01:58:38.320Z'
 imageUrl: https://s6.gifyu.com/images/2021-EIDUL-ADHA-DAS-POSTER.jpg
 thumbnailUrl: https://s6.gifyu.com/images/2021-EIDUL-ADHA-DAS-POSTER.jpg
 ---
+
+
+<span style="text-decoration: underline; font-size: 150%">**UPDATE:**</span>
+
+Please note that due to our <span style="text-decoration: underline">**contractual obligations**</span> to the **City of Ottawa** and under **Ottawa Public Health** guidelines, <span style="color: red; text-decoration: underline">**we ask everyone to wear their masks**</span> during the event (i.e. when arriving, during and leaving Salaat-ul 'Eid). We will also have <span style="color: red; text-decoration: underline">**sign-up sheets for attendance**</span> at the prayer area. These requirements are in addition to the <span style="color: red; text-decoration: underline">**2 metre social distancing measures**</span> put in place at the event. Please review the remaining points/guidelines below.
+
+We ask everyone to do their part by respecting and abiding by the rules as set forth. We pray everyone has a blessed, safe and healthy *'Eid-ul-Adha*, aameen.
+
+<span style="font-size: 150%">\* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \*</span>
 
 The **Day of 'Arafah** will be on **Monday, July 19th, 2021**, in-sha-Allah. It is highly recommended to fast on this day.
 
