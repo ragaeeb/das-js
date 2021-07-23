@@ -68,7 +68,7 @@
     "react-lazy-load-image-component": "1.5.1",
     "react-lazyload": "3.2.0",
     "react-parallax-tilt": "1.5.45",
-    "react-scroll": "1.8.2"
+    "react-scroll": "1.8.3"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "7.14.5",
