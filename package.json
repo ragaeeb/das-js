@@ -67,7 +67,7 @@
     "react-icons": "4.2.0",
     "react-lazy-load-image-component": "1.5.1",
     "react-lazyload": "3.2.0",
-    "react-parallax-tilt": "1.5.45",
+    "react-parallax-tilt": "1.5.52",
     "react-scroll": "1.8.2"
   },
   "devDependencies": {
