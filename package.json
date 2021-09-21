@@ -91,7 +91,7 @@
     "lint-staged": "11.1.2",
     "lmdb-store": "1.6.7",
     "preact-render-to-string": "5.1.19",
-    "prettier": "2.4.0"
+    "prettier": "2.4.1"
   },
   "husky": {
     "hooks": {
