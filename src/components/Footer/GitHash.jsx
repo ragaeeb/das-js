@@ -10,7 +10,7 @@ export const GitHash = () => {
 
   useEffect(() => {
     const repo = packageData.repository.url.substring('https://github.com/'.length);
-    fetch(`https://api.github.com/repos/${repo}/releases/tags/v${packageData.version}`)
+    fetch(`https://api.github.com/repos/${repo}/releases/tags/${packageData.version}`)
       .then((response) => response.json())
       .then((data) => setTag(data));
   }, []);
