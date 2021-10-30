@@ -12,7 +12,6 @@ module.exports = {
   },
   flags: {
     PARALLEL_SOURCING: true,
-    LMDB_STORE: true,
     FAST_DEV: true,
   },
   plugins: [
