@@ -33,7 +33,7 @@
     "test:e2e:ci": "START_SERVER_AND_TEST_INSECURE=1 start-server-and-test develop http://localhost:8000 cy:run"
   },
   "dependencies": {
-    "@ragaeeb/gatsby-plugin-chatwoot": "1.1.2",
+    "@ragaeeb/gatsby-plugin-chatwoot": "1.1.3",
     "adhan": "4.2.1",
     "bootstrap": "5.1.3",
     "chart.js": "3.6.0",
