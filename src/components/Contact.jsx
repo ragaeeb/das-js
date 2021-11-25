@@ -1,4 +1,4 @@
-import {Fade} from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 import { Link } from 'gatsby';
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
@@ -54,10 +54,8 @@ const Contact = () => {
               </a>
             )}
             {mailingList && (
-              <Link to="newsletter" data-cy="newsletter">
-                <a className="cta-btn cta-btn--resume" href="newsletter">
-                  {mailingList}
-                </a>
+              <Link to="newsletter" data-cy="newsletter" className="cta-btn cta-btn--resume">
+                {mailingList}
               </Link>
             )}
           </div>

@@ -10,7 +10,7 @@ As-salāmu ʿalaykum wa raḥmatullāhi wa barakātuh,
 
 Bismillah, walḥamdulillāh was-ṣalātu was-salāmu ‘alaa rasūlillāh,
 
-This is to inform you of the official launch of Dār As-Ṣaḥāba Association’s new website https://dar-as-sahaba.com. Please bookmark it. In-sha-Allāh, we will be using this website for our lecture and event updates from now on instead of our google-groups site. Our other website, islamcanada.com is under construction. In das.ilmtest.net you will also find some beneficial articles and in the near future, we hope to post some audio lectures for you to benefit.
+This is to inform you of the official launch of Dār As-Ṣaḥāba Association’s new website https://dar-as-sahaba.com. Please bookmark it. In-sha-Allāh, we will be using this website for our lecture and event updates from now on instead of our google-groups site. Our other website, islamcanada.com is under construction. In dar-as-sahaba.com you will also find some beneficial articles and in the near future, we hope to post some audio lectures for you to benefit.
 
 You will find the following on the home page:
 
