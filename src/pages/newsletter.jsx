@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 import React, { useState } from 'react';
-import { Alert, Button, Col, Container, Form } from 'react-bootstrap';
+import { Alert, Button, Col, Container, Form, Row } from 'react-bootstrap';
 import SEO from '../components/seo';
 import '../style/main.scss';
 
@@ -45,7 +45,7 @@ const newsletter = () => {
           <br />
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="formBasicEmail">
-              <Form.Row>
+              <Row>
                 <Form.Label column="lg" lg={2}>
                   Email Address
                 </Form.Label>
@@ -57,9 +57,9 @@ const newsletter = () => {
                     placeholder="Enter your email address (ie: abdullah@gmail.com)"
                   />
                 </Col>
-              </Form.Row>
+              </Row>
               <br />
-              <Form.Row>
+              <Row>
                 <Form.Label column="lg" lg={2}>
                   First Name
                 </Form.Label>
@@ -70,9 +70,9 @@ const newsletter = () => {
                     placeholder="Enter your first name (ie: Abdullah)"
                   />
                 </Col>
-              </Form.Row>
+              </Row>
               <br />
-              <Form.Row>
+              <Row>
                 <Form.Label column="lg" lg={2}>
                   Last Name
                 </Form.Label>
@@ -83,7 +83,7 @@ const newsletter = () => {
                     placeholder="Enter you last name (ie: Ahmad)"
                   />
                 </Col>
-              </Form.Row>
+              </Row>
             </Form.Group>
             <Button
               variant="success"

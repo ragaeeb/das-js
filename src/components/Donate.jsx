@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Container, Toast } from 'react-bootstrap';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
 import { Fade } from 'react-awesome-reveal';
 import {
@@ -14,6 +15,8 @@ import {
 import PortfolioContext from '../context/context';
 import { stringToColour } from '../utils/stringUtils';
 import Title from './Title';
+
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 const FONT_SIZE = '2em';
 

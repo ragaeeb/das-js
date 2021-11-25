@@ -11,7 +11,7 @@ const renderRow = ({ timings }, index) => {
   const [fajr, sunrise, dhuhr, asr, maghrib, isha] = timings;
 
   return (
-    <tr>
+    <tr key={index}>
       <td>{index + 1}</td>
       <td>{fajr.time}</td>
       <td>{sunrise.time}</td>
@@ -27,15 +27,17 @@ const Monthly = () => {
   const { calculation, labels } = heroData;
   const [now, setNow] = useState(new Date());
 
-  const nextMonth = (delta = 1) => () => {
-    const newDate = new Date(now.valueOf());
-    newDate.setMonth(newDate.getMonth() + delta);
-    setNow(newDate);
+  const nextMonth =
+    (delta = 1) =>
+    () => {
+      const newDate = new Date(now.valueOf());
+      newDate.setMonth(newDate.getMonth() + delta);
+      setNow(newDate);
 
-    if (window.analytics) {
-      window.analytics.track(delta === 1 ? 'NextMonthTimings' : 'PrevMonthTimings');
-    }
-  };
+      if (window.analytics) {
+        window.analytics.track(delta === 1 ? 'NextMonthTimings' : 'PrevMonthTimings');
+      }
+    };
 
   const { dates, label } = monthly(labels, calculation, now);
   const [headings] = dates;

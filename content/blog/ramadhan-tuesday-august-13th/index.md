@@ -13,7 +13,7 @@ This is to inform you that the <span style="text-decoration: underline; color: #
 Fast when you see the crescent. If it is obscured to you, then complete thirty days of Shaʿbān. And break your fast when you see the crescent. If it is obscured to you then fast thirty days.
 [transmitted by al-Bukhārī and Muslim].
 
-Also, this year due to **COVID-19 Provincewide Shutdown measures [Emergency Brake and Stay-at-Home order](/closing-musalla-03-04-2021),** <span style="text-decoration: underline; color: red">**there will NO ifṭār in the muṣallá.**</span>
+Also, this year due to **COVID-19 Provincewide Shutdown measures Emergency Brake and Stay-at-Home order,** <span style="text-decoration: underline; color: red">**there will NO ifṭār in the muṣallá.**</span>
 
 <span style="text-decoration: underline">**Al-Tarawīḥ prayers will be available at As-Ṣaḥāba Muṣallá, however, will be limiting capacity to 15% occupancy of the room (with masks and social distancing measures).**</span> That means, a <span style="text-decoration: underline; color: red">**maximum of 15 people will be permitted in the Muṣallá for all prayers**</span> (the 5 daily prayers, al-jumuʿah prayers & al-Tarawīḥ prayers) on a first come first served basis for brothers only.
 
