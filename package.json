@@ -55,7 +55,7 @@
     "gatsby-source-filesystem": "4.5.2",
     "gatsby-transformer-remark": "5.5.2",
     "gatsby-transformer-sharp": "4.5.0",
-    "node-sass": "6.0.1",
+    "node-sass": "7.0.1",
     "preact": "10.6.0",
     "prop-types": "15.7.2",
     "react": "17.0.2",
