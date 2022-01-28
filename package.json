@@ -56,7 +56,7 @@
     "gatsby-transformer-remark": "5.5.2",
     "gatsby-transformer-sharp": "4.5.0",
     "node-sass": "7.0.1",
-    "preact": "10.6.0",
+    "preact": "10.6.5",
     "prop-types": "15.7.2",
     "react": "17.0.2",
     "react-awesome-reveal": "3.8.1",
