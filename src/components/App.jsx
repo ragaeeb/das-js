@@ -4,7 +4,6 @@ import { PortfolioProvider } from '../context/context';
 import { aboutData, contactInfo, donationsData, footerData, heroData } from '../mock/data';
 import About from './About';
 import Contact from './Contact';
-import Donate from './Donate';
 import Footer from './Footer/Footer';
 import Hero from './Hero';
 import Projects from './Projects';
@@ -32,9 +31,6 @@ function App() {
       </LazyLoad>
       <LazyLoad>
         <About />
-      </LazyLoad>
-      <LazyLoad>
-        <Donate />
       </LazyLoad>
       <LazyLoad>
         <Contact />
