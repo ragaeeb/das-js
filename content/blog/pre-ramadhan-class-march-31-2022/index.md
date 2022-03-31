@@ -16,5 +16,3 @@ after Maghrib prayer
 Musalla As-Sahaba</br>
 2835 Dumaurier Ave.</br>
 Ottawa, ON K2B 7W3
-
-**LISTEN ONLINE**: http://mixlr.com/islam1st
