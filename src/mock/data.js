@@ -164,7 +164,7 @@ export const heroData = {
       12: '7:30 PM',
     },
   },
-  hijriAdjust: -1,
+  hijriAdjust: 0,
   links: {
     fajr: 'https://archive.org/download/fajr-letter-das/Letter_Fajr-Ishaa_Ottawa-2016-06-27.pdf',
   },
