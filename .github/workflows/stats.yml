@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run pull request stats
-        uses: flowwer-dev/pull-request-stats@v2.1.2
+        uses: flowwer-dev/pull-request-stats@v2.2.1
         with:
           token: ${{ secrets.REPO_PAT }}
           repositories: 'ragaeeb/das-js'
