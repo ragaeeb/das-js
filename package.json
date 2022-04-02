@@ -90,7 +90,7 @@
     "jest": "27.5.1",
     "lint-staged": "12.3.2",
     "lmdb-store": "1.6.14",
-    "preact-render-to-string": "5.1.19",
+    "preact-render-to-string": "5.1.20",
     "prettier": "2.5.1"
   },
   "husky": {
