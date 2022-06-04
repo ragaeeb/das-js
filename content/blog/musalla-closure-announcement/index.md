@@ -1,8 +1,8 @@
 ---
 title: 'Permanent Closure of Musalla As-Sahaba'
 date: '2022-06-03T23:09:09.295Z'
-imageUrl: https://64.media.tumblr.com/9a8f963038507d7b7ef8034960cf39b5/tumblr_nlwc86rWSa1qegyoeo1_1280.jpg
-thumbnailUrl: https://64.media.tumblr.com/9a8f963038507d7b7ef8034960cf39b5/tumblr_nlwc86rWSa1qegyoeo1_1280.jpg
+imageUrl: https://studioarabiya.com/images/easyblog_articles/267/b2ap3_large_old_quran_arabic.jpg
+thumbnailUrl: https://64.media.tumblr.com/678d85b7d362919bcf6ebbae5ed209f3/b74219b1b75e51a1-af/s1280x1920/f8bbb666d7107a88970677b68733b3c6522cb585.jpg
 ---
 
 As-salaamu 'alaikum wa Rahmatullaahi wa Barakaatuh,
