@@ -13,7 +13,6 @@ import {
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import Copyright from './Copyright';
-import { GitHash } from './GitHash';
 
 const brandToNode = {
   facebook: <FaFacebook />,
@@ -27,8 +26,6 @@ const brandToNode = {
 const Footer = () => {
   const { footer } = useContext(PortfolioContext);
   const { networks } = footer;
-
-  const onSocialClicked = (name) => () => window.analytics && window.analytics.track(name);
 
   return (
     <footer className="footer navbar-static-bottom">
@@ -44,13 +41,11 @@ const Footer = () => {
               const { name, url } = network;
               return (
                 <a
-                  onClick={onSocialClicked(name)}
                   key={name}
                   href={url}
                   rel="noopener noreferrer"
                   target="_blank"
                   aria-label={name}
-                  data-cy={name}
                 >
                   {brandToNode[name]}
                 </a>
@@ -58,8 +53,12 @@ const Footer = () => {
             })}
         </div>
         <Copyright />
-        <GitHash />
-        <RouteLink style={{ color: 'white' }} to="privacy" data-cy="privacy">
+        <p className="footer__text">
+          v{process.env.GATSBY_VERSION || '0.0'}{' '}
+          {process.env.GATSBY_GIT_TIMESTAMP &&
+            new Date(process.env.GATSBY_GIT_TIMESTAMP).toLocaleString()}
+        </p>
+        <RouteLink style={{ color: 'white' }} to="privacy">
           Privacy Policy
         </RouteLink>
       </Container>

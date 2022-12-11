@@ -14,14 +14,6 @@
 <h2>
   <img src="https://github.com/ragaeeb/das-js/blob/master/examples/example.gif" alt="Islamic Simplefolio" width="600px" />
   <br>
-  <img src="https://github.com/ragaeeb/das-js/blob/master/examples/monthly.jpg" alt="Monthly Schedule" width="600px" />
-  <br>
-  <img src="https://github.com/ragaeeb/das-js/blob/master/examples/all_posts.png" alt="All Posts" width="600px" />
-  <br>
-  <img src="https://github.com/ragaeeb/das-js/blob/master/examples/sample_post.jpg" alt="Sample Post" width="600px" />
-  <br>
-  <img src="https://github.com/ragaeeb/das-js/blob/master/examples/mailing_list.jpg" alt="Newsletter" width="600px" />
-  <br>
   <img src="https://github.com/ragaeeb/das-js/blob/master/examples/privacy.jpg" alt="Privacy Policy" width="600px" />
 </h2>
 
@@ -36,10 +28,8 @@
 ⚡️ Accurate and dynamic prayer times with support for dynamic iqāmah times\
 ⚡️ Ability to view upcoming and previous prayer times.
 ⚡️ Hijri date display\
-⚡️ Automatic generation of monthly prayer timetable\
 ⚡️ Beautiful visual graph generation of annual prayer timings\
 ⚡️ Up to `1000` blog posts\
-⚡️ Beautiful visual pie chart of monthly expenses for what your audience will be donating for\
 ⚡️ Privacy Policy built-in and included\
 ⚡️ Clear documentation steps on how to replicate for your masjid\
 ⚡️ Built in dynamic last-update feature with direct-link to commit history\
@@ -357,29 +347,6 @@ export const heroData = {
   …
 ```
 
-##### About Section
-
-<img src="https://github.com/ragaeeb/das-js/blob/master/examples/about.jpg" alt="About Us Section" />
-
-This is the information that will be displayed right underneath the updates. You can add as many services as you want by copying and pasting the `title`, and `body` patterns.
-
-```javascript
-export const aboutData = {
-  paragraphOne: 'First paragraph',
-  paragraphTwo: 'Second paragraph',
-  services: [
-    {
-      title: 'Five Daily Ṣalawāt',
-      body: 'The muṣallá is open to allow Muslims (both brothers and sisters) a location to pray their five daily ṣalawāt.',
-    },
-    {
-      title: 'Ṣalat al-Jumʿuah',
-      body: 'Every week, salat-ul-Jumʿuah is held (due to limited space, for brothers only), where the khaṭīb deliver the khuṭbah strictly adhering to the Qur’ān & the Sunnah.',
-    },
-  ],
-};
-```
-
 ##### Donate Section
 
 <img src="https://github.com/ragaeeb/das-js/blob/master/examples/donate.jpg" alt="Donate Section" />
@@ -431,27 +398,6 @@ export const footerData = {
 };
 ```
 
-##### Contact Section
-
-<img src="https://github.com/ragaeeb/das-js/blob/master/examples/contact.jpg" alt="Contact Section" />
-
-Set your centre's contact information here. The email address will automatically be scrambled to be protected from spam bots but should be visible to the user.
-
-If you do not want to display a specific attribute, simply omit it.
-
-```javascript
-export const contactInfo = {
-  address: 'Your masjid address',
-  cta: 'Some information here about when they can come see your centre.',
-  emailButton: 'Email Us',
-  mailingList: 'Mailing List',
-  email: 'yourmeail@gmail.com',
-  mapUrl: 'https://goo.gl/maps/14LYnHa7R9sZsQBG7',
-  telButton: 'Call Us',
-  tel: '+12345678',
-};
-```
-
 #### STYLES
 
 Change the color theme of the website ( choose 2 colors to create a gradient ):
@@ -490,23 +436,6 @@ Replace the value of the `/static/CNAME` file with your domain. It should not co
 
 Here we will be creating various accounts needed to get the most of your website.
 
-##### Chatwoot
-
-<img src="https://github.com/ragaeeb/das-js/blob/master/examples/chatwoot.jpg" alt="Chatwoot setup" />
-
-Chatwoot is used to allow your audience to message you directly from your website. You can reply either using the Chatwoot app, or via email.
-
-1. Go to [chatwoot.com](https://chatwoot.com).
-2. Click `Create an Account` and create your account.
-3. Go to `Inboxes` on the left side.
-4. Fill in the details for your inbox such as the title and welcome messages you want for it.
-5. Once you finish you will be given a `websiteToken` value, copy that.
-6. In your GitHub repository, go to `Settings`.
-7. Go to `Secrets` on the left.
-8. Click `New Repository Secret`.
-9. In the `Name` put: `CHATWOOT_TOKEN`
-10. In the value paste the website token you copied.
-
 ##### Cypress.io
 
 <img src="https://github.com/ragaeeb/das-js/blob/master/examples/cypress.jpg" alt="Cypress setup" />
@@ -524,25 +453,6 @@ Cypress.io is used for end-to-end testing of your website to ensure it stays up 
 9. In the `Name` put: `CYPRESS_RECORD_KEY`
 10. In the value paste the record key you were given `cypress run --record --key PASTE_THIS_VALUE_IN`.
 
-##### Mailchimp
-
-<img src="https://github.com/ragaeeb/das-js/blob/master/examples/mailchimp.jpg" alt="Mailchimp setup" />
-
-Mailchimp is used to allow you to manage your mailing lists for free. You will be able to send out emails to your audience, have them sign up, or unsubscribe at any time without having to manage all of this yourself.
-
-1. Go to [mailchimp.com](https://mailchimp.com).
-2. Click `Sign Up` and create your account.
-3. Click on the `Audience` tab on the left.
-4. In the `Manage Audience` dropdown, select `Signup Forms`.
-5. Select `Embedded Forms`.
-6. [Scroll down](https://www.gatsbyjs.com/plugins/gatsby-plugin-mailchimp/) to find the HTML code text box.
-7. Find the `<form action>` section and copy the URL that is within the double quotes. It should look something like `https://website.us7.list-manage.com/subscribe/post?u=9d342348&amp;id=e1234`
-8. In your GitHub repository, go to `Settings`.
-9. Go to `Secrets` on the left.
-10. Click `New Repository Secret`.
-11. In the `Name` put: `MAILCHIMP_ENDPOINT`
-12. In the value paste the copied endpoint.
-
 ##### GitHub Access Token
 
 <img src="https://github.com/ragaeeb/das-js/blob/master/examples/github_access_token.png" alt="GitHub Access Token setup" />
@@ -559,59 +469,6 @@ To allow automated updates to the website, you will need to create a GitHub acce
 8. Click `New Repository Secret`.
 9. In the `Name` put: `REPO_PAT`
 10. In the value paste the copied token.
-
-##### Segment.io and Amplitude
-
-<img src="https://github.com/ragaeeb/das-js/blob/master/examples/amplitude.png" alt="Amplitude setup" />
-
-To maintain analytics of your audience we use `Segment.io` and `Amplitude`. The benefit of this is that you can switch your analytics providers at any time in the future.
-
-1. Go to [segment.com](https://app.segment.com/signup) and create an account.
-2. When it is in the setup stage, choose `Website` for the data source and enter your URL.
-3. In the next step choose `Amplitude` for sending your data.
-4. Click on `Connections` on the left side, and click `Sources`.
-5. Click on your `Website` and go to the `Settings` tab at the top.
-6. Click on `API Keys` and copy the `Write Key` shown.
-7. In your GitHub repository, go to `Settings`.
-8. Go to `Secrets` on the left.
-9. Click `New Repository Secret`.
-10. In the `Name` put: `SEGMENT_PROD_KEY`
-11. In the value paste the copied write key.
-12. Got to [amplitude.com](https://amplitude.com) and sign up for an account.
-13. At the top click on `Set up on the Free Plan` and verify your email to get a Free account.
-14. Once you have filled everything out click back on the `Set up on the Free Plan`.
-15. Enter a name for your organization and select your URL.
-16. Select `Create New Project` under `Projects`.
-17. Name your project and click `Create`.
-18. Note down your `API Key`.
-19. Click `Add Data Source`.
-20. Select `Segment`.
-21. In Segment's dashboard, for the `Amplitude` settings for the destination, click `API Key`.
-22. Click `Edit` and paste in the key and save.
-23. Enable the `Amplitude Settings` toggle.
-24. Go back on `Amplitude` dashboard, and click `Next` on the `Connect Segment` page.
-25. Back on the `Segment` dashboard, click `Event Tester` and click `Send Event`.
-26. It should now all be connected.
-
-##### Sentry.io
-
-<img src="https://github.com/ragaeeb/das-js/blob/master/examples/sentry.png" alt="Sentry.io setup" />
-
-To track technical failures and bugs we use the `sentry.io` platform.
-
-1. Go to [sentry.io](https://sentry.io) and create an account. I suggest using your GitHub SSO.
-2. In the platform filter search for `Gatsby` and select it.
-3. Select `Create Project`.
-4. Copy the `dsn` that is provided.
-5. In your GitHub repository, go to `Settings`.
-6. Go to `Secrets` on the left.
-7. Click `New Repository Secret`.
-8. In the `Name` put: `SENTRY_DSN`
-9. In the value paste the copied `dsn` value.
-
-#### Blog Posts
-
-We will need to delete all the content in the `/content/blog` folder so we can start fresh.
 
 #### GitHub Settings
 

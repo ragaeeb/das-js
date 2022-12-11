@@ -8,13 +8,7 @@ import hijri from '../utils/hijri';
 const getLabel = (event, label, onClick, link) => {
   if (onClick && link) {
     return (
-      <a
-        target="_blank"
-        onClick={onClick(event)}
-        rel="noopener noreferrer"
-        className="hero-title attached"
-        href={link}
-      >
+      <a target="_blank" rel="noopener noreferrer" className="hero-title attached" href={link}>
         {label}
       </a>
     );
@@ -25,56 +19,45 @@ const getLabel = (event, label, onClick, link) => {
 
 const renderSunnah = (event, label, time) =>
   time && (
-    <div key={event} className="sunan" data-cy="sunan">
+    <div key={event} className="sunan">
       {label} <span className="text-color-main">{time}</span>
     </div>
   );
 
-const renderTiming = (links, onClick) => ({ label, time, iqamah, event }) => {
-  if (!isFard(event)) {
-    return renderSunnah(event, label, time);
-  }
+const renderTiming =
+  (links) =>
+  ({ label, time, iqamah, event }) => {
+    if (!isFard(event)) {
+      return renderSunnah(event, label, time);
+    }
 
-  return (
-    <React.Fragment key={label}>
-      {getLabel(event, label, onClick, links[event])}{' '}
-      <span className="text-color-main">{time}</span>
-      {iqamah && <small className="iqamah">&nbsp;{iqamah}</small>}
-      <br />
-    </React.Fragment>
-  );
-};
+    return (
+      <div key={label}>
+        {getLabel(event, label, links[event])} <span className="text-color-main">{time}</span>
+        {iqamah && <small className="iqamah">&nbsp;{iqamah}</small>}
+        <br />
+      </div>
+    );
+  };
 
 const placeholder = {
   date: '',
   timings: [],
 };
 
-const onLinkClicked = (event) => () =>
-  window.analytics && window.analytics.track(`${event}TimingPdf`);
-const onCalendarClicked = () => window.analytics && window.analytics.track('Calendar');
-
 const Hero = () => {
   const { hero } = useContext(PortfolioContext);
-  const {
-    calculation,
-    links = {},
-    istijabaText,
-    iqamahs,
-    labels = {},
-    calendarUrl,
-    hijriAdjust = 0,
-  } = hero;
+  const { calculation, links = {}, istijabaText, iqamahs, labels = {}, hijriAdjust = 0 } = hero;
   const [now, setNow] = useState(new Date());
   const isLoaded = !!calculation;
 
-  const nextDay = (delta = 1) => () => {
-    const newDate = new Date(now.valueOf());
-    newDate.setDate(newDate.getDate() + delta);
-    setNow(newDate);
-
-    window.analytics.track(delta === 1 ? 'NextDayTimings' : 'PrevDayTimings');
-  };
+  const nextDay =
+    (delta = 1) =>
+    () => {
+      const newDate = new Date(now.valueOf());
+      newDate.setDate(newDate.getDate() + delta);
+      setNow(newDate);
+    };
 
   const { date, timings, istijaba } = isLoaded
     ? daily(labels, calculation, now, iqamahs)
@@ -87,60 +70,33 @@ const Hero = () => {
       <Container>
         {istijaba && istijabaText && (
           <>
-            <h2 data-cy="istijaba">{istijabaText}</h2>
+            <h2>{istijabaText}</h2>
             <br />
             <br />
           </>
         )}
         {isLoaded && (
-          <h3 data-cy="gregorian">
-            <button
-              type="button"
-              onClick={nextDay(-1)}
-              className="arrow-button cta-btn"
-              data-cy="prev"
-            >
+          <h3>
+            <button type="button" onClick={nextDay(-1)} className="arrow-button cta-btn">
               &lt;
             </button>
             &nbsp;
             {date}&nbsp;
-            <button
-              type="button"
-              onClick={nextDay()}
-              className="arrow-button cta-btn"
-              data-cy="next"
-            >
+            <button type="button" onClick={nextDay()} className="arrow-button cta-btn">
               &gt;
             </button>
           </h3>
         )}
-        <h2 data-cy="hijri">{`${day}, ${hijriDate} ${month} ${year} H`}</h2>
-        <h1 className="hero-title" data-cy="timings">
-          {timings.map(renderTiming(links, onLinkClicked))}
-          {isLoaded && renderSunnah('jumuah', labels.jumuah, getIqamahTime(now, iqamahs, 'jumuah'))}
+        <h2>{`${day}, ${hijriDate} ${month} ${year} H`}</h2>
+        <h1 className="hero-title">
+          {timings.map(renderTiming(links))}
           {isLoaded &&
+            iqamahs &&
+            renderSunnah('jumuah', labels.jumuah, getIqamahTime(now, iqamahs, 'jumuah'))}
+          {isLoaded &&
+            iqamahs &&
             renderSunnah('tarawih', labels.tarawih, getIqamahTime(now, iqamahs, 'tarawih'))}
         </h1>
-        <p className="hero-cta">
-          {calendarUrl && (
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={calendarUrl}
-              onClick={onCalendarClicked}
-              data-cy="calendar"
-            >
-              <button type="button" className="cta-btn cta-btn--hero">
-                Calendar
-              </button>
-            </a>
-          )}
-          <Link to="monthly">
-            <button type="button" className="cta-btn cta-btn--hero" data-cy="monthly">
-              Monthly Schedule
-            </button>
-          </Link>
-        </p>
       </Container>
     </section>
   );

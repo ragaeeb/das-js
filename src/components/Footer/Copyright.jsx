@@ -1,23 +1,22 @@
-import { graphql, StaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
-const GitHash = () => (
-  <StaticQuery
-    query={graphql`
-      {
-        site {
-          siteMetadata {
-            description
-          }
+const Copyright = () => {
+  const { site } = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          description
         }
       }
-    `}
-    render={({ site }) => (
-      <p className="footer__text" data-cy="copyright">
-        © {new Date().getFullYear()} {site.siteMetadata.description}
-      </p>
-    )}
-  />
-);
+    }
+  `);
 
-export default GitHash;
+  return (
+    <p className="footer__text">
+      © {new Date().getFullYear()} {site.siteMetadata.description}
+    </p>
+  );
+};
+
+export default Copyright;

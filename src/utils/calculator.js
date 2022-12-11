@@ -27,7 +27,7 @@ const formatDate = (fajr) =>
  * @param {*} latitude
  * @param {*} longitude
  */
-const formatAsObject = (calculationResult, timeZone, iqamahs, salatLabels) => {
+const formatAsObject = ({ sunset, ...calculationResult }, timeZone, iqamahs, salatLabels) => {
   const timings = Object.entries(calculationResult)
     // sort the events from earliest to latest (to sort from fajr - isha)
     .sort(([, value], [, nextValue]) => value - nextValue)
