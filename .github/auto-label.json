@@ -1,8 +1,0 @@
-{
-  "rules": {
-    "blog": ["index.md"],
-    "devops": ["*.yml"],
-    "tests": ["*.test.js", "cypress/*/**"],
-    "user-interface": ["*.jsx"]
-  }
-}

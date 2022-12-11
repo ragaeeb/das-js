@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import { Fade } from 'react-awesome-reveal';
 import PortfolioContext from '../context/context';
 import Title from './Title';
 
@@ -20,13 +19,11 @@ const About = () => {
       <Container>
         <Title title="About Us" />
         <Row className="about-wrapper">
-          <Fade duration={1000} delay={500}>
-            <div className="about-wrapper__info">
-              <p className="about-wrapper__info-text">{paragraphOne}</p>
-              <p className="about-wrapper__info-text">{paragraphTwo}</p>
-              <ul className="about-wrapper__info-text">{(services || []).map(renderService)}</ul>
-            </div>
-          </Fade>
+          <div className="about-wrapper__info">
+            <p className="about-wrapper__info-text">{paragraphOne}</p>
+            <p className="about-wrapper__info-text">{paragraphTwo}</p>
+            <ul className="about-wrapper__info-text">{(services || []).map(renderService)}</ul>
+          </div>
         </Row>
       </Container>
       <br />
