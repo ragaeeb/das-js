@@ -8,13 +8,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@main
+      - name: 'Setup Node.js'
+        uses: 'actions/setup-node@v3'
         with:
           node-version: 19
       - name: Install modules
-        with:
-          node-version: 19
         run: yarn
       - name: Run Jest
         run: yarn test
-        with:
-          node-version: 19
