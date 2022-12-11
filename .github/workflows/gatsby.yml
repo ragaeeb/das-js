@@ -15,6 +15,7 @@ jobs:
           GATSBY_GIT_SHA: ${{github.sha}}
           GATSBY_GIT_TIMESTAMP: ${{github.event.repository.updated_at}}
         with:
+          node-version: 19
           access-token: ${{ secrets.REPO_PAT }}
           deploy-branch: gh-pages
           gatsby-args: --verbose
