@@ -59,7 +59,7 @@ describe('calculator', () => {
           },
         },
       });
-
+      console.log("RESULT", result);
       expect(result).toEqual({
         date: 'Friday, June 19, 2020',
         istijaba: false,
