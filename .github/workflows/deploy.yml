@@ -66,7 +66,7 @@ jobs:
       # 7️⃣ Deploy with the script defined in package.json
       # --------------------------------------------------------------
       - name: Deploy to GitHub Pages
-        run: bun run deploy:ci
+        run: bun run deploy
         env:
             VITE_BUILD_TIME: ${{ github.event.head_commit.timestamp }}
             # Explicitly set Git user for commits
