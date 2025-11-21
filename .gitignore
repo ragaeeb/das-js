@@ -7,6 +7,8 @@ yarn-error.log*
 
 yarn.lock
 
+dist
+
 # Secrets go in here
 cypress.env.json
 
