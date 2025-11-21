@@ -28,7 +28,8 @@
     "lint:fix": "biome check --write .",
     "test": "bun test",
     "clean": "rm -rf dist node_modules",
-    "deploy": "bun run build && gh-pages -d dist"
+    "deploy": "bun run build && gh-pages -d dist",
+    "deploy:ci": "bun run build && gh-pages -d dist -t $GITHUB_TOKEN"
   },
   "dependencies": {
     "adhan": "^4.4.3",

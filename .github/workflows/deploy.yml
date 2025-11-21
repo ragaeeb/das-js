@@ -59,7 +59,7 @@ jobs:
       # 6️⃣ Deploy with the script defined in package.json
       # --------------------------------------------------------------
       - name: Deploy to GitHub Pages
-        run: bun run deploy
+        run: bun run deploy:ci
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             # Explicitly set Git user for commits
