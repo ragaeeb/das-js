@@ -66,8 +66,9 @@ jobs:
       # 7️⃣ Deploy with the script defined in package.json
       # --------------------------------------------------------------
       - name: Deploy to GitHub Pages
-        run: bun run deploy
+        run: bun run deploy:ci
         env:
+            VITE_BUILD_TIME: ${{ github.event.head_commit.timestamp }}
             # Explicitly set Git user for commits
             GIT_AUTHOR_NAME: github-actions[bot]
             GIT_AUTHOR_EMAIL: github-actions[bot]@users.noreply.github.com
@@ -75,7 +76,7 @@ jobs:
             GIT_COMMITTER_EMAIL: github-actions[bot]@users.noreply.github.com
 
       # --------------------------------------------------------------
-      # 7️⃣ Upload coverage to Codecov (optional)
+      # 8️⃣ Upload coverage to Codecov (optional)
       # --------------------------------------------------------------
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v5

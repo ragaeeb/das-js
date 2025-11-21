@@ -1,10 +1,10 @@
 {
-  "name": "islamic-simplefolio",
+  "name": "das-js",
   "private": true,
   "homepage": "https://dar-as-sahaba.com",
   "author": "Dar as-Sahaba",
   "description": "Dār as-Ṣaḥābah Association",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "contributors": [
     {

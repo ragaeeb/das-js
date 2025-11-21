@@ -1,4 +1,3 @@
-import { Link as RouteLink } from 'react-router-dom';
 import { type FC, type ReactNode, useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import {
@@ -10,12 +9,16 @@ import {
   FaTwitter,
   FaYoutube,
 } from 'react-icons/fa';
+import { Link as RouteLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
+import pkg from '@/../package.json';
 import PortfolioContext from '@/context/context';
 import Copyright from './Copyright';
-import pkg from '@/../package.json';
 
 const version = pkg.version;
+const buildTime = import.meta.env.VITE_BUILD_TIME
+  ? new Date(import.meta.env.VITE_BUILD_TIME).toLocaleString()
+  : new Date().toLocaleString();
 
 const brandToNode: Record<string, ReactNode> = {
   facebook: <FaFacebook />,
@@ -56,7 +59,7 @@ const Footer: FC = () => {
         </div>
         <Copyright />
         <p className="footer__text">
-          v{`${version} ${new Date().toLocaleString()}`}
+          v{version} {buildTime}
         </p>
         <RouteLink style={{ color: 'white' }} to="privacy">
           Privacy Policy
