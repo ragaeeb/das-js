@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 #hero {
   min-height: 100vh;
   height: 120vh;
@@ -16,7 +18,7 @@
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
-  background: url('../images/splash.jpg');
+  background: url('../../images/splash.jpg');
   background-position: center;
   background-size: cover;
 

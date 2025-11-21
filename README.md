@@ -1,13 +1,5 @@
 [![time tracker](https://wakatime.com/badge/github/ragaeeb/das-js.svg)](https://wakatime.com/badge/github/ragaeeb/das-js)
-[![Known Vulnerabilities](https://snyk.io/test/github/ragaeeb/das-js/badge.svg)](https://snyk.io/test/github/ragaeeb/das-js)
-
-# [![das-js](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/qnmnp9/master&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/qnmnp9/runs)
-
-![Gatsby Build](https://github.com/ragaeeb/das-js/workflows/Gatsby%20Build/badge.svg)
-![Tests](https://github.com/ragaeeb/das-js/workflows/Tests/badge.svg)
-![Deploy release](https://github.com/ragaeeb/das-js/workflows/Deploy%20release/badge.svg)
-![Check Markdown links](https://github.com/ragaeeb/das-js/workflows/Check%20Markdown%20links/badge.svg)
-[![GitHub](https://img.shields.io/github/license/ragaeeb/das-js?color=blue)](https://github.com/ragaeeb/das-js/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/ragaeeb/das-js) ![GitHub forks](https://img.shields.io/github/forks/ragaeeb/das-js) ![GitHub issues](https://img.shields.io/github/issues/ragaeeb/das-js)
+[![codecov](https://codecov.io/gh/ragaeeb/das-js/graph/badge.svg?token=5DKNZ728JV)](https://codecov.io/gh/ragaeeb/das-js)
 
 ## A clean, beautiful and responsive template for masājid and Islāmic centres.
 

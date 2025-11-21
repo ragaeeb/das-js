@@ -1,3 +1,6 @@
+@use '../abstracts' as *;
+@use 'sass:color';
+
 .footer {
   background-color: $dark-grey;
   color: $white-color;
@@ -8,11 +11,11 @@
   }
 
   &__text {
-    color: darken(white, 50%);
+    color: color.scale(white, $lightness: -50%);
     font-size: 1.3rem;
 
     a {
-      color: darken(white, 50%);
+      color: color.scale(white, $lightness: -50%);
       font-size: 1.3rem;
       transition: all 0.4s;
       display: inline-block;

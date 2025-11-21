@@ -1,3 +1,6 @@
+@use '../abstracts' as *;
+@use 'sass:color';
+
 #about {
   background-color: $primary-color;
   background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
@@ -5,7 +8,7 @@
   height: 100%;
   border-top: 0px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
 
   @include respond(tab-land) {
@@ -60,7 +63,7 @@
         }
 
         &--important {
-          background: darken($secondary-color, 1%);
+          background: color.scale($secondary-color, $lightness: -1%);
           display: inline-block;
           font-style: italic;
           padding: 0 0.3rem;
