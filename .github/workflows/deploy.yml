@@ -52,9 +52,14 @@ jobs:
       # 6️⃣ Deploy with the script defined in package.json
       # --------------------------------------------------------------
       - name: Deploy to GitHub Pages
+        run: bun run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: bun run deploy -- -t $GITHUB_TOKEN
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            # Explicitly set Git user for commits
+            GIT_AUTHOR_NAME: github-actions[bot]
+            GIT_AUTHOR_EMAIL: github-actions[bot]@users.noreply.github.com
+            GIT_COMMITTER_NAME: github-actions[bot]
+            GIT_COMMITTER_EMAIL: github-actions[bot]@users.noreply.github.com
 
       # --------------------------------------------------------------
       # 7️⃣ Upload coverage to Codecov (optional)
