@@ -4,6 +4,13 @@ on:
   push:
     branches: [master]   # adjust if you use a different default branch
 
+# Add permissions at the workflow level
+permissions:
+    contents: write
+    issues: write
+    pull-requests: write
+    id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
