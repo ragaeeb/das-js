@@ -29,7 +29,7 @@
     "test": "bun test",
     "clean": "rm -rf dist node_modules",
     "deploy": "bun run build && gh-pages -d dist",
-    "deploy:ci": "bun run build && gh-pages -d dist -t \"$GITHUB_TOKEN\""
+    "deploy:ci": "bun run build && gh-pages -d dist"
   },
   "dependencies": {
     "adhan": "^4.4.3",

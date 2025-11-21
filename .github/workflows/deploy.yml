@@ -61,7 +61,7 @@ jobs:
       - name: Deploy to GitHub Pages
         run: bun run deploy:ci
         env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             # Explicitly set Git user for commits
             GIT_AUTHOR_NAME: github-actions[bot]
             GIT_AUTHOR_EMAIL: github-actions[bot]@users.noreply.github.com
