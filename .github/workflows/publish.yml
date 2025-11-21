@@ -1,0 +1,26 @@
+name: Deploy release
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check GitHub Status
+        uses: crazy-max/ghaction-github-status@v2
+      - uses: actions/checkout@main
+      - name: 'Setup Node.js'
+        uses: 'actions/setup-node@v3'
+        with:
+          node-version: 19
+      - uses: enriikke/gatsby-gh-pages-action@v2
+        env:
+          GATSBY_VERSION: ${{github.ref_name}}
+          GATSBY_GIT_SHA: ${{github.sha}}
+          GATSBY_GIT_TIMESTAMP: ${{github.event.repository.updated_at}}
+        with:
+          access-token: ${{ secrets.REPO_PAT }}
+          deploy-branch: gh-pages
+          gatsby-args: --verbose

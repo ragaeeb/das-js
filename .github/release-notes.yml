@@ -1,0 +1,22 @@
+changelog:
+    sections:
+        - title: 'Enhancements'
+          labels: ['enhancement', 'usability']
+        - title: 'Bug-Fixes'
+          labels: ['bug', 'regression']
+        - title: 'New Features'
+          labels: ['feature']
+        - title: 'Classical Features Ported'
+          labels: ['feature parity']
+        - title: 'Documentation Updates'
+          labels: ['documentation']
+        - title: 'Development Process Updates'
+          labels: ['devops']
+        - title: 'Dependency Upgrades'
+          labels: ['dependencies']
+        - title: 'Performance Improvements'
+          labels: ['performance']
+        - title: 'Code Health and Technical Debt'
+          labels: ['maintainability', 'tech-debt', 'readability']
+        - title: 'Software Verification and Validation'
+          labels: ['tests']
