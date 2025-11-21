@@ -56,12 +56,18 @@ jobs:
         run: bun test --coverage --coverage-reporter=lcov
 
       # --------------------------------------------------------------
-      # 6️⃣ Deploy with the script defined in package.json
+      # 6️⃣ Configure git remote with token for gh-pages
+      # --------------------------------------------------------------
+      - name: Configure git remote with token
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
+      # --------------------------------------------------------------
+      # 7️⃣ Deploy with the script defined in package.json
       # --------------------------------------------------------------
       - name: Deploy to GitHub Pages
-        run: bun run deploy:ci
+        run: bun run deploy
         env:
-            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             # Explicitly set Git user for commits
             GIT_AUTHOR_NAME: github-actions[bot]
             GIT_AUTHOR_EMAIL: github-actions[bot]@users.noreply.github.com
