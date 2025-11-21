@@ -1,0 +1,65 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master]   # adjust if you use a different default branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed for the push that gh-pages performs
+
+    steps:
+      # --------------------------------------------------------------
+      # 1️⃣ Checkout the repository (full history)
+      # --------------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0               # full history for git push
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # --------------------------------------------------------------
+      # 2️⃣ Configure a Git identity for the bot
+      # --------------------------------------------------------------
+      - name: Set up Git author/committer
+        run: |
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      # --------------------------------------------------------------
+      # 3️⃣ Install Bun (the runtime you use)
+      # --------------------------------------------------------------
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      # --------------------------------------------------------------
+      # 4️⃣ Install dependencies (locked lockfile)
+      # --------------------------------------------------------------
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      # --------------------------------------------------------------
+      # 5️⃣ Run tests (kept from your previous workflow)
+      # --------------------------------------------------------------
+      - name: Run tests
+        run: bun test --coverage --coverage-reporter=lcov
+
+      # --------------------------------------------------------------
+      # 6️⃣ Deploy with the script defined in package.json
+      # --------------------------------------------------------------
+      - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # <-- gh-pages will read this
+        run: bun run deploy
+
+      # --------------------------------------------------------------
+      # 7️⃣ Upload coverage to Codecov (optional)
+      # --------------------------------------------------------------
+      - name: Upload results to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}

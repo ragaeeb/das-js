@@ -1,5 +1,5 @@
 [![time tracker](https://wakatime.com/badge/github/ragaeeb/das-js.svg)](https://wakatime.com/badge/github/ragaeeb/das-js)
-[![codecov](https://codecov.io/gh/ragaeeb/das-js/graph/badge.svg?token=5DKNZ728JV)](https://codecov.io/gh/ragaeeb/das-js)
+[![codecov](https://codecov.io/gh/ragaeeb/das-js/graph/badge.svg?token=IS45QCP7XT)](https://codecov.io/gh/ragaeeb/das-js)
 
 ## A clean, beautiful and responsive template for masājid and Islāmic centres.
 
