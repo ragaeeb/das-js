@@ -53,8 +53,8 @@ jobs:
       # --------------------------------------------------------------
       - name: Deploy to GitHub Pages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # <-- gh-pages will read this
-        run: bun run deploy
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bun run deploy -- -t $GITHUB_TOKEN
 
       # --------------------------------------------------------------
       # 7️⃣ Upload coverage to Codecov (optional)
